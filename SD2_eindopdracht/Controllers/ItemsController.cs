@@ -48,6 +48,8 @@ namespace SD2_eindopdracht.Controllers
         // GET: Items/Create
         public IActionResult Create()
         {
+            ViewBag.Authors = new SelectList(_context.Author, "Id", "FirstName", "LastName");
+            ViewBag.Categories = new SelectList(_context.Category, "Id", "Name");
             return View();
         }
 
@@ -56,7 +58,7 @@ namespace SD2_eindopdracht.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Title,Description,YearOfRelease")] Item item)
+        public async Task<IActionResult> Create([Bind("Id,Title,Description,YearOfRelease,AuthorId,CategoryId")] Item item)
         {
             if (ModelState.IsValid)
             {
@@ -64,6 +66,10 @@ namespace SD2_eindopdracht.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+
+            ViewBag.Authors = new SelectList(_context.Author, "Id", "FirstName", "LastName");
+            ViewBag.Categories = new SelectList(_context.Category, "Id", "Name");
+
             return View(item);
         }
 
@@ -88,7 +94,7 @@ namespace SD2_eindopdracht.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,Description,YearOfRelease")] Item item)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,Description,YearOfRelease,AuthorId,CategoryId")] Item item)
         {
             if (id != item.Id)
             {

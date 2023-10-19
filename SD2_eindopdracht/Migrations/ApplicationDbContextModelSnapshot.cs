@@ -8,7 +8,7 @@ using SD2_eindopdracht.Data;
 
 #nullable disable
 
-namespace SD2_eindopdracht.Data.Migrations
+namespace SD2_eindopdracht.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     partial class ApplicationDbContextModelSnapshot : ModelSnapshot
@@ -275,10 +275,10 @@ namespace SD2_eindopdracht.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int?>("AuthorId")
+                    b.Property<int>("AuthorId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("CategoryId")
+                    b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
                     b.Property<string>("Description")
@@ -404,11 +404,15 @@ namespace SD2_eindopdracht.Data.Migrations
                 {
                     b.HasOne("SD2_eindopdracht.Models.Author", null)
                         .WithMany("Items")
-                        .HasForeignKey("AuthorId");
+                        .HasForeignKey("AuthorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("SD2_eindopdracht.Models.Category", null)
                         .WithMany("Items")
-                        .HasForeignKey("CategoryId");
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("SD2_eindopdracht.Models.Author", b =>
