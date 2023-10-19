@@ -12,7 +12,7 @@ using SD2_eindopdracht.Data;
 namespace SD2_eindopdracht.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20231019102006_Initial")]
+    [Migration("20231019103425_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -278,10 +278,10 @@ namespace SD2_eindopdracht.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("AuthorId")
+                    b.Property<int?>("AuthorId")
                         .HasColumnType("int");
 
-                    b.Property<int>("CategoryId")
+                    b.Property<int?>("CategoryId")
                         .HasColumnType("int");
 
                     b.Property<string>("Description")
@@ -405,21 +405,13 @@ namespace SD2_eindopdracht.Data.Migrations
 
             modelBuilder.Entity("SD2_eindopdracht.Models.Item", b =>
                 {
-                    b.HasOne("SD2_eindopdracht.Models.Author", "Author")
+                    b.HasOne("SD2_eindopdracht.Models.Author", null)
                         .WithMany("Items")
-                        .HasForeignKey("AuthorId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("AuthorId");
 
-                    b.HasOne("SD2_eindopdracht.Models.Category", "Category")
+                    b.HasOne("SD2_eindopdracht.Models.Category", null)
                         .WithMany("Items")
-                        .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Author");
-
-                    b.Navigation("Category");
+                        .HasForeignKey("CategoryId");
                 });
 
             modelBuilder.Entity("SD2_eindopdracht.Models.Author", b =>

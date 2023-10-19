@@ -15,10 +15,6 @@ namespace SD2_eindopdracht.Models
         [Required, Range(1,2023, ErrorMessage = "Kies een jaar tussen 1 en 2023")]
         public int YearOfRelease { get; set; }
 
-        [Required]
-        public Author Author { get; set; }
-
-        [Required]
-        public Category Category { get; set; }
+        
     }
 }
