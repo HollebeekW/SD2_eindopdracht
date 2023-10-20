@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Identity.Client;
 using SD2_eindopdracht.Models;
@@ -23,13 +24,16 @@ namespace SD2_eindopdracht.Data
         {
             base.OnModelCreating(builder);
 
-            builder.Entity<Category>().HasData(
-                new Category { Id = 1, Name = "Boek" },
-                new Category { Id = 2, Name = "CD" },
-                new Category { Id = 3, Name = "Game" },
-                new Category { Id = 4, Name = "DVD" },
-                new Category { Id = 5, Name = "Blu-Ray" }
-                );
+            builder.Entity<Category>().HasData(Seeder.CategorySeeder()); //seed categories
+
+            builder.Entity<Subscription>().HasData(Seeder.SubscriptionSeeder()); //seed subscription types
+            
+            Seeder.Init(20, 100, 100); //20 authors, 100 items and 100 users
+
+            builder.Entity<Author>().HasData(Seeder.AuthorList); //seed authors with fake data
+            builder.Entity<Item>().HasData(Seeder.ItemList); //seed items with fake data
+            builder.Entity<IdentityUser>().HasData(Seeder.IdentityUserList); //seed users with fake data
+
         }
     }
 
