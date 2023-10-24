@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SD2_eindopdracht.Models
 {
@@ -16,6 +17,8 @@ namespace SD2_eindopdracht.Models
         public int? MaxAge { get; set; } //null = no maximum age
         public int? YearlyItems { get; set; } //null = no limit on items
 
+        public int? ItemsAtOnce { get; set; }
+
         [Required, Range(0, int.MaxValue)]
         public int LoanPeriod { get; set; }
 
@@ -30,6 +33,7 @@ namespace SD2_eindopdracht.Models
 
         [Required, Range(0, double.MaxValue)]
         public decimal SubscriptionPrice { get; set; }
-        public List<IdentityUser>? Users { get; set; }
+
+        public List<ApplicationUser> Users { get; set; }
     }
 }

@@ -12,7 +12,7 @@ using SD2_eindopdracht.Data;
 namespace SD2_eindopdracht.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20231019141310_Initial")]
+    [Migration("20231024092215_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -89,6 +89,10 @@ namespace SD2_eindopdracht.Migrations
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Discriminator")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Email")
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
@@ -122,9 +126,6 @@ namespace SD2_eindopdracht.Migrations
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("SubscriptionId")
-                        .HasColumnType("int");
-
                     b.Property<bool>("TwoFactorEnabled")
                         .HasColumnType("bit");
 
@@ -142,9 +143,11 @@ namespace SD2_eindopdracht.Migrations
                         .HasDatabaseName("UserNameIndex")
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
-                    b.HasIndex("SubscriptionId");
-
                     b.ToTable("AspNetUsers", (string)null);
+
+                    b.HasDiscriminator<string>("Discriminator").HasValue("IdentityUser");
+
+                    b.UseTphMappingStrategy();
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
@@ -318,6 +321,9 @@ namespace SD2_eindopdracht.Migrations
                     b.Property<int>("Extensions")
                         .HasColumnType("int");
 
+                    b.Property<int?>("ItemsAtOnce")
+                        .HasColumnType("int");
+
                     b.Property<int>("LoanPeriod")
                         .HasColumnType("int");
 
@@ -345,6 +351,18 @@ namespace SD2_eindopdracht.Migrations
                     b.ToTable("Subscription");
                 });
 
+            modelBuilder.Entity("SD2_eindopdracht.Models.ApplicationUser", b =>
+                {
+                    b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityUser");
+
+                    b.Property<int>("SubscriptionId")
+                        .HasColumnType("int");
+
+                    b.HasIndex("SubscriptionId");
+
+                    b.HasDiscriminator().HasValue("ApplicationUser");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -352,13 +370,6 @@ namespace SD2_eindopdracht.Migrations
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUser", b =>
-                {
-                    b.HasOne("SD2_eindopdracht.Models.Subscription", null)
-                        .WithMany("Users")
-                        .HasForeignKey("SubscriptionId");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
@@ -416,6 +427,17 @@ namespace SD2_eindopdracht.Migrations
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("SD2_eindopdracht.Models.ApplicationUser", b =>
+                {
+                    b.HasOne("SD2_eindopdracht.Models.Subscription", "Subscription")
+                        .WithMany("Users")
+                        .HasForeignKey("SubscriptionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Subscription");
                 });
 
             modelBuilder.Entity("SD2_eindopdracht.Models.Author", b =>
