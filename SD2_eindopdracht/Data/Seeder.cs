@@ -2,6 +2,7 @@
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNetCore.Identity;
 using SD2_eindopdracht.Models;
+using System.Net.Cache;
 
 namespace SD2_eindopdracht.Data
 {
@@ -134,7 +135,18 @@ namespace SD2_eindopdracht.Data
                 .RuleFor(u => u.Email, f => f.Internet.Email())
                 .RuleFor(u => u.NormalizedEmail, (f, u) => u.Email.ToUpper())
                 .RuleFor(u => u.PhoneNumber, f => f.Phone.PhoneNumber())
-                .RuleFor(u => u.SubscriptionId, f => f.Random.Number(1,4));
+                .RuleFor(u => u.Age, f => f.Random.Number(12, 80))
+                .RuleFor(u => u.SubscriptionId, (f, u) =>
+                {
+                    if (u.Age >= 18)
+                    {
+                        return f.Random.Number(2, 4); //if age is 18+, don't allow jeugd subscription
+                    }
+                    else
+                    {
+                        return 1; //if age is lower than 18, only allow jeugd subscription
+                    }
+                });
 
             //generate authors and items, amount is set in DbContext
             AuthorList = authorFaker.Generate(AuthorCount);

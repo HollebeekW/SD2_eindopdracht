@@ -6,5 +6,7 @@ namespace SD2_eindopdracht.Models
     {
         public int SubscriptionId { get; set; }
         public Subscription Subscription { get; set; }
+
+        public int Age { get; set; }
     }
 }
