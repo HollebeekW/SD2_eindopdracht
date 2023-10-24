@@ -62,6 +62,7 @@ namespace SD2_eindopdracht.Migrations
                     MinAge = table.Column<int>(type: "int", nullable: false),
                     MaxAge = table.Column<int>(type: "int", nullable: true),
                     YearlyItems = table.Column<int>(type: "int", nullable: true),
+                    ItemsAtOnce = table.Column<int>(type: "int", nullable: true),
                     LoanPeriod = table.Column<int>(type: "int", nullable: false),
                     Extensions = table.Column<int>(type: "int", nullable: false),
                     ReservationPrice = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
@@ -128,6 +129,7 @@ namespace SD2_eindopdracht.Migrations
                 columns: table => new
                 {
                     Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    Discriminator = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     SubscriptionId = table.Column<int>(type: "int", nullable: true),
                     UserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     NormalizedUserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
@@ -151,7 +153,8 @@ namespace SD2_eindopdracht.Migrations
                         name: "FK_AspNetUsers_Subscription_SubscriptionId",
                         column: x => x.SubscriptionId,
                         principalTable: "Subscription",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(

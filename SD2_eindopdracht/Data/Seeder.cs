@@ -10,6 +10,7 @@ namespace SD2_eindopdracht.Data
         public static List<Author> AuthorList = new List<Author>();
         public static List<Item> ItemList = new List<Item>();
         public static List<IdentityUser> IdentityUserList = new List<IdentityUser>();
+        public static List<ApplicationUser> ApplicationUserList = new List<ApplicationUser>();
 
         //seed categories
         public static Category[] CategorySeeder()
@@ -45,6 +46,7 @@ namespace SD2_eindopdracht.Data
                     MinAge = 0,
                     MaxAge = 17,
                     YearlyItems = null,
+                    ItemsAtOnce = null,
                     LoanPeriod = 3,
                     Extensions = 3,
                     ReservationPrice = 0.25m,
@@ -60,6 +62,7 @@ namespace SD2_eindopdracht.Data
                     MinAge = 18,
                     MaxAge = null,
                     YearlyItems = 10,
+                    ItemsAtOnce = 10,
                     LoanPeriod = 3,
                     Extensions = 1,
                     ReservationPrice = 0.25m,
@@ -75,6 +78,7 @@ namespace SD2_eindopdracht.Data
                     MinAge = 18,
                     MaxAge = null,
                     YearlyItems = null,
+                    ItemsAtOnce = null,
                     LoanPeriod = 3,
                     Extensions = 3,
                     ReservationPrice = 0.25m,
@@ -90,6 +94,7 @@ namespace SD2_eindopdracht.Data
                     MinAge = 18,
                     MaxAge = null,
                     YearlyItems = null,
+                    ItemsAtOnce= null,
                     LoanPeriod = 3,
                     Extensions = 5,
                     ReservationPrice = 0m,
@@ -122,19 +127,20 @@ namespace SD2_eindopdracht.Data
 
             //fake users
             var userId = 1;
-            var userFaker = new Faker<IdentityUser>()
+            var userFaker = new Faker<ApplicationUser>()
                 .RuleFor(u => u.Id, f => (userId++).ToString())
                 .RuleFor(u => u.UserName, f => f.Internet.UserName())
                 .RuleFor(u => u.NormalizedUserName, (f, u) => u.UserName.ToUpper())
                 .RuleFor(u => u.Email, f => f.Internet.Email())
                 .RuleFor(u => u.NormalizedEmail, (f, u) => u.Email.ToUpper())
-                .RuleFor(u => u.PhoneNumber, f => f.Phone.PhoneNumber());
-
+                .RuleFor(u => u.PhoneNumber, f => f.Phone.PhoneNumber())
+                .RuleFor(u => u.SubscriptionId, f => f.Random.Number(1,4));
 
             //generate authors and items, amount is set in DbContext
             AuthorList = authorFaker.Generate(AuthorCount);
             ItemList = itemFaker.Generate(ItemCount);
-            IdentityUserList = userFaker.Generate(UserCount);
+            ApplicationUserList = userFaker.Generate(UserCount);
+            
         }
     }
 }

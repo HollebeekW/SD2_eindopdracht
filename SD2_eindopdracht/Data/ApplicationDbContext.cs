@@ -32,7 +32,7 @@ namespace SD2_eindopdracht.Data
 
             builder.Entity<Author>().HasData(Seeder.AuthorList); //seed authors with fake data
             builder.Entity<Item>().HasData(Seeder.ItemList); //seed items with fake data
-            builder.Entity<IdentityUser>().HasData(Seeder.IdentityUserList); //seed users with fake data
+            builder.Entity<ApplicationUser>().HasData(Seeder.ApplicationUserList); //seed users with fake data
 
         }
     }

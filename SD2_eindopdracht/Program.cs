@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using SD2_eindopdracht.Data;
+using SD2_eindopdracht.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
