@@ -48,6 +48,7 @@ namespace SD2_eindopdracht.Controllers
         }
 
         // GET: Authors/Create
+        [Authorize(Roles = "Admin,Employee")]
         public IActionResult Create()
         {
             return View();
@@ -70,6 +71,7 @@ namespace SD2_eindopdracht.Controllers
         }
 
         // GET: Authors/Edit/5
+        [Authorize(Roles = "Admin,Employee")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Author == null)
@@ -90,6 +92,7 @@ namespace SD2_eindopdracht.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin,Employee")]
         public async Task<IActionResult> Edit(int id, [Bind("Id,FirstName,LastName")] Author author)
         {
             if (id != author.Id)
@@ -121,6 +124,7 @@ namespace SD2_eindopdracht.Controllers
         }
 
         // GET: Authors/Delete/5
+        [Authorize(Roles = "Admin,Employee")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Author == null)
@@ -139,6 +143,7 @@ namespace SD2_eindopdracht.Controllers
         }
 
         // POST: Authors/Delete/5
+        [Authorize(Roles = "Admin,Employee")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)

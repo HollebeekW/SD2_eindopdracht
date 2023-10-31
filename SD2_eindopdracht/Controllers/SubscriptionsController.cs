@@ -48,6 +48,7 @@ namespace SD2_eindopdracht.Controllers
         }
 
         // GET: Subscriptions/Create
+        [Authorize(Roles = "Admin,Employee")]
         public IActionResult Create()
         {
             return View();
@@ -58,6 +59,7 @@ namespace SD2_eindopdracht.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin,Employee")]
         public async Task<IActionResult> Create([Bind("Id,Name,MinAge,MaxAge,YearlyItems,LoanPeriod,Extensions,ReservationPrice,DailyFine,SubscriptionPrice")] Subscription subscription)
         {
             if (ModelState.IsValid)
@@ -70,6 +72,7 @@ namespace SD2_eindopdracht.Controllers
         }
 
         // GET: Subscriptions/Edit/5
+        [Authorize(Roles = "Admin,Employee")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Subscription == null)
@@ -90,6 +93,7 @@ namespace SD2_eindopdracht.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin,Employee")]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Name,MinAge,MaxAge,YearlyItems,LoanPeriod,Extensions,ReservationPrice,DailyFine,SubscriptionPrice")] Subscription subscription)
         {
             if (id != subscription.Id)
@@ -121,6 +125,7 @@ namespace SD2_eindopdracht.Controllers
         }
 
         // GET: Subscriptions/Delete/5
+        [Authorize(Roles = "Admin,Employee")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Subscription == null)
@@ -139,6 +144,7 @@ namespace SD2_eindopdracht.Controllers
         }
 
         // POST: Subscriptions/Delete/5
+        [Authorize(Roles = "Admin,Employee")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
