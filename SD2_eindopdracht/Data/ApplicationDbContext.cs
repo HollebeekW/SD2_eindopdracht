@@ -10,9 +10,12 @@ namespace SD2_eindopdracht.Data
 {
     public class ApplicationDbContext : IdentityDbContext
     {
+        private readonly UserManager<ApplicationUser> _userManager;
+
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
+
         }
 
         public DbSet<Author> Author { get; set; }
@@ -28,7 +31,7 @@ namespace SD2_eindopdracht.Data
 
             builder.Entity<Subscription>().HasData(Seeder.SubscriptionSeeder()); //seed subscription types
             
-            Seeder.Init(20, 100, 100); //20 authors, 100 items and 100 users
+            Seeder.Init(20, 100, 100, _userManager); //20 authors, 100 items and 100 users
 
             builder.Entity<Author>().HasData(Seeder.AuthorList); //seed authors with fake data
             builder.Entity<Item>().HasData(Seeder.ItemList); //seed items with fake data

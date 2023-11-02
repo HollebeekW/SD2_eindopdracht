@@ -1,19 +1,26 @@
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using SD2_eindopdracht.Data;
 using SD2_eindopdracht.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-var connectionString = "Server=(localdb)\\mssqllocaldb;Database=BibliotheekS1117975;Trusted_Connection=True;MultipleActiveResultSets=true";
+builder.Configuration.AddJsonFile("appsettings.json");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(connectionString));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true) //disable need to confirm email (may be changed later)
+builder.Services.AddDefaultIdentity<ApplicationUser>(options =>
+    options.SignIn.RequireConfirmedAccount = false)
     .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>();
+
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
@@ -26,7 +33,6 @@ if (app.Environment.IsDevelopment())
 else
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
@@ -42,12 +48,11 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 app.MapRazorPages();
 
-//role creation
+// Role creation
 using (var scope = app.Services.CreateScope())
 {
     var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
     var roles = new[] { "Admin", "Employee", "User" };
-    var roleId = 1;
 
     foreach (var role in roles)
     {
@@ -58,18 +63,18 @@ using (var scope = app.Services.CreateScope())
     }
 }
 
-//user creation
+// User creation
 using (var scope = app.Services.CreateScope())
 {
-    var userManager = scope.ServiceProvider.GetRequiredService<UserManager<IdentityUser>>();
+    var userManager = scope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
 
     var password = "Pass1!";
 
     if (await userManager.FindByEmailAsync("admin@email.com") == null)
     {
-        var adminUser = new IdentityUser();
+        var adminUser = new ApplicationUser();
         adminUser.Email = "admin@email.com";
-        adminUser.UserName = "admin@email.com"; //won't work without it, idk why
+        adminUser.UserName = "admin@email.com";
         adminUser.LockoutEnabled = false;
         adminUser.EmailConfirmed = true;
 
@@ -80,29 +85,30 @@ using (var scope = app.Services.CreateScope())
 
     if (await userManager.FindByEmailAsync("employee@email.com") == null)
     {
-        var adminUser = new IdentityUser();
-        adminUser.Email = "employee@email.com";
-        adminUser.UserName = "employee@email.com"; //same here, won't work without it
-        adminUser.LockoutEnabled = false;
-        adminUser.EmailConfirmed = true;
+        var employeeUser = new ApplicationUser();
+        employeeUser.Email = "employee@email.com";
+        employeeUser.UserName = "employee@email.com";
+        employeeUser.LockoutEnabled = false;
+        employeeUser.EmailConfirmed = true;
 
-        await userManager.CreateAsync(adminUser, password);
+        await userManager.CreateAsync(employeeUser, password);
 
-        await userManager.AddToRoleAsync(adminUser, "Employee");
+        await userManager.AddToRoleAsync(employeeUser, "Employee");
     }
 
     if (await userManager.FindByEmailAsync("user@email.com") == null)
     {
-        var adminUser = new IdentityUser();
-        adminUser.Email = "user@email.com";
-        adminUser.UserName = "user@email.com"; //same here, won't work without it
-        adminUser.LockoutEnabled = false;
-        adminUser.EmailConfirmed = true;
+        var user = new ApplicationUser();
+        user.Email = "user@email.com";
+        user.UserName = "user@email.com";
+        user.LockoutEnabled = false;
+        user.EmailConfirmed = true;
 
-        await userManager.CreateAsync(adminUser, password);
+        await userManager.CreateAsync(user, password);
 
-        await userManager.AddToRoleAsync(adminUser, "user");
+        await userManager.AddToRoleAsync(user, "User");
     }
+
 }
 
 app.Run();

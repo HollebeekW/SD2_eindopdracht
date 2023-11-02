@@ -1,6 +1,7 @@
 ﻿using Bogus;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using SD2_eindopdracht.Models;
 using System.Net.Cache;
@@ -108,7 +109,7 @@ namespace SD2_eindopdracht.Data
             return subscriptions.ToArray();
         }
        
-        public static void Init(int AuthorCount, int ItemCount,int UserCount) //2 values, for amount of authors, items and users
+        public static async Task Init(int AuthorCount, int ItemCount,int UserCount, Microsoft.AspNetCore.Identity.UserManager<ApplicationUser> userManager) //2 values, for amount of authors, items and users
         {
             //fake authors
             var authorId = 1;
@@ -153,7 +154,12 @@ namespace SD2_eindopdracht.Data
             AuthorList = authorFaker.Generate(AuthorCount);
             ItemList = itemFaker.Generate(ItemCount);
             ApplicationUserList = userFaker.Generate(UserCount);
-            
+
+            foreach (var user in ApplicationUserList)
+            {
+                await userManager.AddToRoleAsync(user, "User");
+            }
+
         }
     }
 }
