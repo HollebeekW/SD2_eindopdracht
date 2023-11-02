@@ -1,0 +1,46 @@
+﻿@model IEnumerable<dynamic>
+
+@{
+    ViewData["Title"] = "User List";
+}
+
+<h2>User List</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Email</th>
+            <th>Role(s)</th>
+            <th>Subscription type</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.User.Email</td>
+                <td>
+                    @string.Join(", ", item.Roles)
+                </td>
+                <td>
+                    @if (item.User.SubscriptionId != null)
+                    {
+                        @item.User.Subscription.Name
+                    }
+                    else {
+                        <p>No subscription active</p>
+                    }
+                    
+                </td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.User.Id">Details</a>
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <a asp-action="Edit" asp-route-id="@item.User.Id">Edit</a>
+                        <a asp-action="Delete" asp-route-id="@item.User.Id">Delete</a>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

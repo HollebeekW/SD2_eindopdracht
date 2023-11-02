@@ -1,0 +1,57 @@
+﻿@model SD2_eindopdracht.Models.ApplicationUser
+
+@{
+    ViewData["Title"] = "Edit User Role";
+}
+
+<h1>Edit User Role</h1>
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="AddRole">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+
+            <div class="form-group">
+                <label for="selectedRole">Select Role:</label>
+                <select id="selectedRole" name="selectedRole" class="form-control">
+                    @foreach (var role in ViewBag.AllRoles)
+                    {
+                        <option value="@role.Name">@role.Name</option>
+                    }
+                </select>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Add Role" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <h3>Current Roles:</h3>
+    <ul>
+        @foreach (var role in ViewBag.UserRoles)
+        {
+            <li>
+                @role
+                <form asp-action="RemoveRole">
+                    <input type="hidden" asp-for="Id">
+                    <input type="hidden" name="userRole" value="@role" />
+                    <button type="submit" class="btn btn-danger">Remove role</button>
+                </form>
+            </li>
+        }
+    </ul>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

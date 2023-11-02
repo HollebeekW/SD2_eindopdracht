@@ -1,6 +1,8 @@
 ﻿using Bogus;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 using SD2_eindopdracht.Models;
 using System.Net.Cache;
 
@@ -106,9 +108,8 @@ namespace SD2_eindopdracht.Data
 
             return subscriptions.ToArray();
         }
-
        
-        public static void Init(int AuthorCount, int ItemCount,int UserCount) //2 values, for amount of authors, items and users
+        public static async Task Init(int AuthorCount, int ItemCount,int UserCount) //2 values, for amount of authors, items and users
         {
             //fake authors
             var authorId = 1;
@@ -123,6 +124,7 @@ namespace SD2_eindopdracht.Data
                 .RuleFor(i => i.Id, f => itemId++) //auto increment id
                 .RuleFor(i => i.Title, f => f.Commerce.ProductName()) //product name may be changed
                 .RuleFor(i => i.Description, f => f.Commerce.ProductDescription()) //product desciption may be changed
+                .RuleFor(i => i.YearOfRelease, f => f.Random.Number(2000,2023))
                 .RuleFor(i => i.AuthorId, f => f.Random.Number(1, AuthorList.Count)) //random number between 1 and amount of existing authors
                 .RuleFor(i => i.CategoryId, f => f.Random.Number(1, 5)); //random number between 1 and 5, because there are 5 categories when seeding
 
@@ -152,7 +154,7 @@ namespace SD2_eindopdracht.Data
             AuthorList = authorFaker.Generate(AuthorCount);
             ItemList = itemFaker.Generate(ItemCount);
             ApplicationUserList = userFaker.Generate(UserCount);
-            
+
         }
     }
 }

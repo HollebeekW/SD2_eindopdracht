@@ -10,6 +10,8 @@ namespace SD2_eindopdracht.Data
 {
     public class ApplicationDbContext : IdentityDbContext
     {
+        private readonly UserManager<ApplicationUser> _userManager;
+
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
