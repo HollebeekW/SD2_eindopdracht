@@ -7,6 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using SD2_eindopdracht.Data;
 using SD2_eindopdracht.Models;
+using Microsoft.IdentityModel.Tokens;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -108,7 +109,23 @@ using (var scope = app.Services.CreateScope())
 
         await userManager.AddToRoleAsync(user, "User");
     }
+}
 
+//adding role to seeded users
+using (var scope = app.Services.CreateScope())
+{
+    var userManager = scope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
+
+    var seededUsers = userManager.Users.ToList();
+
+    //if 
+    if (seededUsers.Any())
+    {
+        foreach (var user in seededUsers)
+        {
+            await userManager.AddToRoleAsync(user, "User");
+        }
+    }
 }
 
 app.Run();

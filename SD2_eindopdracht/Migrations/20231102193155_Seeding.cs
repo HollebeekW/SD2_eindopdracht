@@ -5,7 +5,7 @@
 namespace SD2_eindopdracht.Migrations
 {
     /// <inheritdoc />
-    public partial class seeder : Migration
+    public partial class Seeding : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -18,1541 +18,1541 @@ namespace SD2_eindopdracht.Migrations
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "1",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 33, "97a0d54f-3140-4b70-8089-097011c4430c", "Assunta81@hotmail.com", "ASSUNTA81@HOTMAIL.COM", "JAN_POLLICH65", "1-279-201-5886", "eb840b44-e0de-4af1-8c45-9ba80b2083aa", 2, "Jan_Pollich65" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
+                values: new object[] { 57, "368a028c-892f-4a36-a394-0c59dc375b7d", "Michale_Braun16@hotmail.com", "MICHALE_BRAUN16@HOTMAIL.COM", "OTHA_BOGAN28", "(639) 623-2751 x2268", "3a9336de-84aa-47e2-837d-1a26738d5194", "Otha_Bogan28" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "10",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 21, "2444fb58-11e3-4af3-991d-4a07d8a960cc", "Concepcion13@yahoo.com", "CONCEPCION13@YAHOO.COM", "LESSIE.MACEJKOVIC10", "1-959-998-1406", "7b8c84f9-234b-4de1-940d-9e2127104f2a", 4, "Lessie.Macejkovic10" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
+                values: new object[] { 33, "b63cfce2-5d43-4c0a-8f97-2794f566aa8c", "Elijah.Cummerata@hotmail.com", "ELIJAH.CUMMERATA@HOTMAIL.COM", "DEE.CUMMERATA97", "1-247-335-7671 x9295", "3287ba3c-e069-44f1-89c8-d2243aa79c9d", "Dee.Cummerata97" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "100",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 48, "e28f6be4-4103-4c82-b1ed-e79e1de24ea6", "Kamren55@hotmail.com", "KAMREN55@HOTMAIL.COM", "LINA72", "469.899.8376", "6122661b-d2d8-48f8-8878-0443a20720b4", 3, "Lina72" });
+                values: new object[] { 67, "505b2802-3bd1-4bac-a891-b35a1ca7a346", "Earline_Ritchie84@gmail.com", "EARLINE_RITCHIE84@GMAIL.COM", "TRAVIS86", "401-726-3517", "5a00bb34-a0cd-4739-96d9-b873d7294429", 3, "Travis86" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "11",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
-                values: new object[] { 37, "5cb69628-4c9a-4175-aa71-dfcb58d87757", "Louisa.Kerluke@yahoo.com", "LOUISA.KERLUKE@YAHOO.COM", "MARGUERITE36", "(675) 583-1684", "05c2c0aa-dfea-4bbc-9a4f-6084f0559990", "Marguerite36" });
+                values: new object[] { 23, "1e90c6f1-2b99-4692-95f4-14881bb7be11", "Allison78@hotmail.com", "ALLISON78@HOTMAIL.COM", "DORRIS_JONES", "862-222-2971 x57037", "d7ede7a2-e540-473a-8981-9528020548c7", "Dorris_Jones" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "12",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 20, "951208d2-d5c3-4c2f-b2ab-06213f8bc14e", "Blair.Okuneva70@hotmail.com", "BLAIR.OKUNEVA70@HOTMAIL.COM", "STEFANIE.GIBSON", "1-832-862-1939 x219", "fad7f97f-1911-4f97-b345-0c0c2b7d4b16", 3, "Stefanie.Gibson" });
+                values: new object[] { 64, "e56b21a0-ceac-4ea6-9cf1-4c9d7e365e52", "Jeanne_Roberts@yahoo.com", "JEANNE_ROBERTS@YAHOO.COM", "LUCIANO_HARBER75", "(227) 474-3264 x46643", "974a60d1-2d61-4292-a793-0313ab2506fb", 2, "Luciano_Harber75" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "13",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
-                values: new object[] { 77, "a4852013-85b9-4922-bd66-0512261bdff1", "Abagail_King@hotmail.com", "ABAGAIL_KING@HOTMAIL.COM", "EULALIA70", "(751) 759-0678", "511ca46e-0a74-4f89-b0ee-c0db0d0e2bb3", "Eulalia70" });
+                values: new object[] { 51, "598a0f04-f032-46ad-b043-8ac3965ec237", "Raquel68@gmail.com", "RAQUEL68@GMAIL.COM", "JARRELL70", "417-432-8269 x00975", "e2146781-911b-40f4-af35-4c65f7227ece", "Jarrell70" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "14",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
-                values: new object[] { 76, "65297239-3ea8-496d-aa3a-515517d8c41b", "Dante.Reichel10@yahoo.com", "DANTE.REICHEL10@YAHOO.COM", "SAVANNAH.CORKERY32", "(943) 776-4044 x855", "0e707321-3901-4538-bcff-75be8eb75b28", "Savannah.Corkery32" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
+                values: new object[] { 17, "1b6d3169-e3b2-479b-9551-c4051e5469a3", "Idella_Dibbert62@gmail.com", "IDELLA_DIBBERT62@GMAIL.COM", "MAUREEN_RUNOLFSDOTTIR37", "(997) 522-1825 x92537", "6255be27-1a9d-439d-aa77-20222895548a", 1, "Maureen_Runolfsdottir37" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "15",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 57, "9eb55c54-d4c8-411b-b4e2-bfe4909fcf62", "Aryanna0@yahoo.com", "ARYANNA0@YAHOO.COM", "EBONY_OHARA38", "(663) 953-2158 x79020", "c3abda6c-de12-4ed2-ae53-88c5c7ee1f3a", 3, "Ebony_OHara38" });
+                values: new object[] { 24, "05eec9e9-a4a1-4a1d-a0a7-04ffd88efad5", "Lois.Gottlieb17@hotmail.com", "LOIS.GOTTLIEB17@HOTMAIL.COM", "CHLOE_CORMIER", "1-466-402-4184", "c865a89e-b928-4443-806d-a077c21fb496", 4, "Chloe_Cormier" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "16",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
-                values: new object[] { 44, "a8188a1a-754d-4b6d-8893-fb32bf35c6c9", "Jordan6@gmail.com", "JORDAN6@GMAIL.COM", "DRAKE59", "388-999-8691", "ca592f79-40c5-4c77-b096-e4c688c592ac", "Drake59" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
+                values: new object[] { 73, "5ed1a872-6fe7-4407-b31f-0de205529bbd", "Torrey_Cronin19@yahoo.com", "TORREY_CRONIN19@YAHOO.COM", "BUFORD.MULLER", "663.513.0491", "c0d09150-1085-4581-8aef-a72a6fe8edfe", 2, "Buford.Muller" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "17",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 59, "25ea1119-5a6b-48ef-a591-1dda233f813d", "Tianna_Thiel@hotmail.com", "TIANNA_THIEL@HOTMAIL.COM", "GEORGETTE65", "1-548-818-1328", "53067533-344d-43f3-ba2a-a3809e61f79d", 2, "Georgette65" });
+                values: new object[] { 24, "5edc7059-278a-4c59-bec2-b814d0193a18", "Gabriella_Torphy@hotmail.com", "GABRIELLA_TORPHY@HOTMAIL.COM", "JILLIAN81", "732-778-3069", "9900be47-8efc-4769-9e7a-36a9a13c723a", 3, "Jillian81" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "18",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 47, "80412a5e-e71d-4818-ac68-d76c9449e739", "Itzel70@hotmail.com", "ITZEL70@HOTMAIL.COM", "ROBBIE_MCGLYNN19", "(784) 505-6890 x27460", "c904fef1-e2c3-4c35-a30a-baf2b0bff27e", 3, "Robbie_McGlynn19" });
+                values: new object[] { 24, "ceda75b6-77b2-4728-ac87-d77413fac439", "Harold25@gmail.com", "HAROLD25@GMAIL.COM", "JACEY_JAKUBOWSKI18", "(386) 671-2304 x0012", "0991fcc8-4085-4caf-971a-2cc6d85a70cd", 3, "Jacey_Jakubowski18" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "19",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 17, "d8995ab4-7857-43d4-b1c6-41019d3bf800", "Daniella_Dicki16@gmail.com", "DANIELLA_DICKI16@GMAIL.COM", "PEGGIE.ROLFSON", "1-665-567-5855 x2050", "970e4e03-aca5-4812-82d4-407f973f7622", 1, "Peggie.Rolfson" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
+                values: new object[] { 79, "33eb8af3-e957-408e-ac5b-8bae7b89af63", "Ferne_Reichert20@gmail.com", "FERNE_REICHERT20@GMAIL.COM", "HALLE_CASPER", "841.652.4606", "a947c034-4298-42ef-b6ad-c53faf8082a9", "Halle_Casper" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "2",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 35, "e366ac69-da9e-450b-b58a-caa2e0501dad", "Trevor.Marquardt@gmail.com", "TREVOR.MARQUARDT@GMAIL.COM", "STUART_HELLER43", "(245) 569-9783", "d75690a3-4e34-4d05-bf9e-5dc6c333539d", 3, "Stuart_Heller43" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
+                values: new object[] { 25, "a93264d9-1908-44f4-8b4f-362fd8ee81a6", "Abigail57@hotmail.com", "ABIGAIL57@HOTMAIL.COM", "FLOSSIE_BLICK5", "416.771.8545 x357", "d7c93c74-2773-44e8-b675-6299740186ad", "Flossie_Blick5" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "20",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 62, "8c5a554d-c961-47fb-a364-c7dacf6c22c2", "Velma_Feest53@hotmail.com", "VELMA_FEEST53@HOTMAIL.COM", "BETTE_YOST", "225.218.1438", "2f93b71a-975c-4049-ae81-2c5d71e92567", 3, "Bette_Yost" });
+                values: new object[] { 51, "882fb7f9-8cf8-4e55-8b3e-296f790bb832", "Adolf.Rosenbaum88@hotmail.com", "ADOLF.ROSENBAUM88@HOTMAIL.COM", "MARLON.ORN28", "(934) 570-9467 x3507", "3680743d-d9a3-476a-9647-190aee7719ab", 2, "Marlon.Orn28" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "21",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
-                values: new object[] { 36, "dcd5eef8-10fe-4f54-9ed9-57dad94bdf7e", "Norwood_Jenkins@hotmail.com", "NORWOOD_JENKINS@HOTMAIL.COM", "KASANDRA47", "(291) 674-1607", "8214b091-6259-4425-a9ca-8bec75b35945", "Kasandra47" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
+                values: new object[] { 17, "77501a42-7ae0-4e75-a40b-05dc8c5a7d57", "Jerome_Hayes4@hotmail.com", "JEROME_HAYES4@HOTMAIL.COM", "LAMBERT.PARKER51", "(200) 914-9848 x749", "b8434107-8752-4738-8ef8-a5d897e1820d", 1, "Lambert.Parker51" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "22",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 70, "d4468e05-d7b8-4072-b4ec-51437cf028b6", "Trace.Pfeffer@yahoo.com", "TRACE.PFEFFER@YAHOO.COM", "FREDDY.RODRIGUEZ29", "462-511-2720", "17a7de87-4c2a-4af9-902c-3e1eb81d4d0e", 4, "Freddy.Rodriguez29" });
+                values: new object[] { 67, "fa567ef6-1f34-4315-b802-302fb614d281", "Rosalinda_Lang@hotmail.com", "ROSALINDA_LANG@HOTMAIL.COM", "ASHLEE.KASSULKE", "582.607.7951", "2e209dab-d7b0-4a9a-aa3d-f098bb6c51ad", 2, "Ashlee.Kassulke" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "23",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 39, "fdacf94d-3102-4eb0-8d04-cde6a998f9e3", "Herta34@yahoo.com", "HERTA34@YAHOO.COM", "NORMA.MILLER19", "481.968.5634 x1938", "11f7c1cf-5718-4395-979e-f5a2ab8d01db", 3, "Norma.Miller19" });
+                values: new object[] { 46, "75be4c48-2af6-4cbe-af48-d9b1f3b19587", "America31@gmail.com", "AMERICA31@GMAIL.COM", "FEDERICO.HAUCK", "(718) 889-3144 x48197", "e1328386-3f95-4a5d-b292-69e7ed28b450", 2, "Federico.Hauck" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "24",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
-                values: new object[] { 57, "ac85a09a-6b08-41d4-adc1-958a6dcad104", "Jacques54@yahoo.com", "JACQUES54@YAHOO.COM", "LAVERNE_DURGAN", "1-364-311-1396", "799b77c0-a9b7-4af7-ba3c-41d3a96020cd", "Laverne_Durgan" });
+                values: new object[] { 64, "d8fd5653-e215-43cb-90e9-dd540571d715", "Eleazar_Wuckert28@hotmail.com", "ELEAZAR_WUCKERT28@HOTMAIL.COM", "CLEORA85", "765-355-1091", "4fc62efc-9157-4e8a-8363-f43bdbfb728a", "Cleora85" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "25",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 42, "535619d2-ee6d-4e3f-92bf-97de44e968e7", "Dewayne.Lemke36@hotmail.com", "DEWAYNE.LEMKE36@HOTMAIL.COM", "VELMA86", "544.226.2571 x08833", "ac5d7063-4273-4c42-aefd-552e8daba785", 2, "Velma86" });
+                values: new object[] { 37, "944bd61e-3d5d-4804-86b2-dc38bd99971b", "Raquel_Hills@yahoo.com", "RAQUEL_HILLS@YAHOO.COM", "DEON_GREENFELDER", "264.897.4365", "db67b9e7-918e-4798-828e-33b4b9405e8c", 2, "Deon_Greenfelder" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "26",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 40, "1c873dda-1bd8-48db-9d2f-e6da5f1e1c10", "Beulah5@hotmail.com", "BEULAH5@HOTMAIL.COM", "RAFAEL67", "(954) 997-3193 x908", "d224af6a-406a-4949-a982-c2990b70a542", 4, "Rafael67" });
+                values: new object[] { 53, "27a66ab7-0608-40fb-be28-605bdf7b6455", "Ayana_Stracke86@yahoo.com", "AYANA_STRACKE86@YAHOO.COM", "ROWLAND.STROSIN", "664-791-5357 x9533", "89e1b288-d9e3-4bc9-b9e4-840f0002d395", 3, "Rowland.Strosin" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "27",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 36, "5db53e10-d8aa-43bd-a015-5eeb0d0758e0", "Gwendolyn.Kulas@gmail.com", "GWENDOLYN.KULAS@GMAIL.COM", "SHANELLE.BOYER80", "(294) 312-8135", "0eee51bc-a777-41e8-a3a2-a3f9c5e8be65", 3, "Shanelle.Boyer80" });
+                values: new object[] { 36, "510c7e6f-649e-4e85-91e0-a6f20a0b4738", "Jarrell.Breitenberg77@yahoo.com", "JARRELL.BREITENBERG77@YAHOO.COM", "MELVIN_VONRUEDEN", "1-368-916-5560 x24202", "d14fe7c4-88ce-4926-8630-743173a276ce", 4, "Melvin_VonRueden" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "28",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 17, "f1201132-e85e-4654-8694-79a030236111", "Ellis.Sauer@hotmail.com", "ELLIS.SAUER@HOTMAIL.COM", "BEVERLY.CASPER60", "867.813.1157", "4b9425b9-476f-4b68-942a-daa39e7b7980", 1, "Beverly.Casper60" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
+                values: new object[] { 63, "5eaf11f1-c6a9-41b8-b372-7fd28ce86da8", "Oleta83@gmail.com", "OLETA83@GMAIL.COM", "DIANNA.WATERS76", "566.420.2143 x56114", "bb291961-301f-4113-8da5-0bbe4e41a73b", "Dianna.Waters76" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "29",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 17, "53555a99-ab92-4307-a5db-80ea35cd73f6", "Zena20@gmail.com", "ZENA20@GMAIL.COM", "JIMMY.HOMENICK27", "943.596.3146 x8764", "1a07bb8c-e773-46b9-9602-fdd03758d7da", 1, "Jimmy.Homenick27" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
+                values: new object[] { 43, "9f8c9af7-5b09-446f-ba3e-7dbb817cd1ca", "Antwon.Corwin@yahoo.com", "ANTWON.CORWIN@YAHOO.COM", "VLADIMIR_OKEEFE", "608-433-0705 x3265", "27607162-16ab-4fe4-ad32-324ab08271f7", "Vladimir_OKeefe" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "3",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 36, "e16f2815-518d-434f-bc1f-c200e5d8c11f", "Buster.Hegmann84@hotmail.com", "BUSTER.HEGMANN84@HOTMAIL.COM", "MACK_TORPHY47", "977.564.5362", "4444dabc-a479-40bf-adb9-2703f4c0e05d", 2, "Mack_Torphy47" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
+                values: new object[] { 22, "29292382-1024-450b-b680-52037387322e", "Alfreda38@gmail.com", "ALFREDA38@GMAIL.COM", "AMBROSE.JACOBSON", "710-441-5247 x823", "f046dd79-7e1f-4e47-9ad3-5439e1f18cb9", "Ambrose.Jacobson" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "30",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 54, "6003f61a-5a60-4b91-b396-88909700318f", "Kyler66@yahoo.com", "KYLER66@YAHOO.COM", "QUEEN.MAGGIO", "1-751-635-3741", "46407e6e-7bee-4883-938d-0e99a1615daf", 2, "Queen.Maggio" });
+                values: new object[] { 17, "7a176138-9e8b-4bc4-84d3-369d8df60db8", "Annamae37@yahoo.com", "ANNAMAE37@YAHOO.COM", "KALEY50", "1-592-412-5998", "4bd45547-e3c8-4d59-834a-59a93220af4a", 1, "Kaley50" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "31",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 34, "26dfbc51-40a7-406b-a338-647bbf2efac7", "Deon99@gmail.com", "DEON99@GMAIL.COM", "ORION.WILLMS", "605-624-3826", "041677af-2398-4129-8eba-b38eeabba52f", 4, "Orion.Willms" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
+                values: new object[] { 59, "1f3f6c80-d0a6-44d1-976e-13b2659a2278", "Jorge_Hudson5@hotmail.com", "JORGE_HUDSON5@HOTMAIL.COM", "ASHLEE_LINDGREN72", "429-769-4615", "10e7e815-8197-4314-b004-2b737527deed", "Ashlee_Lindgren72" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "32",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
-                values: new object[] { 62, "48a9ea68-ffac-477e-8fa9-1664b27eabb9", "Rosie.Bins@hotmail.com", "ROSIE.BINS@HOTMAIL.COM", "IMANI_KONOPELSKI66", "1-985-940-8535 x71536", "73c716b0-a2a1-441f-a1e6-3ffcd43d765a", "Imani_Konopelski66" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
+                values: new object[] { 53, "d6d6732f-49f4-4b2c-bd22-d48cdfed8c72", "Jeffery_Olson41@gmail.com", "JEFFERY_OLSON41@GMAIL.COM", "JULIANA_POLLICH", "(614) 453-3089", "998c9933-7997-4224-8373-6ad3d61fff8d", 2, "Juliana_Pollich" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "33",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 40, "47398f76-2127-40a3-b1f9-e3246296958a", "Leonor60@yahoo.com", "LEONOR60@YAHOO.COM", "MARLEY_HAND", "1-902-279-8042 x8668", "ba902e49-306a-4e66-90ff-211b548805a3", 4, "Marley_Hand" });
+                values: new object[] { 13, "66ba574e-7777-4dbf-ad0f-b53a7bd3f939", "Amaya33@yahoo.com", "AMAYA33@YAHOO.COM", "CLAUDE.TORPHY", "743.353.7617", "56f5a29e-edf0-4d16-8a47-9f23a4b2378b", 1, "Claude.Torphy" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "34",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 67, "b185e50f-4141-48b6-9f06-c4bd5add67d6", "Domenic.Miller39@gmail.com", "DOMENIC.MILLER39@GMAIL.COM", "ADALBERTO.GIBSON", "1-716-635-4546 x09917", "b686c74c-0a8f-4bfc-816d-f65b6e21c862", 2, "Adalberto.Gibson" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
+                values: new object[] { 47, "51542877-9508-4567-af86-0656be5625ab", "Eric_Crona@hotmail.com", "ERIC_CRONA@HOTMAIL.COM", "GREGORIA_KUB96", "620-407-4928 x39634", "1fe91f94-0445-423d-85ae-93ea288a6f16", "Gregoria_Kub96" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "35",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 16, "02cbc3a2-05ba-4a12-b6dd-a51ff44af438", "Ryann_Olson@hotmail.com", "RYANN_OLSON@HOTMAIL.COM", "BRAYAN.CRONIN", "(859) 817-5464", "b214ba97-93f7-4642-b3ca-b79b4f163cda", 1, "Brayan.Cronin" });
+                values: new object[] { 57, "7520c024-b984-4124-ae77-01df18605422", "Clotilde.Windler@gmail.com", "CLOTILDE.WINDLER@GMAIL.COM", "KENNEDI94", "(500) 958-2411 x3087", "9f2bf6f5-1690-4573-a226-02b8a7572977", 3, "Kennedi94" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "36",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
-                values: new object[] { 23, "d86dd6fd-7126-4c6a-b885-cd000736af4f", "Brando_Gerhold@yahoo.com", "BRANDO_GERHOLD@YAHOO.COM", "SANTA_FRANECKI", "817-418-3743 x32844", "2d594583-32af-4bb9-8518-f553f6fc8a0b", "Santa_Franecki" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
+                values: new object[] { 40, "e1dc1df9-5e42-4054-b6d6-91dc2deff0db", "Dameon.Rau92@hotmail.com", "DAMEON.RAU92@HOTMAIL.COM", "JULIEN_KUHLMAN29", "516.457.5022", "ed5b20a0-90bb-4590-803c-31e2ce1917ed", 2, "Julien_Kuhlman29" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "37",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 62, "95b82d9e-b223-450a-9ac0-da4737fc26d5", "Carolina.McLaughlin32@hotmail.com", "CAROLINA.MCLAUGHLIN32@HOTMAIL.COM", "ARIC.BLOCK", "1-428-856-0833 x1453", "ebd46f56-4a35-4f17-93b0-52b6dcbee7d3", 4, "Aric.Block" });
+                values: new object[] { 78, "8fcaa84a-b4c0-4ec6-91c7-032cf268e7a9", "Giovani_Wisozk@hotmail.com", "GIOVANI_WISOZK@HOTMAIL.COM", "SALLIE12", "595.627.4092", "95005b63-bc8c-4e8b-b0e6-0c749214c704", 3, "Sallie12" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "38",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
-                values: new object[] { 61, "a3e66212-6a80-4d7b-b254-4a01fe509014", "Beth_Hintz@yahoo.com", "BETH_HINTZ@YAHOO.COM", "CAROLINA.LOWE", "1-308-802-7401", "c2742619-a591-47c4-80b5-7ef5ab6ccff6", "Carolina.Lowe" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
+                values: new object[] { 73, "09712590-6438-44df-ac5f-162998b6c350", "Tommie_Hartmann@yahoo.com", "TOMMIE_HARTMANN@YAHOO.COM", "GARLAND.ANDERSON63", "464.696.4467 x37272", "72554ccb-20bf-466a-9e24-224b1306de96", 2, "Garland.Anderson63" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "39",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
-                values: new object[] { 55, "f0fcdcf0-df44-4c57-8f6a-54de3c8cda80", "Vernie.Hegmann@yahoo.com", "VERNIE.HEGMANN@YAHOO.COM", "JULIA.JOHNSON", "458-588-4734 x275", "839d501a-e52d-43a1-a9f3-bb2d584d9e1d", "Julia.Johnson" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
+                values: new object[] { 23, "b0f427e0-071c-409f-88c2-acba8504452f", "Perry.Schiller57@hotmail.com", "PERRY.SCHILLER57@HOTMAIL.COM", "LAUREL.SCHILLER", "271.260.3021 x023", "e345dfd1-b318-451c-b63d-c35e1c26bece", 3, "Laurel.Schiller" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "4",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 74, "72259dd4-ebc8-4a93-8716-843ccec687fe", "Alfredo_OHara75@yahoo.com", "ALFREDO_OHARA75@YAHOO.COM", "ISOBEL_PFANNERSTILL", "(302) 826-1219", "3acb6e77-9c3b-4879-99eb-afc3bd130950", 3, "Isobel_Pfannerstill" });
+                values: new object[] { 44, "8b76625c-251d-4c9a-b6a7-535a0389a2d5", "Mabel.Fritsch87@hotmail.com", "MABEL.FRITSCH87@HOTMAIL.COM", "DELORES80", "(218) 231-1411 x9395", "c067cce3-2930-4e14-89af-59dd256c5936", 3, "Delores80" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "40",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 37, "bc96cf7e-4935-4b86-a6c1-f59c0d36ea0d", "Lesly87@hotmail.com", "LESLY87@HOTMAIL.COM", "EMILIE32", "723.767.7365 x2887", "5ef4dabe-6c38-4c75-81f8-44676b0f159a", 2, "Emilie32" });
+                values: new object[] { 61, "d62b17ce-3a1e-40bf-8dae-4a6594d19b9d", "Julianne.Huel1@hotmail.com", "JULIANNE.HUEL1@HOTMAIL.COM", "PRICE72", "1-665-649-8768 x58644", "18937575-03d7-44d8-94c7-e2287a26362e", 3, "Price72" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "41",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 15, "9421d286-b362-49eb-ae85-28549e213ce4", "Jessica29@gmail.com", "JESSICA29@GMAIL.COM", "RENEE.MARKS", "398.388.0106 x3509", "5c5303c2-8550-4f5e-b29e-c25916c33d0f", 1, "Renee.Marks" });
+                values: new object[] { 46, "d8bb39a4-b7f0-4aa4-98c4-83a702ac8dce", "Ervin59@yahoo.com", "ERVIN59@YAHOO.COM", "SHELDON.LARSON22", "(812) 604-5173", "7e19b911-3cae-4da6-9681-5e87cd56a068", 2, "Sheldon.Larson22" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "42",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 77, "0f95cefe-eb32-45f9-8ff5-139ca8c4fb68", "Scotty_Gusikowski71@yahoo.com", "SCOTTY_GUSIKOWSKI71@YAHOO.COM", "MCKENZIE_KIRLIN", "448-265-4918 x5997", "fa76f96c-4852-46c1-b7eb-0ba496969df1", 4, "Mckenzie_Kirlin" });
+                values: new object[] { 67, "95ef35a9-9b3a-4775-8eac-edd037939008", "Oswald.Strosin1@yahoo.com", "OSWALD.STROSIN1@YAHOO.COM", "SHANEL.KOVACEK96", "(789) 957-7108 x2088", "b9da54f0-fb14-4b9b-b6a1-a9235addc416", 3, "Shanel.Kovacek96" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "43",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
-                values: new object[] { 44, "24bbb36a-0cb5-44e7-8fc9-68a1b932637d", "Hortense.Huel37@yahoo.com", "HORTENSE.HUEL37@YAHOO.COM", "EDNA.HYATT93", "(867) 480-0040", "91c831e5-0515-42ad-9d3b-54c61288de3c", "Edna.Hyatt93" });
+                values: new object[] { 59, "db62a8aa-26b6-4915-bb84-2075dfb75aee", "Nash.Dicki@gmail.com", "NASH.DICKI@GMAIL.COM", "ROSELLA75", "811.870.9930 x8349", "c77ae0eb-89fa-4a62-a696-ddf6a6dd3027", "Rosella75" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "44",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 51, "d55b6498-7b45-4350-a437-90170eabb7d3", "Kade.Murazik@gmail.com", "KADE.MURAZIK@GMAIL.COM", "MIA43", "(336) 599-1287 x833", "737e780b-9c4b-4ff6-baa2-1fac2e0d3095", 4, "Mia43" });
+                values: new object[] { 59, "ae50f9dc-05f4-4183-833b-27863d6720a1", "Tommie.Ratke39@hotmail.com", "TOMMIE.RATKE39@HOTMAIL.COM", "MONA_ERNSER", "1-879-793-3936 x1962", "a71dcfb3-00aa-4714-bff0-4ed7bd367363", 4, "Mona_Ernser" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "45",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
-                values: new object[] { 28, "26a3359c-597a-4a7f-b50f-a2e35d79b4be", "Aurelie_Fadel46@hotmail.com", "AURELIE_FADEL46@HOTMAIL.COM", "IDA71", "787-270-2317", "11165d84-565f-4c4c-ba1a-b00015d0ff59", "Ida71" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
+                values: new object[] { 68, "c2cc0bbb-2de7-4127-a97e-d69242652a77", "Ezequiel15@yahoo.com", "EZEQUIEL15@YAHOO.COM", "PRICE_CRONA", "(821) 337-5793", "a48773a8-ff18-4f59-978b-a49db3a52e31", 2, "Price_Crona" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "46",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 16, "913679be-2e5f-4c0b-9979-31b7f82729bd", "Luella.Hegmann23@hotmail.com", "LUELLA.HEGMANN23@HOTMAIL.COM", "ALEXANDREA51", "(900) 356-6599", "b97b9a90-bdf3-49cd-9656-46ff4c2b9e88", 1, "Alexandrea51" });
+                values: new object[] { 22, "c92dc4f1-deb1-45e6-a3c3-fbe2cedf4907", "Jenifer69@gmail.com", "JENIFER69@GMAIL.COM", "DAPHNEY80", "1-850-794-7343", "2dfd9414-cd64-4b67-8354-f5cf3ad508fa", 4, "Daphney80" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "47",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 76, "e8b05aa4-2bf0-4686-8c54-20d6f2895857", "Keira_Kuhic92@gmail.com", "KEIRA_KUHIC92@GMAIL.COM", "DEONTAE_TILLMAN78", "401.530.9705 x10555", "78c1244a-4ebc-4488-8a05-161b58ce9848", 2, "Deontae_Tillman78" });
+                values: new object[] { 51, "a6dc7bea-87ad-4096-a9ff-bbea57a8ef37", "Ila_Orn72@hotmail.com", "ILA_ORN72@HOTMAIL.COM", "ALANNA46", "1-450-907-6506 x53403", "72278d08-79fb-45a8-ae9a-c9dff03305c6", 4, "Alanna46" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "48",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 75, "dd0f913d-dc2b-49d8-9ec7-d692bf3e7d8d", "Terrell.Jerde26@gmail.com", "TERRELL.JERDE26@GMAIL.COM", "MICAELA_BECKER28", "395.242.2597", "6a6e299a-7c96-4d60-a258-82c4d6336e48", 4, "Micaela_Becker28" });
+                values: new object[] { 47, "1a9f1ed7-62e7-4d1d-9bba-faeb45521197", "Carmelo.Wolff16@yahoo.com", "CARMELO.WOLFF16@YAHOO.COM", "DAKOTA87", "837-436-3710", "a60a7252-7379-4d15-a948-effcfdf6964c", 2, "Dakota87" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "49",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 41, "852ea6d1-29a5-45ea-84d4-1292a20239ae", "Myah_Gulgowski@yahoo.com", "MYAH_GULGOWSKI@YAHOO.COM", "ALFRED22", "(671) 869-9800 x47218", "f527ea99-3736-4da0-9520-3972243503a4", 2, "Alfred22" });
+                values: new object[] { 60, "17efb2c3-52ce-47f0-a00f-1c51b4273442", "Sophia52@gmail.com", "SOPHIA52@GMAIL.COM", "KARIANE_MOSCISKI", "1-905-812-2677 x9488", "33b745f4-30c4-47e1-b8be-9d15098e8efa", 2, "Kariane_Mosciski" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "5",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 29, "ae43b0ec-3486-4900-988a-d212a07d9f47", "Nikko.West@hotmail.com", "NIKKO.WEST@HOTMAIL.COM", "KIAN.JOHNSTON", "1-504-527-6147", "a06e5c57-3e9c-4234-98c7-c3a3d178b949", 3, "Kian.Johnston" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
+                values: new object[] { 74, "1d208bb8-96be-47cb-999f-b6e954479c05", "Jesse_Deckow@yahoo.com", "JESSE_DECKOW@YAHOO.COM", "EDUARDO47", "(208) 540-3147 x3486", "a4ab330c-d938-424e-ab72-3a762b61fa8e", "Eduardo47" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "50",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
-                values: new object[] { 66, "bd908716-1724-40ee-9d16-607d2e194af3", "Alfonso10@gmail.com", "ALFONSO10@GMAIL.COM", "RHEA26", "388-711-5443 x65850", "ed6b8b7a-4cea-42db-b149-6e9a3900612c", "Rhea26" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
+                values: new object[] { 27, "a6d9dc08-b652-43ce-847b-23611fd430c2", "Isaias.Abbott@gmail.com", "ISAIAS.ABBOTT@GMAIL.COM", "DESTIN.DIBBERT", "734.962.9803", "a10df470-0fda-444b-bc24-e2b18a4dffb6", 4, "Destin.Dibbert" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "51",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 49, "2cb92a6c-7851-491e-a45d-e5cc327c71bf", "Stuart.Toy32@yahoo.com", "STUART.TOY32@YAHOO.COM", "MAGNOLIA.ZIEMANN", "580-375-4789 x82062", "c8e716fa-65d5-40f3-9503-cf6254b86562", 4, "Magnolia.Ziemann" });
+                values: new object[] { 46, "0f421f66-489c-49d5-88a1-c130550127c7", "Fern.Bergnaum84@yahoo.com", "FERN.BERGNAUM84@YAHOO.COM", "ALENE.HERZOG", "496.377.1748", "ab787c53-4ea3-44ac-b9dc-564ce3bb97b3", 3, "Alene.Herzog" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "52",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
-                values: new object[] { 75, "29a4cd2d-335b-4743-82f1-bed3d43f6576", "Alvis.Corwin10@hotmail.com", "ALVIS.CORWIN10@HOTMAIL.COM", "PRESTON_NADER41", "1-513-285-0999 x01993", "5993298f-8e95-46f0-adb6-fa85c11ae5bb", "Preston_Nader41" });
+                values: new object[] { 18, "2112f87b-3d57-4699-935e-57c1c4b1808e", "Francisco.Mante95@hotmail.com", "FRANCISCO.MANTE95@HOTMAIL.COM", "DEON_RUSSEL", "(906) 246-1435 x4832", "4ee50f18-46a0-4071-978f-66582751f53d", "Deon_Russel" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "53",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 43, "35eac693-b7f4-477e-afd3-af0fc47eb9d1", "Cecil_Dach@yahoo.com", "CECIL_DACH@YAHOO.COM", "QUEENIE.RUNTE5", "701.466.4163", "bf2a4aaa-ee87-4bed-bbaa-58afed0a481b", 4, "Queenie.Runte5" });
+                values: new object[] { 60, "b425b995-466b-4e5d-9f62-0fa3ae5906ff", "Hilario.Denesik6@yahoo.com", "HILARIO.DENESIK6@YAHOO.COM", "MEGHAN46", "900.524.6048 x04666", "9cc22fa5-da85-4299-a64d-621086c31a0b", 2, "Meghan46" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "54",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 32, "e5c0f18a-d21e-431d-b2ab-550a2d19dd1b", "Dusty45@gmail.com", "DUSTY45@GMAIL.COM", "ANNABELLE.HINTZ", "789-482-3056 x037", "4ea021ef-b34e-44ef-be60-53a981220c7a", 2, "Annabelle.Hintz" });
+                values: new object[] { 18, "b4e498c2-d1ec-47d8-bc01-80478d0ee263", "Jermain18@hotmail.com", "JERMAIN18@HOTMAIL.COM", "KAYLA_CROOKS1", "361.668.5807 x85651", "38448c39-efae-4b53-b069-fe3cc270d564", 4, "Kayla_Crooks1" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "55",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 66, "ae8f1db1-925c-44a3-a9dd-130f210c3bff", "Francesco.Gerlach30@hotmail.com", "FRANCESCO.GERLACH30@HOTMAIL.COM", "CHRIS_BATZ", "1-438-801-3703 x6379", "fc853b9b-a259-4534-9d61-4c609a9baeb9", 2, "Chris_Batz" });
+                values: new object[] { 65, "c3b7a42e-8362-434d-8c8d-8a4894b6a0cb", "Eric.Stracke@hotmail.com", "ERIC.STRACKE@HOTMAIL.COM", "PETE_RATH34", "(510) 303-4348 x87420", "bdc6aeac-4c77-4306-9f5a-c659cf533c4d", 3, "Pete_Rath34" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "56",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 16, "91c4bb49-2533-4ac9-97fa-c4e19d3638cd", "Rebecca.Toy32@yahoo.com", "REBECCA.TOY32@YAHOO.COM", "CADEN49", "1-593-686-6491 x28195", "828e0e2d-7a2f-4872-babd-f8d71bff0d9e", 1, "Caden49" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
+                values: new object[] { 49, "89983930-b56c-417a-b72e-0540b82d3fdf", "Kellie_Boehm89@hotmail.com", "KELLIE_BOEHM89@HOTMAIL.COM", "LACEY.GRADY11", "200-282-1198 x21740", "ed079273-0e0f-43bd-a794-b5458592836c", "Lacey.Grady11" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "57",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 28, "d3d8ac0d-44d6-4a3e-979a-50abf885c299", "Ross99@gmail.com", "ROSS99@GMAIL.COM", "RENEE.BOEHM", "570-734-4940", "56238758-d3f0-4861-84d4-94c7cec41a9d", 4, "Renee.Boehm" });
+                values: new object[] { 57, "b9bcc2f8-3b3d-45b7-a094-d6366d9c7958", "Tillman4@yahoo.com", "TILLMAN4@YAHOO.COM", "ELENOR83", "687-527-6774 x530", "9008bfc3-d4a5-4804-8da9-b2463ea2a295", 4, "Elenor83" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "58",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 47, "5fafd060-d48e-48db-90b8-21c858ab2f18", "Maud.Zboncak81@gmail.com", "MAUD.ZBONCAK81@GMAIL.COM", "DANGELO.SCHOWALTER6", "(695) 545-5187 x92152", "0280bd9a-748b-464c-a3a9-6bb749f2edbd", 2, "Dangelo.Schowalter6" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
+                values: new object[] { 41, "f174d8f9-e0a2-4b39-9faa-bea0a99ab3e3", "Lee49@yahoo.com", "LEE49@YAHOO.COM", "LINNEA.COLLIER41", "(469) 658-3750 x5858", "716e9448-6573-45fd-b9bc-bad3a9321433", "Linnea.Collier41" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "59",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 67, "8369fd36-1221-441a-abdc-b3a836629a32", "Tre_Fay59@hotmail.com", "TRE_FAY59@HOTMAIL.COM", "ETTIE90", "1-450-862-7835 x2614", "e2e09082-75cb-4bd6-845f-6a892b7e79b2", 4, "Ettie90" });
+                values: new object[] { 12, "a203ea0f-06e0-411b-bd49-afb6091456ae", "Oswaldo_Russel@yahoo.com", "OSWALDO_RUSSEL@YAHOO.COM", "ANNE.ZBONCAK", "662.685.9879 x3344", "fd5f4af5-0c5b-4c2e-8d1e-b9c566c3b2f0", 1, "Anne.Zboncak" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "6",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 21, "798c0f4b-825f-4d39-b72b-f7eff47e6142", "America_Powlowski@yahoo.com", "AMERICA_POWLOWSKI@YAHOO.COM", "LAURYN_LUEILWITZ", "900.778.2705", "b6e57866-8c48-494f-b2ca-54b25f102aa8", 2, "Lauryn_Lueilwitz" });
+                values: new object[] { 43, "f7161d19-6657-42a6-9d08-41cb7427d7a1", "Mckayla55@yahoo.com", "MCKAYLA55@YAHOO.COM", "TIARA.VON73", "813-703-5881", "fa708db5-1e9c-4e54-ab13-ff5e171c1200", 3, "Tiara.Von73" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "60",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 18, "7ff377e8-3179-45ab-9231-3f13d6d7e0ac", "Lisette.Johnson@gmail.com", "LISETTE.JOHNSON@GMAIL.COM", "KYLEIGH_STOKES46", "652-226-6640 x633", "fe089fe8-732c-46f8-9cca-9c7cd3ba4179", 3, "Kyleigh_Stokes46" });
+                values: new object[] { 48, "6b5bb592-5b76-43cb-af0c-c223da0b317d", "Alejandrin_Bode33@gmail.com", "ALEJANDRIN_BODE33@GMAIL.COM", "BENNY_OHARA50", "503-354-5158 x964", "2fb50b10-8ca5-4bf4-bcb5-083e836a493b", 2, "Benny_OHara50" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "61",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
-                values: new object[] { 54, "37b36573-7d90-46b9-a215-61636a6d52d5", "Antonia47@yahoo.com", "ANTONIA47@YAHOO.COM", "BERENICE2", "1-345-518-6593 x673", "a2e6c555-3b06-4d24-be85-046b5635c460", "Berenice2" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
+                values: new object[] { 26, "dcb6e151-1237-47c5-a6c1-4518a0e3f925", "Kristopher.Greenfelder97@hotmail.com", "KRISTOPHER.GREENFELDER97@HOTMAIL.COM", "ARVILLA67", "875.993.8990 x3460", "518cbacc-4db4-4d48-9224-5d9082b162ac", 3, "Arvilla67" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "62",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
-                values: new object[] { 67, "5af7b089-002d-4683-a5dc-86723989a7e4", "Desiree.Krajcik89@yahoo.com", "DESIREE.KRAJCIK89@YAHOO.COM", "ELMIRA_DOUGLAS77", "685-696-5222 x11032", "4b901434-5102-4bb3-927f-efa729a902c1", "Elmira_Douglas77" });
+                values: new object[] { 40, "9fb894bf-63ea-4fd0-91f5-b0f1baf59c2f", "Kellen.Haag53@yahoo.com", "KELLEN.HAAG53@YAHOO.COM", "VERGIE71", "(911) 749-6893 x046", "cdeb06ab-c73a-4385-ba67-f71ca6febde5", "Vergie71" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "63",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 72, "40d32d17-44cf-408b-96af-ef3a99acbc2a", "Triston61@yahoo.com", "TRISTON61@YAHOO.COM", "JERALD.GOODWIN", "429-852-3838 x82033", "b1e79c87-9ac9-43c6-9528-0454fe721a69", 3, "Jerald.Goodwin" });
+                values: new object[] { 41, "0e2469e3-8684-4caa-90bd-f60dea3e0c56", "Maegan.Wolff@hotmail.com", "MAEGAN.WOLFF@HOTMAIL.COM", "JAYDEN2", "(299) 614-7739 x5907", "d82d5ea6-3f35-4aa6-8f8c-e6f05ddbda52", 2, "Jayden2" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "64",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 20, "10903dc0-4658-450b-b515-68172d2495a3", "Kayleigh1@hotmail.com", "KAYLEIGH1@HOTMAIL.COM", "KENDALL.RATKE", "566.821.4219 x52916", "30a2ccbf-9e91-430e-811e-d5eef9d8ab5c", 2, "Kendall.Ratke" });
+                values: new object[] { 27, "15759f1e-c061-4cde-bf92-0ddc7efaaf79", "Bulah_Reynolds@gmail.com", "BULAH_REYNOLDS@GMAIL.COM", "CAROLE_POLLICH", "430-935-2510 x00530", "c6a21947-47b5-4da2-8a7e-f99a1d2d77c6", 3, "Carole_Pollich" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "65",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 53, "39659179-c25c-46f0-907e-7e3531d11d3f", "Martina69@gmail.com", "MARTINA69@GMAIL.COM", "KAVON_CUMMINGS69", "1-319-487-8129", "60547dbd-94f3-43d5-abf4-00c3a1a3be4e", 2, "Kavon_Cummings69" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
+                values: new object[] { 12, "c234bb73-583b-4e58-bfcc-6aa1c46fe983", "Jeramie43@gmail.com", "JERAMIE43@GMAIL.COM", "DAMARIS_WILLMS54", "1-870-626-0053 x30307", "25d96e4a-5858-4984-9949-5cebca8bee6f", "Damaris_Willms54" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "66",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
-                values: new object[] { 62, "a196499d-a325-4cf7-a57d-b91a312f1973", "Kayley83@yahoo.com", "KAYLEY83@YAHOO.COM", "JAZMYNE_RIPPIN", "1-501-517-2200 x1310", "4736e9f6-0f8c-4418-b28a-ff9bad049367", "Jazmyne_Rippin" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
+                values: new object[] { 56, "2c91f34c-f530-473d-89b9-3c001eb2dc85", "Carmella.Hilpert38@gmail.com", "CARMELLA.HILPERT38@GMAIL.COM", "DENA47", "(994) 673-5699 x3821", "6b9a9c15-7894-44d8-9597-a60eafb10c24", 2, "Dena47" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "67",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 18, "ac91e533-ecc8-4b77-bd0f-9947848a3e38", "Amalia.Kutch@hotmail.com", "AMALIA.KUTCH@HOTMAIL.COM", "DEMETRIUS.HAAG", "948-202-0780 x913", "a4bba87e-5f07-4115-836a-8d115608dda9", 3, "Demetrius.Haag" });
+                values: new object[] { 34, "bd77184a-77ad-40f5-9f2a-c35c863d87f7", "Paxton.Bailey3@hotmail.com", "PAXTON.BAILEY3@HOTMAIL.COM", "DAPHNE31", "1-784-914-5825 x0081", "143be0dd-428b-45e8-a415-d9f913f07311", 2, "Daphne31" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "68",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 63, "f83ae14b-adfb-42ff-9151-473d82951335", "Daren.Kihn74@yahoo.com", "DAREN.KIHN74@YAHOO.COM", "FELIPA.MURPHY96", "489-536-7979 x6364", "e6dbe674-6c9c-4fd5-842b-638d30cbba2a", 2, "Felipa.Murphy96" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
+                values: new object[] { 37, "e9c495c7-3d41-41f6-8dac-5f66b881eb54", "Sigrid81@gmail.com", "SIGRID81@GMAIL.COM", "JAYDEN84", "655.961.5836", "ffa97f0b-35d5-422e-8b5a-4da121dc0d7c", "Jayden84" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "69",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 68, "e072b433-f67b-4729-b86f-a9f20a9ab965", "Wilford47@hotmail.com", "WILFORD47@HOTMAIL.COM", "CRYSTEL.SCHROEDER17", "853-292-6872 x5326", "270d4714-1599-4595-8e3e-772874d942f5", 3, "Crystel.Schroeder17" });
+                values: new object[] { 61, "d472cd70-2d38-4f38-afe5-9090d19f1521", "Gilda_Schroeder@yahoo.com", "GILDA_SCHROEDER@YAHOO.COM", "PETE_BREKKE", "1-762-789-9165 x19960", "be054830-804b-4389-9cd7-f540245d9d23", 4, "Pete_Brekke" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "7",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 15, "d0d2f801-0ade-4e90-8ec9-2ce6a777726c", "Josephine.Orn@gmail.com", "JOSEPHINE.ORN@GMAIL.COM", "AUGUSTINE.KEEBLER1", "561.722.8940 x4218", "38ae314f-c6ac-4758-966e-9fa20d27ced8", 1, "Augustine.Keebler1" });
+                values: new object[] { 17, "74fc0291-6b45-4089-9343-fb78de5f4adb", "Justine97@gmail.com", "JUSTINE97@GMAIL.COM", "ALIZA_DECKOW", "1-937-776-2026", "20703a49-17fa-4b4c-9abf-e342c301ad3d", 1, "Aliza_Deckow" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "70",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 13, "f07d3ba0-721c-4240-af4e-1fd314263153", "Erika.Goodwin64@hotmail.com", "ERIKA.GOODWIN64@HOTMAIL.COM", "ONIE55", "939-307-0850 x858", "f406c9fa-e097-42e9-a508-c20c023d09b1", 1, "Onie55" });
+                values: new object[] { 33, "19031f89-6887-4dd1-8696-5a9c894d92e3", "Lavonne38@hotmail.com", "LAVONNE38@HOTMAIL.COM", "NIKOLAS_MAGGIO", "1-450-818-3445 x3757", "e882f744-f7c0-4814-8e36-2a49b0979a8d", 2, "Nikolas_Maggio" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "71",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
-                values: new object[] { 44, "8bf5c73b-c5cf-4da9-a09a-7e493b184b97", "Micah_Jakubowski61@hotmail.com", "MICAH_JAKUBOWSKI61@HOTMAIL.COM", "GINA45", "685.680.3667", "7cea8a30-955b-4979-9ff6-9d7e7a338e97", "Gina45" });
+                values: new object[] { 69, "3b059acc-221f-4912-b14a-dfe1b8628c1d", "Kelli.Erdman30@hotmail.com", "KELLI.ERDMAN30@HOTMAIL.COM", "STONE_KUNDE45", "(413) 407-5465", "242319ae-bcd3-4b50-a55c-848791b44324", "Stone_Kunde45" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "72",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 42, "2c694add-3ebb-45dc-88e4-cf485c36e721", "Zelda31@yahoo.com", "ZELDA31@YAHOO.COM", "CONRAD_COLLIER", "(789) 461-9248 x22907", "534f354f-987e-4bb5-ac3c-92025293819b", 2, "Conrad_Collier" });
+                values: new object[] { 44, "65a20103-ff8a-4fec-a8d7-dbedabe9c053", "Freddie.Runte25@hotmail.com", "FREDDIE.RUNTE25@HOTMAIL.COM", "ELEANORA35", "885.631.1198 x714", "5e43415f-2b39-45a2-88d5-f571116c6286", 4, "Eleanora35" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "73",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 57, "264db5b0-79d2-46f4-bfa3-977c8c52b6ba", "Khalil_Kemmer@yahoo.com", "KHALIL_KEMMER@YAHOO.COM", "CESAR.MEDHURST", "1-559-721-8005", "8cdf24a6-baa1-447c-8184-de6f7f273b6f", 4, "Cesar.Medhurst" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
+                values: new object[] { 26, "3156aceb-d09e-4388-b464-8306cfbdca0c", "Dejon_Casper@gmail.com", "DEJON_CASPER@GMAIL.COM", "GERALD43", "1-912-335-3367", "7a8e32a4-d442-4149-8e79-f76be0c7d721", "Gerald43" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "74",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 36, "33b186ea-2fb8-4373-9cad-7772f977c72b", "Gerda71@yahoo.com", "GERDA71@YAHOO.COM", "MYRTIE_ROLFSON93", "1-453-876-9946 x57094", "8d9220dd-ae17-4581-84e3-3e612016ba51", 2, "Myrtie_Rolfson93" });
+                values: new object[] { 45, "0eb88592-7eb6-44bd-84d5-20aaf6f8d595", "Garry_Price@hotmail.com", "GARRY_PRICE@HOTMAIL.COM", "LEONARD_LARSON95", "1-400-433-5880", "74b847ca-da19-4c63-966c-420266bd6dcf", 3, "Leonard_Larson95" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "75",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 80, "4dd6c72e-fd71-4fa8-beee-d96f4a3a548d", "Lucile56@yahoo.com", "LUCILE56@YAHOO.COM", "ARDEN_ROBERTS21", "(836) 521-7168 x43283", "2e1edf70-ada7-4a9e-8e2a-96d0b3c5d87a", 2, "Arden_Roberts21" });
+                values: new object[] { 29, "8824679a-2ecb-4f9d-ad28-a0f5734955b5", "Berenice.Williamson@hotmail.com", "BERENICE.WILLIAMSON@HOTMAIL.COM", "ALVINA_DIBBERT", "(472) 752-6413 x455", "a146e65e-37a8-4bc4-b670-f4fd5a702fb6", 2, "Alvina_Dibbert" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "76",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
-                values: new object[] { 27, "74a8d9de-27ad-46da-bc34-f212ad4e2f7e", "Idell3@gmail.com", "IDELL3@GMAIL.COM", "ANTHONY.HESSEL", "(952) 316-1732 x1049", "b3a1159a-e6da-4e80-a5aa-087ec87c11b5", "Anthony.Hessel" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
+                values: new object[] { 27, "13a98ed1-e780-418b-bc71-b14143b48714", "Emilia80@hotmail.com", "EMILIA80@HOTMAIL.COM", "JOHNNIE_WEHNER", "654.567.4144", "ad825655-2b99-442c-8e45-766f99548f27", 4, "Johnnie_Wehner" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "77",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 32, "dff2e9d4-49f7-48e2-b0b2-de8640e5e434", "Lisandro_Schaden@yahoo.com", "LISANDRO_SCHADEN@YAHOO.COM", "MAIYA_ANKUNDING", "868.396.3129", "26429ad9-6642-41fc-b398-44ef81a3ded8", 3, "Maiya_Ankunding" });
+                values: new object[] { 61, "31ebdde5-0987-4335-8f01-8d3b91b15bf8", "Zetta_Smith@gmail.com", "ZETTA_SMITH@GMAIL.COM", "ADRAIN_MULLER", "(263) 316-0717", "368dd075-3629-409e-ae0c-b67b8a100d80", 4, "Adrain_Muller" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "78",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
-                values: new object[] { 80, "b6d4c4e5-9dec-4a45-9cc1-fd6ddb589558", "Domenick.Franecki71@hotmail.com", "DOMENICK.FRANECKI71@HOTMAIL.COM", "EDMOND_BRAUN21", "214.284.0117 x31845", "35946a7c-9be7-4d12-a759-a7315d7c4b57", "Edmond_Braun21" });
+                values: new object[] { 39, "3e39fcf0-5647-462f-8ca3-942062c2ad2b", "Terrell.Dibbert@hotmail.com", "TERRELL.DIBBERT@HOTMAIL.COM", "KALE_KEELING", "670-489-4657 x435", "9b8866ef-950c-48a2-85aa-5ec40e35d9a9", "Kale_Keeling" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "79",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 48, "5aab8a8b-776c-4773-8b31-43d8be6fbab3", "Laurianne6@yahoo.com", "LAURIANNE6@YAHOO.COM", "MCKENNA.FAHEY12", "450-999-7883 x880", "133c8b12-07a8-4d4f-982a-a75520896ba2", 4, "Mckenna.Fahey12" });
+                values: new object[] { 60, "5988234b-b9b4-402e-bb37-f58782e6b6c3", "Shanon87@yahoo.com", "SHANON87@YAHOO.COM", "JAYLAN_LAKIN", "(385) 351-3555", "86354bdb-bd1d-4a77-9513-7a8b67d73a78", 4, "Jaylan_Lakin" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "8",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 27, "39d4e793-52f7-405d-91ec-8f3dcb8fe3e2", "Jailyn6@gmail.com", "JAILYN6@GMAIL.COM", "GRETCHEN87", "(526) 776-0867 x548", "a2492c1e-4ddf-4f4a-8ed4-dcef26f4409a", 4, "Gretchen87" });
+                values: new object[] { 12, "81b6d5a0-0fc1-4cfb-ab12-b212a354310c", "Herminia_Barton@gmail.com", "HERMINIA_BARTON@GMAIL.COM", "JERRELL.FARRELL9", "1-835-716-0227 x41012", "6a146af2-099d-4c02-a245-12c4b9b54951", 1, "Jerrell.Farrell9" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "80",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 69, "fb82c11e-df93-4283-8718-a9d0b09f97bb", "Aditya62@yahoo.com", "ADITYA62@YAHOO.COM", "JOSEFINA_MUELLER70", "907.662.3895 x70532", "fc0e66f5-16ea-4975-88cf-63e65ca2cee0", 3, "Josefina_Mueller70" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
+                values: new object[] { 17, "864abb06-7e70-47a4-9687-11e411940303", "Nash89@yahoo.com", "NASH89@YAHOO.COM", "STEFAN_WEBER34", "(871) 618-8945", "e67fae0f-411f-4caf-82b7-b856ad71afb9", "Stefan_Weber34" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "81",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
-                values: new object[] { 18, "644fa150-f5f7-4cf3-85e2-cd3dea42f8c9", "Davon.Wolf@yahoo.com", "DAVON.WOLF@YAHOO.COM", "CLAY_FLATLEY", "1-987-225-6837 x0145", "091df42b-a205-49e3-b534-e652740bde92", "Clay_Flatley" });
+                values: new object[] { 80, "a194de93-20d7-4872-8416-b8dc6da559b1", "Afton_Effertz44@hotmail.com", "AFTON_EFFERTZ44@HOTMAIL.COM", "OFELIA.SCHAMBERGER", "914.615.8585", "53446f6c-4624-4ab3-b49f-5a27860cf568", "Ofelia.Schamberger" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "82",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 64, "2f6831e4-d10a-410d-a77b-d97de50b2516", "Agnes_Parker@gmail.com", "AGNES_PARKER@GMAIL.COM", "KYLEIGH_JACOBSON", "391.203.3149", "5e32ef33-e437-4b49-9633-48adde12de83", 2, "Kyleigh_Jacobson" });
+                values: new object[] { 60, "8031d353-249f-4714-b052-b81815396c70", "Itzel_Hessel57@hotmail.com", "ITZEL_HESSEL57@HOTMAIL.COM", "HARVEY20", "530.690.7705 x400", "8c32887e-6f80-4266-a697-504ec141bb9c", 2, "Harvey20" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "83",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 36, "057900e5-ffd7-4581-a4b6-0ec2d38e6ff0", "Josh43@hotmail.com", "JOSH43@HOTMAIL.COM", "HERMINA_ABERNATHY11", "(697) 406-1555 x54462", "c4f7f111-038f-4780-a5e2-bcb822653b2f", 4, "Hermina_Abernathy11" });
+                values: new object[] { 80, "46e83a64-0306-402e-8b20-d7691b79d298", "Llewellyn16@yahoo.com", "LLEWELLYN16@YAHOO.COM", "GIOVANNY89", "235.914.2952", "d238b9f7-83cb-4c4b-9b23-118fe8650852", 2, "Giovanny89" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "84",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 62, "8c18b74e-d623-40ac-8180-548911c89925", "Veda_Gibson97@hotmail.com", "VEDA_GIBSON97@HOTMAIL.COM", "MINERVA29", "1-639-538-2973 x63944", "a914953d-d69d-4c3c-94d0-06c82985cfbb", 3, "Minerva29" });
+                values: new object[] { 12, "0d3e6573-16b4-4498-ba80-2e12660deb41", "Blanche.Hettinger92@yahoo.com", "BLANCHE.HETTINGER92@YAHOO.COM", "LEONORA_VANDERVORT", "549.316.4025 x092", "30fb2396-f20b-4392-8600-890d85445677", 1, "Leonora_Vandervort" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "85",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 70, "2213edb6-55e1-4c15-ad13-498de86fe977", "Maya_Dooley@yahoo.com", "MAYA_DOOLEY@YAHOO.COM", "RUSSELL.CUMMINGS36", "(409) 345-8226 x961", "0628b778-d028-4502-acfc-54c846ea4db7", 4, "Russell.Cummings36" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
+                values: new object[] { 53, "8d0bcde6-61b9-49fc-8e4d-54c8019f8b35", "Elenor1@gmail.com", "ELENOR1@GMAIL.COM", "KEVEN_LEDNER17", "349.492.5107 x805", "ce1052fe-d6e8-4e75-9811-9be372362cc6", "Keven_Ledner17" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "86",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
-                values: new object[] { 61, "84b91baa-ed03-4253-91b7-ee710e30a116", "Flossie_Rath@hotmail.com", "FLOSSIE_RATH@HOTMAIL.COM", "KIRSTIN82", "849-988-4487 x4127", "3345846b-c72d-40a9-ad57-b6df860eeaff", "Kirstin82" });
+                values: new object[] { 35, "41557674-bd27-40bf-ba7f-faa27d0ecc36", "Randall_Feil@hotmail.com", "RANDALL_FEIL@HOTMAIL.COM", "ANGEL93", "368.802.1164 x16299", "b05362d6-c2e8-41d8-89ce-530e9ce640a3", "Angel93" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "87",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 49, "d1757f67-c32a-4bb9-849e-f3da287b8ad7", "Lavinia32@hotmail.com", "LAVINIA32@HOTMAIL.COM", "GARRET_CHRISTIANSEN", "880.829.9242", "e90bd47b-3a7b-46ef-b79a-29dc9a7cad7b", 2, "Garret_Christiansen" });
+                values: new object[] { 64, "4b5e0a92-3a0b-4b9d-bb0d-2a419e96650b", "Constantin.Batz@yahoo.com", "CONSTANTIN.BATZ@YAHOO.COM", "ROMAINE_JASKOLSKI", "1-368-922-2388 x08253", "73751174-6858-4ead-8b8b-ee23dc6a1e59", 4, "Romaine_Jaskolski" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "88",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 33, "695e1b2c-aeed-4361-ae88-40bb739560b3", "Amaya.Volkman@hotmail.com", "AMAYA.VOLKMAN@HOTMAIL.COM", "CRAIG27", "1-959-646-2909 x1241", "cbc89991-c1a0-4d38-8723-2e475462062d", 4, "Craig27" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
+                values: new object[] { 53, "b96f0bfb-1ccd-4883-af28-e60b7433cc52", "Darrick_Brakus78@hotmail.com", "DARRICK_BRAKUS78@HOTMAIL.COM", "KENNEDY.SENGER", "1-854-955-9164 x99676", "0bbe0190-5995-416b-9d46-f629fe9b0826", "Kennedy.Senger" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "89",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 12, "8a7c45ab-f3e0-4a6e-a6d6-d7ed8d4d4c9b", "Susanna.Moen94@gmail.com", "SUSANNA.MOEN94@GMAIL.COM", "VIVIANE.TREMBLAY", "632.947.3931", "9faefd4e-43d7-4a48-9ae9-20a52f3f7aa1", 1, "Viviane.Tremblay" });
+                values: new object[] { 18, "8add6683-3b96-4d3c-b324-5c7b64af9715", "Adolf.Price@hotmail.com", "ADOLF.PRICE@HOTMAIL.COM", "ELFRIEDA_COLE36", "366.261.8079 x0450", "9dfc3e79-97a8-4d66-9b9d-eaa0e94e2b47", 4, "Elfrieda_Cole36" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "9",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 23, "a9357b95-aa7b-443c-876d-ff7d85ca6b10", "Rosetta_Douglas@hotmail.com", "ROSETTA_DOUGLAS@HOTMAIL.COM", "TRESSA.JACOBI92", "1-554-204-5986", "52a2dde8-2a30-40ea-88d4-60519c9af23c", 2, "Tressa.Jacobi92" });
+                values: new object[] { 56, "ed713779-4479-42c9-8cae-e5fa64dd174b", "Andrew_Schumm66@hotmail.com", "ANDREW_SCHUMM66@HOTMAIL.COM", "ADELINE37", "378.603.0947", "ee210646-241c-4cc4-8b14-930c808f8378", 2, "Adeline37" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "90",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 20, "2d220e8f-a048-4814-b964-5cfb4b48e356", "Brandon.Crona@hotmail.com", "BRANDON.CRONA@HOTMAIL.COM", "ASTRID88", "808.794.4024 x93580", "fce3bdec-7c07-4bb8-8df2-e2e9de5c01a8", 4, "Astrid88" });
+                values: new object[] { 25, "0b81bc27-9f8a-458e-8e29-228a17ba8c22", "Fredy.Waters26@hotmail.com", "FREDY.WATERS26@HOTMAIL.COM", "JUSTON.RAYNOR67", "397-864-2629 x457", "083d29c3-9b2c-4b09-8ec5-29323cf80eb9", 4, "Juston.Raynor67" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "91",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 70, "8e3e3f39-afe7-471d-9fe9-ea73e3ff2baa", "Bradly.Ferry@hotmail.com", "BRADLY.FERRY@HOTMAIL.COM", "DELL_CASPER", "262-449-1326", "fc38abd9-e4b4-4da2-b3cc-73da12696d2a", 2, "Dell_Casper" });
+                values: new object[] { 62, "3d57724f-1c18-4390-b3c5-734bd4dd2036", "Aglae.Harvey1@gmail.com", "AGLAE.HARVEY1@GMAIL.COM", "LESTER_GRADY", "806.733.3382 x44548", "581ece88-eadb-447e-8e84-a882dafd082c", 3, "Lester_Grady" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "92",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
-                values: new object[] { 66, "0d5dff98-8f91-4731-8cb5-130eae1bd897", "Chance56@yahoo.com", "CHANCE56@YAHOO.COM", "KRYSTINA.HOEGER", "1-899-972-6071 x09498", "ce3abacb-07d0-41ad-84ef-c430ae3d3f21", "Krystina.Hoeger" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
+                values: new object[] { 41, "b82f9723-746d-427d-81fc-0c8663a5a86d", "Cierra_Stoltenberg@hotmail.com", "CIERRA_STOLTENBERG@HOTMAIL.COM", "LLEWELLYN_RUNTE41", "(355) 274-5304", "229335e0-a43e-4d4b-a03a-a7335d46019c", 3, "Llewellyn_Runte41" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "93",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 33, "77fc121b-6ac3-4b33-83b8-b9f6b871b022", "Zack.Daniel@yahoo.com", "ZACK.DANIEL@YAHOO.COM", "ESTEBAN49", "758-247-5353 x2529", "7415582d-a8b4-4daf-a28a-707e269829bd", 3, "Esteban49" });
+                values: new object[] { 18, "89827ab2-bc72-4350-9822-288c16c92e46", "Romaine24@gmail.com", "ROMAINE24@GMAIL.COM", "TIMMOTHY_EFFERTZ", "1-893-963-6358 x4381", "87d1198f-cec5-439a-98af-dd1f667cb68c", 2, "Timmothy_Effertz" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "94",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 24, "a4f18071-6386-47d2-99fd-8deb6df82c8d", "Darryl_Champlin@yahoo.com", "DARRYL_CHAMPLIN@YAHOO.COM", "TITO.MAYER67", "(552) 865-5953 x39123", "b2b637cc-5558-4b4b-894c-e942001aebf6", 3, "Tito.Mayer67" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
+                values: new object[] { 79, "f173aa4f-51fb-48b0-bf51-6e318f235376", "Nelson_Feest8@yahoo.com", "NELSON_FEEST8@YAHOO.COM", "COOPER.HAHN", "1-555-806-8005", "3f4e147f-c94c-4d7b-a360-fc24ed8366db", "Cooper.Hahn" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "95",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
-                values: new object[] { 39, "3692dae5-865f-4326-a792-213f14b61155", "Ernestina71@gmail.com", "ERNESTINA71@GMAIL.COM", "ERNESTINA12", "731-854-6472", "db635058-466f-4cf2-bc7b-404b75d4bdf2", "Ernestina12" });
+                values: new object[] { 42, "cc91229d-213c-4563-b6fc-dfa69f06c9b4", "Brandyn53@hotmail.com", "BRANDYN53@HOTMAIL.COM", "JUNIUS.NOLAN", "1-956-791-0665", "ea3466bd-75f8-41f1-bdbf-369e348d29f7", "Junius.Nolan" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "96",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 12, "a05c0947-1e86-4408-986c-207a28dab99c", "Lavonne44@hotmail.com", "LAVONNE44@HOTMAIL.COM", "EMMITT_GISLASON47", "881-762-3851 x041", "7eae3e68-bfb5-4661-8c4c-f848aabed2d4", 1, "Emmitt_Gislason47" });
+                values: new object[] { 58, "738ddb0f-1d47-4daf-8e94-963852f3b9e0", "Marisol.Turcotte98@gmail.com", "MARISOL.TURCOTTE98@GMAIL.COM", "CHRISTIAN35", "(627) 512-8672 x58139", "21db6a83-1064-4999-94d7-e9dfd5443907", 4, "Christian35" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "97",
-                columns: new[] { "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
-                values: new object[] { "c25a3863-42f8-4a07-b538-0aeb2e71d9bc", "Tressa18@gmail.com", "TRESSA18@GMAIL.COM", "DAISY_KIHN", "(923) 578-3227", "dba2011c-1569-475f-89b9-8d26f3405a17", "Daisy_Kihn" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
+                values: new object[] { 54, "0c36c629-4bcb-4936-861b-1d15f1f31558", "Amina_Lubowitz@gmail.com", "AMINA_LUBOWITZ@GMAIL.COM", "SABINA_CREMIN", "661.680.2699 x41396", "1184d54c-133e-466c-b804-d3bdb4c71f80", 2, "Sabina_Cremin" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "98",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 34, "04cc3dbe-406b-4f3f-84a7-48430a14a3f4", "Harley.Ernser@gmail.com", "HARLEY.ERNSER@GMAIL.COM", "CLEORA.SCHULTZ84", "317.349.4725 x912", "518b5d31-314a-4d10-870e-54badba6ab9b", 4, "Cleora.Schultz84" });
+                values: new object[] { 57, "ed33b49c-466e-47ea-825b-289ba6e6e515", "Greta.Purdy63@hotmail.com", "GRETA.PURDY63@HOTMAIL.COM", "CADEN.SCHINNER", "1-839-773-8041 x54786", "25ae323a-85de-41b3-8086-06582065b6f5", 4, "Caden.Schinner" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "99",
                 columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 16, "aebb762c-0545-44d6-a959-7fbbedc1e367", "Guido.Stokes@yahoo.com", "GUIDO.STOKES@YAHOO.COM", "LYSANNE.BUCKRIDGE1", "445.494.5360", "b1b88a91-b54c-4d77-a87d-fb78ac86c9eb", 1, "Lysanne.Buckridge1" });
+                values: new object[] { 23, "70d1d8b9-8fd1-4c8b-91d6-61d70b9d870d", "Roy.Green62@yahoo.com", "ROY.GREEN62@YAHOO.COM", "LIZZIE15", "(943) 364-6606 x041", "68df9670-1fd7-481f-b0e5-7dbb92d61265", 4, "Lizzie15" });
 
             migrationBuilder.UpdateData(
                 table: "Author",
                 keyColumn: "Id",
                 keyValue: 1,
                 columns: new[] { "FirstName", "LastName" },
-                values: new object[] { "Tyshawn", "Klein" });
+                values: new object[] { "Garnet", "O'Hara" });
 
             migrationBuilder.UpdateData(
                 table: "Author",
                 keyColumn: "Id",
                 keyValue: 2,
                 columns: new[] { "FirstName", "LastName" },
-                values: new object[] { "Trevor", "Carroll" });
+                values: new object[] { "Martina", "Fritsch" });
 
             migrationBuilder.UpdateData(
                 table: "Author",
                 keyColumn: "Id",
                 keyValue: 3,
                 columns: new[] { "FirstName", "LastName" },
-                values: new object[] { "Alexandrea", "Boyer" });
+                values: new object[] { "Willa", "Bosco" });
 
             migrationBuilder.UpdateData(
                 table: "Author",
                 keyColumn: "Id",
                 keyValue: 4,
                 columns: new[] { "FirstName", "LastName" },
-                values: new object[] { "Jordon", "Altenwerth" });
+                values: new object[] { "Jonathon", "Dooley" });
 
             migrationBuilder.UpdateData(
                 table: "Author",
                 keyColumn: "Id",
                 keyValue: 5,
                 columns: new[] { "FirstName", "LastName" },
-                values: new object[] { "Kyleigh", "Wiegand" });
+                values: new object[] { "Calista", "Monahan" });
 
             migrationBuilder.UpdateData(
                 table: "Author",
                 keyColumn: "Id",
                 keyValue: 6,
                 columns: new[] { "FirstName", "LastName" },
-                values: new object[] { "Mayra", "Hamill" });
+                values: new object[] { "Carole", "Glover" });
 
             migrationBuilder.UpdateData(
                 table: "Author",
                 keyColumn: "Id",
                 keyValue: 7,
                 columns: new[] { "FirstName", "LastName" },
-                values: new object[] { "Keyon", "Robel" });
+                values: new object[] { "Gilda", "Swaniawski" });
 
             migrationBuilder.UpdateData(
                 table: "Author",
                 keyColumn: "Id",
                 keyValue: 8,
                 columns: new[] { "FirstName", "LastName" },
-                values: new object[] { "Cynthia", "Schamberger" });
+                values: new object[] { "Charley", "Schoen" });
 
             migrationBuilder.UpdateData(
                 table: "Author",
                 keyColumn: "Id",
                 keyValue: 9,
                 columns: new[] { "FirstName", "LastName" },
-                values: new object[] { "Haylie", "Parisian" });
+                values: new object[] { "Ken", "Harris" });
 
             migrationBuilder.UpdateData(
                 table: "Author",
                 keyColumn: "Id",
                 keyValue: 10,
                 columns: new[] { "FirstName", "LastName" },
-                values: new object[] { "Richmond", "Daugherty" });
+                values: new object[] { "Alvera", "Homenick" });
 
             migrationBuilder.UpdateData(
                 table: "Author",
                 keyColumn: "Id",
                 keyValue: 11,
                 columns: new[] { "FirstName", "LastName" },
-                values: new object[] { "Winston", "Dickinson" });
+                values: new object[] { "Loyce", "Pfeffer" });
 
             migrationBuilder.UpdateData(
                 table: "Author",
                 keyColumn: "Id",
                 keyValue: 12,
                 columns: new[] { "FirstName", "LastName" },
-                values: new object[] { "Darrion", "Bernier" });
+                values: new object[] { "Bernard", "Rohan" });
 
             migrationBuilder.UpdateData(
                 table: "Author",
                 keyColumn: "Id",
                 keyValue: 13,
                 columns: new[] { "FirstName", "LastName" },
-                values: new object[] { "Brian", "Cruickshank" });
+                values: new object[] { "Levi", "McGlynn" });
 
             migrationBuilder.UpdateData(
                 table: "Author",
                 keyColumn: "Id",
                 keyValue: 14,
                 columns: new[] { "FirstName", "LastName" },
-                values: new object[] { "Leonor", "Fisher" });
+                values: new object[] { "Mavis", "Beer" });
 
             migrationBuilder.UpdateData(
                 table: "Author",
                 keyColumn: "Id",
                 keyValue: 15,
                 columns: new[] { "FirstName", "LastName" },
-                values: new object[] { "Chet", "Hyatt" });
+                values: new object[] { "Erling", "Zboncak" });
 
             migrationBuilder.UpdateData(
                 table: "Author",
                 keyColumn: "Id",
                 keyValue: 16,
                 columns: new[] { "FirstName", "LastName" },
-                values: new object[] { "Faustino", "Schuppe" });
+                values: new object[] { "Dina", "Doyle" });
 
             migrationBuilder.UpdateData(
                 table: "Author",
                 keyColumn: "Id",
                 keyValue: 17,
                 columns: new[] { "FirstName", "LastName" },
-                values: new object[] { "Ebony", "Gutkowski" });
+                values: new object[] { "Tamara", "Runte" });
 
             migrationBuilder.UpdateData(
                 table: "Author",
                 keyColumn: "Id",
                 keyValue: 18,
                 columns: new[] { "FirstName", "LastName" },
-                values: new object[] { "Larry", "Heathcote" });
+                values: new object[] { "Olga", "Deckow" });
 
             migrationBuilder.UpdateData(
                 table: "Author",
                 keyColumn: "Id",
                 keyValue: 19,
                 columns: new[] { "FirstName", "LastName" },
-                values: new object[] { "Ellis", "O'Connell" });
+                values: new object[] { "Reyna", "Hirthe" });
 
             migrationBuilder.UpdateData(
                 table: "Author",
                 keyColumn: "Id",
                 keyValue: 20,
                 columns: new[] { "FirstName", "LastName" },
-                values: new object[] { "Sanford", "Marvin" });
+                values: new object[] { "Emil", "Reichel" });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 1,
-                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 19, "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit", "Ergonomic Granite Tuna", 2014 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 16, 4, "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles", "Awesome Concrete Ball", 2022 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 2,
-                columns: new[] { "AuthorId", "CategoryId", "Title", "YearOfRelease" },
-                values: new object[] { 10, 4, "Unbranded Cotton Towels", 2009 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 7, 3, "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design", "Intelligent Concrete Pizza", 2006 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 3,
                 columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 5, 1, "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles", "Sleek Steel Mouse", 2019 });
+                values: new object[] { 18, 5, "New ABC 13 9370, 13.3, 5th Gen CoreA5-8250U, 8GB RAM, 256GB SSD, power UHD Graphics, OS 10 Home, OS Office A & J 2016", "Practical Rubber Salad", 2005 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 4,
-                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 19, 5, "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals", "Unbranded Frozen Pants", 2009 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title" },
+                values: new object[] { 14, 3, "New ABC 13 9370, 13.3, 5th Gen CoreA5-8250U, 8GB RAM, 256GB SSD, power UHD Graphics, OS 10 Home, OS Office A & J 2016", "Refined Rubber Mouse" });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 5,
-                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 15, 1, "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design", "Handcrafted Soft Salad", 2018 });
+                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 4, "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design", "Rustic Granite Towels", 2006 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 6,
-                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 4, "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles", "Rustic Wooden Chips", 2002 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title" },
+                values: new object[] { 8, 5, "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality", "Rustic Concrete Chicken" });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 7,
                 columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 18, 2, "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality", "Practical Cotton Shirt", 2012 });
+                values: new object[] { 18, 3, "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive", "Small Cotton Towels", 2018 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 8,
-                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 20, "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit", "Refined Frozen Bacon", 2000 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 18, 4, "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients", "Refined Metal Table", 2017 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 9,
-                columns: new[] { "AuthorId", "CategoryId", "Title", "YearOfRelease" },
-                values: new object[] { 10, 3, "Unbranded Cotton Bike", 2015 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 12, 3, "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive", "Ergonomic Wooden Sausages", 2023 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 10,
-                columns: new[] { "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 2, "The Football Is Good For Training And Recreational Purposes", "Ergonomic Granite Table", 2003 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 12, 4, "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients", "Fantastic Metal Pants", 2010 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 11,
                 columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 19, 2, "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J", "Small Plastic Keyboard", 2004 });
+                values: new object[] { 18, 3, "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals", "Licensed Concrete Chips", 2023 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 12,
-                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 1, "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J", "Ergonomic Fresh Chair", 2003 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 6, 2, "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit", "Refined Rubber Car", 2019 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 13,
-                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 19, 2, "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles", "Intelligent Plastic Salad", 2017 });
+                columns: new[] { "AuthorId", "Title", "YearOfRelease" },
+                values: new object[] { 15, "Generic Fresh Car", 2010 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 14,
-                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 3, 5, "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles", "Intelligent Frozen Chair", 2007 });
+                columns: new[] { "AuthorId", "CategoryId", "Title", "YearOfRelease" },
+                values: new object[] { 11, 3, "Intelligent Plastic Chips", 2023 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 15,
-                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 11, "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality", "Licensed Soft Pizza", 2017 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 3, 4, "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients", "Refined Frozen Bacon", 2021 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 16,
-                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 12, 5, "New ABC 13 9370, 13.3, 5th Gen CoreA5-8250U, 8GB RAM, 256GB SSD, power UHD Graphics, OS 10 Home, OS Office A & J 2016", "Ergonomic Frozen Shirt", 2011 });
+                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 5, "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J", "Practical Concrete Shirt", 2023 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 17,
                 columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 18, 4, "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart", "Gorgeous Steel Shoes", 2011 });
+                values: new object[] { 9, 4, "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals", "Ergonomic Cotton Ball", 2021 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 18,
-                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 4, "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles", "Gorgeous Frozen Cheese", 2008 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 14, 2, "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality", "Gorgeous Soft Towels", 2002 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 19,
-                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 5, "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J", "Practical Cotton Tuna", 2014 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 9, 5, "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles", "Refined Plastic Computer", 2002 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 20,
                 columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 6, 2, "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design", "Refined Metal Mouse", 2003 });
+                values: new object[] { 18, 1, "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals", "Licensed Concrete Shirt", 2012 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 21,
                 columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 3, 3, "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design", "Handmade Fresh Chair", 2001 });
+                values: new object[] { 20, 3, "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J", "Practical Frozen Gloves", 2016 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 22,
                 columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 6, 2, "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J", "Gorgeous Soft Table", 2011 });
+                values: new object[] { 20, 1, "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients", "Practical Concrete Mouse", 2011 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 23,
                 columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 10, 4, "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart", "Rustic Soft Chair", 2020 });
+                values: new object[] { 17, 2, "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design", "Ergonomic Soft Mouse", 2014 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 24,
                 columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 13, 1, "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design", "Incredible Rubber Keyboard", 2006 });
+                values: new object[] { 3, 4, "New ABC 13 9370, 13.3, 5th Gen CoreA5-8250U, 8GB RAM, 256GB SSD, power UHD Graphics, OS 10 Home, OS Office A & J 2016", "Awesome Granite Mouse", 2021 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 25,
-                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 20, "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design", "Awesome Rubber Gloves", 2014 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 16, 4, "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart", "Awesome Metal Sausages", 2012 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 26,
                 columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 19, 3, "The Football Is Good For Training And Recreational Purposes", "Practical Rubber Hat", 2012 });
+                values: new object[] { 4, 3, "The Football Is Good For Training And Recreational Purposes", "Refined Plastic Pizza", 2016 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 27,
-                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 17, "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design", "Handmade Steel Fish", 2017 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title" },
+                values: new object[] { 13, 1, "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J", "Refined Steel Table" });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 28,
                 columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 8, "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit", "Fantastic Plastic Chicken", 2000 });
+                values: new object[] { 7, "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles", "Fantastic Frozen Pants", 2011 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 29,
-                columns: new[] { "AuthorId", "CategoryId", "Description", "Title" },
-                values: new object[] { 17, 4, "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support", "Tasty Concrete Towels" });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 2, 1, "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals", "Handcrafted Soft Ball", 2007 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 30,
                 columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 20, 4, "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support", "Small Fresh Mouse", 2007 });
+                values: new object[] { 8, 4, "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart", "Practical Soft Keyboard", 2003 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 31,
-                columns: new[] { "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 5, "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles", "Generic Granite Keyboard", 2004 });
+                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 14, "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J", "Tasty Metal Ball", 2010 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 32,
-                columns: new[] { "AuthorId", "CategoryId", "Title", "YearOfRelease" },
-                values: new object[] { 11, 3, "Fantastic Rubber Tuna", 2013 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 13, 2, "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles", "Gorgeous Metal Tuna", 2019 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 33,
                 columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 1, 4, "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J", "Handmade Fresh Salad", 2006 });
+                values: new object[] { 2, 4, "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design", "Intelligent Steel Pants", 2019 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 34,
                 columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 19, 5, "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support", "Handmade Soft Pizza", 2003 });
+                values: new object[] { 4, 1, "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients", "Awesome Concrete Ball", 2000 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 35,
                 columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 20, 5, "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support", "Gorgeous Plastic Shirt", 2006 });
+                values: new object[] { 18, 4, "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles", "Fantastic Frozen Gloves", 2017 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 36,
-                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 11, 2, "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J", "Generic Rubber Pizza", 2017 });
+                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 5, "New ABC 13 9370, 13.3, 5th Gen CoreA5-8250U, 8GB RAM, 256GB SSD, power UHD Graphics, OS 10 Home, OS Office A & J 2016", "Fantastic Fresh Shoes", 2022 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 37,
-                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 7, 4, "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients", "Refined Fresh Shirt", 2001 });
+                columns: new[] { "CategoryId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 1, "New ABC 13 9370, 13.3, 5th Gen CoreA5-8250U, 8GB RAM, 256GB SSD, power UHD Graphics, OS 10 Home, OS Office A & J 2016", "Refined Wooden Ball", 2023 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 38,
-                columns: new[] { "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 4, "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals", "Tasty Granite Tuna", 2014 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 4, 3, "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals", "Generic Steel Mouse", 2018 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 39,
                 columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 13, "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles", "Rustic Metal Chair", 2018 });
+                values: new object[] { 6, "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality", "Tasty Plastic Car", 2000 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 40,
-                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 4, "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive", "Ergonomic Wooden Pizza", 2016 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 5, 3, "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive", "Sleek Concrete Bike", 2004 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 41,
                 columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 9, 3, "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive", "Tasty Steel Mouse", 2007 });
+                values: new object[] { 12, 1, "The Football Is Good For Training And Recreational Purposes", "Unbranded Rubber Chicken", 2014 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 42,
                 columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 19, 1, "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive", "Practical Plastic Bike", 2002 });
+                values: new object[] { 16, 1, "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit", "Awesome Fresh Ball", 2021 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 43,
                 columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 12, "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J", "Small Soft Pizza", 2016 });
+                values: new object[] { 20, "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design", "Intelligent Plastic Hat", 2012 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 44,
-                columns: new[] { "AuthorId", "CategoryId", "Title", "YearOfRelease" },
-                values: new object[] { 5, 5, "Intelligent Wooden Hat", 2000 });
+                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 18, "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart", "Incredible Fresh Soap", 2005 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 45,
-                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 8, 4, "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J", "Ergonomic Soft Ball", 2007 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title" },
+                values: new object[] { 6, 3, "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals", "Handcrafted Rubber Fish" });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 46,
                 columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 11, 2, "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart", "Rustic Metal Pants", 2019 });
+                values: new object[] { 15, 3, "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart", "Sleek Cotton Fish", 2010 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 47,
-                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 8, "The Football Is Good For Training And Recreational Purposes", "Handcrafted Soft Bacon", 2007 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 4, 5, "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design", "Licensed Steel Chair", 2022 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 48,
                 columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 5, 3, "The Football Is Good For Training And Recreational Purposes", "Intelligent Metal Gloves", 2012 });
+                values: new object[] { 14, 3, "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J", "Fantastic Concrete Soap", 2008 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 49,
-                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 15, "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles", "Handcrafted Wooden Shoes", 2017 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 3, 3, "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive", "Rustic Plastic Bacon", 2017 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 50,
-                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 3, 1, "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart", "Handcrafted Plastic Table", 2003 });
+                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 10, "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart", "Small Wooden Shirt", 2009 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 51,
                 columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 4, 5, "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit", "Rustic Rubber Towels", 2010 });
+                values: new object[] { 9, 5, "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support", "Awesome Concrete Chicken", 2009 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 52,
                 columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 10, 2, "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J", "Generic Soft Pants", 2002 });
+                values: new object[] { 8, 2, "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart", "Handmade Soft Sausages", 2007 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 53,
                 columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 4, 4, "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients", "Ergonomic Metal Keyboard", 2013 });
+                values: new object[] { 1, 5, "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart", "Handcrafted Fresh Hat", 2015 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 54,
                 columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 10, 3, "The Football Is Good For Training And Recreational Purposes", "Handmade Plastic Sausages", 2007 });
+                values: new object[] { 8, 4, "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart", "Intelligent Metal Shoes", 2002 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 55,
-                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 6, "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit", "Handcrafted Soft Shoes", 2000 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 14, 1, "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support", "Fantastic Plastic Gloves", 2020 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 56,
                 columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 3, 4, "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality", "Ergonomic Frozen Tuna", 2020 });
+                values: new object[] { 3, 2, "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals", "Sleek Concrete Chicken", 2000 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 57,
                 columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 8, 1, "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design", "Handcrafted Granite Table", 2020 });
+                values: new object[] { 19, 4, "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design", "Practical Granite Bacon", 2021 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 58,
                 columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 6, 4, "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive", "Gorgeous Soft Shirt", 2008 });
+                values: new object[] { 10, 3, "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals", "Awesome Frozen Bacon", 2006 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 59,
-                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 4, 4, "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support", "Refined Frozen Car", 2015 });
+                columns: new[] { "AuthorId", "CategoryId", "Title" },
+                values: new object[] { 14, 4, "Gorgeous Soft Cheese" });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 60,
-                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 12, 3, "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive", "Handmade Wooden Tuna", 2003 });
+                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 5, "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support", "Sleek Soft Cheese", 2010 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 61,
                 columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 20, 3, "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality", "Handcrafted Fresh Bacon", 2016 });
+                values: new object[] { 16, 4, "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals", "Licensed Soft Fish", 2001 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 62,
                 columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 13, 2, "The Football Is Good For Training And Recreational Purposes", "Incredible Plastic Soap", 2005 });
+                values: new object[] { 3, 2, "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals", "Generic Soft Pizza", 2010 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 63,
-                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 14, "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive", "Tasty Cotton Chips", 2006 });
+                columns: new[] { "AuthorId", "Title", "YearOfRelease" },
+                values: new object[] { 2, "Rustic Granite Pants", 2019 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 64,
                 columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 16, 2, "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients", "Generic Metal Chips", 2013 });
+                values: new object[] { 2, 2, "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design", "Handmade Soft Chair", 2010 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 65,
                 columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 10, 3, "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles", "Awesome Granite Keyboard", 2007 });
+                values: new object[] { 8, 1, "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support", "Incredible Granite Tuna", 2002 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 66,
                 columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 8, 4, "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J", "Tasty Steel Gloves", 2008 });
+                values: new object[] { 7, 4, "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J", "Unbranded Fresh Cheese", 2008 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 67,
-                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 4, "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design", "Rustic Granite Keyboard", 2010 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 8, 5, "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles", "Sleek Rubber Soap", 2023 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 68,
-                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 2, 3, "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality", "Incredible Granite Pizza", 2006 });
+                columns: new[] { "Description", "Title", "YearOfRelease" },
+                values: new object[] { "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design", "Practical Cotton Cheese", 2008 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 69,
-                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 12, 4, "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design", "Generic Concrete Hat", 2008 });
+                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 12, "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design", "Ergonomic Wooden Keyboard", 2015 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 70,
-                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 17, "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit", "Practical Frozen Towels", 2018 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 5, 4, "New ABC 13 9370, 13.3, 5th Gen CoreA5-8250U, 8GB RAM, 256GB SSD, power UHD Graphics, OS 10 Home, OS Office A & J 2016", "Refined Soft Bike", 2006 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 71,
                 columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 4, 5, "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive", "Handcrafted Soft Car", 2016 });
+                values: new object[] { 11, 2, "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles", "Practical Frozen Bacon", 2023 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 72,
                 columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 17, 3, "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles", "Gorgeous Wooden Car", 2018 });
+                values: new object[] { 12, 3, "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support", "Practical Steel Computer", 2001 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 73,
-                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 4, 4, "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J", "Awesome Steel Chair", 2018 });
+                columns: new[] { "AuthorId", "Title" },
+                values: new object[] { 14, "Incredible Soft Salad" });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 74,
                 columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 18, 3, "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit", "Awesome Frozen Salad", 2021 });
+                values: new object[] { 7, 3, "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design", "Fantastic Soft Sausages", 2002 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 75,
                 columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 13, 1, "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart", "Practical Cotton Tuna", 2014 });
+                values: new object[] { 4, 3, "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design", "Fantastic Wooden Mouse", 2012 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 76,
                 columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 16, 1, "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients", "Handmade Metal Pants", 2008 });
+                values: new object[] { 11, 5, "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart", "Incredible Cotton Chips", 2006 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 77,
-                columns: new[] { "Description", "Title", "YearOfRelease" },
-                values: new object[] { "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support", "Incredible Wooden Keyboard", 2013 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 9, 3, "New ABC 13 9370, 13.3, 5th Gen CoreA5-8250U, 8GB RAM, 256GB SSD, power UHD Graphics, OS 10 Home, OS Office A & J 2016", "Gorgeous Cotton Fish", 2023 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 78,
-                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 6, 3, "New ABC 13 9370, 13.3, 5th Gen CoreA5-8250U, 8GB RAM, 256GB SSD, power UHD Graphics, OS 10 Home, OS Office A & J 2016", "Rustic Soft Bacon", 2010 });
+                columns: new[] { "AuthorId", "CategoryId", "Title", "YearOfRelease" },
+                values: new object[] { 14, 5, "Generic Fresh Shoes", 2022 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 79,
-                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 16, "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J", "Rustic Rubber Pants", 2011 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 11, 3, "New ABC 13 9370, 13.3, 5th Gen CoreA5-8250U, 8GB RAM, 256GB SSD, power UHD Graphics, OS 10 Home, OS Office A & J 2016", "Small Metal Car", 2014 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 80,
                 columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 20, 4, "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support", "Handcrafted Cotton Bike", 2003 });
+                values: new object[] { 11, 4, "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design", "Tasty Granite Mouse", 2015 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 81,
-                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 2, 2, "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality", "Licensed Concrete Ball", 2007 });
+                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 15, "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles", "Ergonomic Wooden Gloves", 2002 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 82,
-                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 2, "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart", "Unbranded Concrete Soap", 2017 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 18, 4, "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J", "Incredible Rubber Towels", 2002 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 83,
-                columns: new[] { "AuthorId", "CategoryId", "Description", "Title" },
-                values: new object[] { 14, 2, "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients", "Unbranded Plastic Towels" });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 18, 3, "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients", "Rustic Fresh Pants", 2022 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 84,
                 columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 1, 3, "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles", "Intelligent Wooden Fish", 2014 });
+                values: new object[] { 9, 4, "The Football Is Good For Training And Recreational Purposes", "Fantastic Soft Shoes", 2012 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 85,
-                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 9, 4, "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support", "Small Fresh Sausages", 2022 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title" },
+                values: new object[] { 15, 5, "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit", "Intelligent Frozen Car" });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 86,
-                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 18, 2, "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive", "Licensed Frozen Pants", 2001 });
+                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 19, "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J", "Unbranded Metal Car", 2013 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 87,
                 columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 2, 3, "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive", "Small Plastic Chair", 2008 });
+                values: new object[] { 3, 4, "New ABC 13 9370, 13.3, 5th Gen CoreA5-8250U, 8GB RAM, 256GB SSD, power UHD Graphics, OS 10 Home, OS Office A & J 2016", "Small Granite Bike", 2005 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 88,
-                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 13, 1, "The Football Is Good For Training And Recreational Purposes", "Small Plastic Chicken", 2004 });
+                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 19, "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart", "Handcrafted Frozen Keyboard", 2023 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 89,
                 columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 15, 4, "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart", "Gorgeous Concrete Gloves", 2007 });
+                values: new object[] { 9, 1, "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive", "Gorgeous Concrete Sausages", 2012 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 90,
                 columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 15, 4, "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients", "Ergonomic Steel Hat", 2006 });
+                values: new object[] { 15, 5, "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive", "Incredible Soft Keyboard", 2018 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 91,
                 columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 10, 4, "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients", "Intelligent Frozen Keyboard", 2006 });
+                values: new object[] { 11, 4, "New ABC 13 9370, 13.3, 5th Gen CoreA5-8250U, 8GB RAM, 256GB SSD, power UHD Graphics, OS 10 Home, OS Office A & J 2016", "Incredible Concrete Chicken", 2021 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 92,
-                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 1, "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients", "Fantastic Soft Sausages", 2019 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 1, 1, "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design", "Fantastic Cotton Towels", 2021 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 93,
                 columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 6, 5, "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals", "Handmade Wooden Chips", 2004 });
+                values: new object[] { 10, 3, "The Football Is Good For Training And Recreational Purposes", "Handcrafted Plastic Fish", 2007 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 94,
                 columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 8, 2, "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart", "Gorgeous Concrete Chair", 2012 });
+                values: new object[] { 13, 4, "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals", "Intelligent Fresh Tuna", 2004 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 95,
                 columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 18, 1, "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart", "Tasty Steel Hat", 2008 });
+                values: new object[] { 12, 2, "New ABC 13 9370, 13.3, 5th Gen CoreA5-8250U, 8GB RAM, 256GB SSD, power UHD Graphics, OS 10 Home, OS Office A & J 2016", "Tasty Plastic Keyboard", 2015 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 96,
                 columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 6, 5, "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design", "Handcrafted Concrete Sausages", 2006 });
+                values: new object[] { 4, 1, "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients", "Awesome Concrete Shirt", 2015 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 97,
                 columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 14, 2, "The Football Is Good For Training And Recreational Purposes", "Incredible Granite Gloves", 2020 });
+                values: new object[] { 17, 5, "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit", "Practical Fresh Hat", 2016 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 98,
                 columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 11, 1, "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart", "Incredible Fresh Ball", 2016 });
+                values: new object[] { 14, 3, "New ABC 13 9370, 13.3, 5th Gen CoreA5-8250U, 8GB RAM, 256GB SSD, power UHD Graphics, OS 10 Home, OS Office A & J 2016", "Ergonomic Soft Towels", 2014 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 99,
                 columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 7, 5, "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients", "Practical Frozen Towels", 2003 });
+                values: new object[] { 17, 2, "The Football Is Good For Training And Recreational Purposes", "Intelligent Plastic Table", 2016 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 100,
                 columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 14, 4, "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles", "Generic Granite Table", 2019 });
+                values: new object[] { 5, 3, "New ABC 13 9370, 13.3, 5th Gen CoreA5-8250U, 8GB RAM, 256GB SSD, power UHD Graphics, OS 10 Home, OS Office A & J 2016", "Small Frozen Chips", 2000 });
 
             migrationBuilder.AddForeignKey(
                 name: "FK_AspNetUsers_Subscription_SubscriptionId",
@@ -1573,15 +1573,15 @@ namespace SD2_eindopdracht.Migrations
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "1",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 78, "27d9b0ad-76f3-4305-81b5-4a77f575d511", "Keyshawn21@gmail.com", "KEYSHAWN21@GMAIL.COM", "WILLARD_JOHNSON", "313-814-5988 x9294", "8449dd07-cd8e-448e-949b-ae8c2d86b3c7", 4, "Willard_Johnson" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
+                values: new object[] { 78, "27d9b0ad-76f3-4305-81b5-4a77f575d511", "Keyshawn21@gmail.com", "KEYSHAWN21@GMAIL.COM", "WILLARD_JOHNSON", "313-814-5988 x9294", "8449dd07-cd8e-448e-949b-ae8c2d86b3c7", "Willard_Johnson" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "10",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 49, "2f158138-8c0f-46c4-b24b-676a0258b710", "Ardella.Koss86@yahoo.com", "ARDELLA.KOSS86@YAHOO.COM", "ORLAND_BERGNAUM", "426-746-6527 x8375", "c01ac55b-2f9b-4421-996e-7b6c95c3e907", 2, "Orland_Bergnaum" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
+                values: new object[] { 49, "2f158138-8c0f-46c4-b24b-676a0258b710", "Ardella.Koss86@yahoo.com", "ARDELLA.KOSS86@YAHOO.COM", "ORLAND_BERGNAUM", "426-746-6527 x8375", "c01ac55b-2f9b-4421-996e-7b6c95c3e907", "Orland_Bergnaum" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
@@ -1615,8 +1615,8 @@ namespace SD2_eindopdracht.Migrations
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "14",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
-                values: new object[] { 77, "2f2a67ed-8301-42ea-9464-e2be1801268b", "Paige86@gmail.com", "PAIGE86@GMAIL.COM", "BENNY.LESCH16", "(844) 527-1977", "0a14ba82-1e4f-4b16-b246-689e93bf03b8", "Benny.Lesch16" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
+                values: new object[] { 77, "2f2a67ed-8301-42ea-9464-e2be1801268b", "Paige86@gmail.com", "PAIGE86@GMAIL.COM", "BENNY.LESCH16", "(844) 527-1977", "0a14ba82-1e4f-4b16-b246-689e93bf03b8", 4, "Benny.Lesch16" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
@@ -1629,8 +1629,8 @@ namespace SD2_eindopdracht.Migrations
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "16",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
-                values: new object[] { 80, "edbdab3a-1b79-473a-a23c-bf3c84b9f260", "Maryse_Streich@hotmail.com", "MARYSE_STREICH@HOTMAIL.COM", "NORWOOD.JENKINS", "1-522-988-8203", "cb38eea3-7f4f-4226-93eb-32ea6d3f4733", "Norwood.Jenkins" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
+                values: new object[] { 80, "edbdab3a-1b79-473a-a23c-bf3c84b9f260", "Maryse_Streich@hotmail.com", "MARYSE_STREICH@HOTMAIL.COM", "NORWOOD.JENKINS", "1-522-988-8203", "cb38eea3-7f4f-4226-93eb-32ea6d3f4733", 4, "Norwood.Jenkins" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
@@ -1650,15 +1650,15 @@ namespace SD2_eindopdracht.Migrations
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "19",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 63, "c145bd3b-ebf2-4062-a962-b09dff9251f8", "Justina_Rempel87@gmail.com", "JUSTINA_REMPEL87@GMAIL.COM", "STEPHON_ZIEME", "897-335-6722 x04015", "88108f6f-14b0-4ad1-bac1-f0e1d0f30f12", 3, "Stephon_Zieme" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
+                values: new object[] { 63, "c145bd3b-ebf2-4062-a962-b09dff9251f8", "Justina_Rempel87@gmail.com", "JUSTINA_REMPEL87@GMAIL.COM", "STEPHON_ZIEME", "897-335-6722 x04015", "88108f6f-14b0-4ad1-bac1-f0e1d0f30f12", "Stephon_Zieme" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "2",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 27, "fcb2486c-bc05-44a1-b2ab-b2e7d0db9a53", "Rosalinda.Carroll90@yahoo.com", "ROSALINDA.CARROLL90@YAHOO.COM", "STEVE73", "679-753-9586 x52197", "d188816d-8f02-4c75-9eef-151983d3dd14", 2, "Steve73" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
+                values: new object[] { 27, "fcb2486c-bc05-44a1-b2ab-b2e7d0db9a53", "Rosalinda.Carroll90@yahoo.com", "ROSALINDA.CARROLL90@YAHOO.COM", "STEVE73", "679-753-9586 x52197", "d188816d-8f02-4c75-9eef-151983d3dd14", "Steve73" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
@@ -1671,8 +1671,8 @@ namespace SD2_eindopdracht.Migrations
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "21",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
-                values: new object[] { 18, "5f3c07e4-5c7d-449f-9628-816138c1fe76", "Louie.Nienow43@gmail.com", "LOUIE.NIENOW43@GMAIL.COM", "PEYTON.REILLY56", "372-764-9098", "aa872e08-3427-4795-8244-d3b476e21d02", "Peyton.Reilly56" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
+                values: new object[] { 18, "5f3c07e4-5c7d-449f-9628-816138c1fe76", "Louie.Nienow43@gmail.com", "LOUIE.NIENOW43@GMAIL.COM", "PEYTON.REILLY56", "372-764-9098", "aa872e08-3427-4795-8244-d3b476e21d02", 2, "Peyton.Reilly56" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
@@ -1720,22 +1720,22 @@ namespace SD2_eindopdracht.Migrations
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "28",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 18, "2beda5f1-d53d-443c-9d5c-d9ac91e83e71", "Emma.Hammes@gmail.com", "EMMA.HAMMES@GMAIL.COM", "GIOVANNI_PRICE34", "(565) 864-9809 x02933", "dc7db832-435f-42dd-8184-8c5adb2b5dfd", 2, "Giovanni_Price34" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
+                values: new object[] { 18, "2beda5f1-d53d-443c-9d5c-d9ac91e83e71", "Emma.Hammes@gmail.com", "EMMA.HAMMES@GMAIL.COM", "GIOVANNI_PRICE34", "(565) 864-9809 x02933", "dc7db832-435f-42dd-8184-8c5adb2b5dfd", "Giovanni_Price34" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "29",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 55, "128704f8-2af7-44bc-bc76-ab9c6fdeb058", "Angeline99@gmail.com", "ANGELINE99@GMAIL.COM", "KEELY57", "1-819-605-5006 x390", "07e19919-fb2a-4a7b-b42e-885285495d8b", 4, "Keely57" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
+                values: new object[] { 55, "128704f8-2af7-44bc-bc76-ab9c6fdeb058", "Angeline99@gmail.com", "ANGELINE99@GMAIL.COM", "KEELY57", "1-819-605-5006 x390", "07e19919-fb2a-4a7b-b42e-885285495d8b", "Keely57" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "3",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 39, "9ded53b7-b4d0-4006-9acc-8200e78208d4", "Elisha12@gmail.com", "ELISHA12@GMAIL.COM", "TYREEK_NICOLAS", "287.468.3404", "bfa038b4-825b-41ca-a4fb-2ef2abf3d079", 4, "Tyreek_Nicolas" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
+                values: new object[] { 39, "9ded53b7-b4d0-4006-9acc-8200e78208d4", "Elisha12@gmail.com", "ELISHA12@GMAIL.COM", "TYREEK_NICOLAS", "287.468.3404", "bfa038b4-825b-41ca-a4fb-2ef2abf3d079", "Tyreek_Nicolas" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
@@ -1748,15 +1748,15 @@ namespace SD2_eindopdracht.Migrations
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "31",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 77, "a5f74d63-9c06-4d73-ad56-66672e3c665b", "Dovie.Howe@hotmail.com", "DOVIE.HOWE@HOTMAIL.COM", "AIDA_GRIMES22", "823.608.0547 x670", "70459ae8-f5b7-42cf-85fb-6d5eddea5ec0", 2, "Aida_Grimes22" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
+                values: new object[] { 77, "a5f74d63-9c06-4d73-ad56-66672e3c665b", "Dovie.Howe@hotmail.com", "DOVIE.HOWE@HOTMAIL.COM", "AIDA_GRIMES22", "823.608.0547 x670", "70459ae8-f5b7-42cf-85fb-6d5eddea5ec0", "Aida_Grimes22" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "32",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
-                values: new object[] { 58, "5d10d29a-1d10-4fec-b903-d61073d335bd", "Colt_Mante0@yahoo.com", "COLT_MANTE0@YAHOO.COM", "NORMA43", "832-237-3576 x708", "3de838ee-d05d-4c9e-adaf-290c10884dc4", "Norma43" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
+                values: new object[] { 58, "5d10d29a-1d10-4fec-b903-d61073d335bd", "Colt_Mante0@yahoo.com", "COLT_MANTE0@YAHOO.COM", "NORMA43", "832-237-3576 x708", "3de838ee-d05d-4c9e-adaf-290c10884dc4", 4, "Norma43" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
@@ -1769,8 +1769,8 @@ namespace SD2_eindopdracht.Migrations
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "34",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 57, "2f08f829-c46d-4f83-ab5f-09cfa086267a", "Raymundo.Daugherty75@gmail.com", "RAYMUNDO.DAUGHERTY75@GMAIL.COM", "COLEMAN.HYATT7", "1-769-608-2561", "77c23c3a-1ee9-40ac-b097-44e6300b4dbc", 3, "Coleman.Hyatt7" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
+                values: new object[] { 57, "2f08f829-c46d-4f83-ab5f-09cfa086267a", "Raymundo.Daugherty75@gmail.com", "RAYMUNDO.DAUGHERTY75@GMAIL.COM", "COLEMAN.HYATT7", "1-769-608-2561", "77c23c3a-1ee9-40ac-b097-44e6300b4dbc", "Coleman.Hyatt7" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
@@ -1783,8 +1783,8 @@ namespace SD2_eindopdracht.Migrations
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "36",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
-                values: new object[] { 72, "3a716bda-325e-441c-95b9-a0596c32c0d8", "Herminio_Hermiston@yahoo.com", "HERMINIO_HERMISTON@YAHOO.COM", "LENNIE.VON65", "1-833-564-0857 x370", "3806e879-b92a-497e-8b07-3b7fbc10e068", "Lennie.Von65" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
+                values: new object[] { 72, "3a716bda-325e-441c-95b9-a0596c32c0d8", "Herminio_Hermiston@yahoo.com", "HERMINIO_HERMISTON@YAHOO.COM", "LENNIE.VON65", "1-833-564-0857 x370", "3806e879-b92a-497e-8b07-3b7fbc10e068", 3, "Lennie.Von65" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
@@ -1797,15 +1797,15 @@ namespace SD2_eindopdracht.Migrations
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "38",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
-                values: new object[] { 42, "e7f84e7f-0ea2-4ca3-a56b-384a3a06ecc1", "Orion_Morar62@hotmail.com", "ORION_MORAR62@HOTMAIL.COM", "BILLY63", "775.471.3180 x1737", "b244340e-0ff9-4b06-a5c2-6b62c8d1378f", "Billy63" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
+                values: new object[] { 42, "e7f84e7f-0ea2-4ca3-a56b-384a3a06ecc1", "Orion_Morar62@hotmail.com", "ORION_MORAR62@HOTMAIL.COM", "BILLY63", "775.471.3180 x1737", "b244340e-0ff9-4b06-a5c2-6b62c8d1378f", 3, "Billy63" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "39",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
-                values: new object[] { 49, "b244f246-d683-49c2-883b-037dd952087f", "Moises_Weber18@hotmail.com", "MOISES_WEBER18@HOTMAIL.COM", "DANIKA_BARTOLETTI", "(969) 382-1803", "5f4e82e3-e691-419d-972a-814ecb1198c0", "Danika_Bartoletti" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
+                values: new object[] { 49, "b244f246-d683-49c2-883b-037dd952087f", "Moises_Weber18@hotmail.com", "MOISES_WEBER18@HOTMAIL.COM", "DANIKA_BARTOLETTI", "(969) 382-1803", "5f4e82e3-e691-419d-972a-814ecb1198c0", 2, "Danika_Bartoletti" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
@@ -1853,8 +1853,8 @@ namespace SD2_eindopdracht.Migrations
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "45",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
-                values: new object[] { 34, "0c8ab53e-80e6-4f25-a52f-03582d01c8ef", "Tatum_Bartoletti54@gmail.com", "TATUM_BARTOLETTI54@GMAIL.COM", "DEVON_LARKIN86", "495.680.1956 x88033", "9c2aa0ce-1d2f-4026-bea2-137a9e6d9304", "Devon_Larkin86" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
+                values: new object[] { 34, "0c8ab53e-80e6-4f25-a52f-03582d01c8ef", "Tatum_Bartoletti54@gmail.com", "TATUM_BARTOLETTI54@GMAIL.COM", "DEVON_LARKIN86", "495.680.1956 x88033", "9c2aa0ce-1d2f-4026-bea2-137a9e6d9304", 4, "Devon_Larkin86" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
@@ -1888,15 +1888,15 @@ namespace SD2_eindopdracht.Migrations
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "5",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 30, "d2baf7dc-da0f-418e-b55d-f3a02d68206d", "Albert61@yahoo.com", "ALBERT61@YAHOO.COM", "RACHELLE.BERGSTROM", "482.224.8280 x906", "1fcd113c-b21d-4eae-8e55-f296ef125b4b", 2, "Rachelle.Bergstrom" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
+                values: new object[] { 30, "d2baf7dc-da0f-418e-b55d-f3a02d68206d", "Albert61@yahoo.com", "ALBERT61@YAHOO.COM", "RACHELLE.BERGSTROM", "482.224.8280 x906", "1fcd113c-b21d-4eae-8e55-f296ef125b4b", "Rachelle.Bergstrom" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "50",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
-                values: new object[] { 64, "cbbfa838-a59f-4630-897d-21d899ea6d5c", "Tyreek55@gmail.com", "TYREEK55@GMAIL.COM", "MATHILDE7", "1-935-914-0617 x0951", "ab0c48a8-3feb-4b42-9ef4-8b7864e1699c", "Mathilde7" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
+                values: new object[] { 64, "cbbfa838-a59f-4630-897d-21d899ea6d5c", "Tyreek55@gmail.com", "TYREEK55@GMAIL.COM", "MATHILDE7", "1-935-914-0617 x0951", "ab0c48a8-3feb-4b42-9ef4-8b7864e1699c", 2, "Mathilde7" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
@@ -1937,8 +1937,8 @@ namespace SD2_eindopdracht.Migrations
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "56",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 62, "43c34bd3-248f-435e-882d-9b5d9a6656f6", "Derek.Bayer40@hotmail.com", "DEREK.BAYER40@HOTMAIL.COM", "META_EBERT", "(436) 970-2501 x28047", "b7af7efa-58b9-4e81-9520-779fd8ee8f27", 2, "Meta_Ebert" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
+                values: new object[] { 62, "43c34bd3-248f-435e-882d-9b5d9a6656f6", "Derek.Bayer40@hotmail.com", "DEREK.BAYER40@HOTMAIL.COM", "META_EBERT", "(436) 970-2501 x28047", "b7af7efa-58b9-4e81-9520-779fd8ee8f27", "Meta_Ebert" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
@@ -1951,8 +1951,8 @@ namespace SD2_eindopdracht.Migrations
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "58",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 39, "1f6bc4d8-058a-4eec-ba11-64c431c7cc49", "Berenice.Frami@gmail.com", "BERENICE.FRAMI@GMAIL.COM", "EZEQUIEL_SKILES", "962.209.0484", "7d5582ea-2de3-45f7-8058-546d46ea73fe", 4, "Ezequiel_Skiles" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
+                values: new object[] { 39, "1f6bc4d8-058a-4eec-ba11-64c431c7cc49", "Berenice.Frami@gmail.com", "BERENICE.FRAMI@GMAIL.COM", "EZEQUIEL_SKILES", "962.209.0484", "7d5582ea-2de3-45f7-8058-546d46ea73fe", "Ezequiel_Skiles" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
@@ -1979,8 +1979,8 @@ namespace SD2_eindopdracht.Migrations
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "61",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
-                values: new object[] { 60, "1afa94bb-1a07-47d0-9a19-aac369070bc0", "Kaden5@gmail.com", "KADEN5@GMAIL.COM", "EZEQUIEL.PROSACCO96", "926-313-4674", "a5e1a68a-19c0-48e2-bcfb-54d677469317", "Ezequiel.Prosacco96" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
+                values: new object[] { 60, "1afa94bb-1a07-47d0-9a19-aac369070bc0", "Kaden5@gmail.com", "KADEN5@GMAIL.COM", "EZEQUIEL.PROSACCO96", "926-313-4674", "a5e1a68a-19c0-48e2-bcfb-54d677469317", 2, "Ezequiel.Prosacco96" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
@@ -2007,15 +2007,15 @@ namespace SD2_eindopdracht.Migrations
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "65",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 13, "5e4a7527-044a-44b6-9cd1-219509324a22", "Leone.Bauch@hotmail.com", "LEONE.BAUCH@HOTMAIL.COM", "SAMARA.KOELPIN", "495.635.6933", "980e6a46-4809-4563-ab04-2adc33a3e80b", 1, "Samara.Koelpin" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
+                values: new object[] { 13, "5e4a7527-044a-44b6-9cd1-219509324a22", "Leone.Bauch@hotmail.com", "LEONE.BAUCH@HOTMAIL.COM", "SAMARA.KOELPIN", "495.635.6933", "980e6a46-4809-4563-ab04-2adc33a3e80b", "Samara.Koelpin" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "66",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
-                values: new object[] { 18, "7b66b67f-f074-40a6-94b2-74b617d14fe5", "Alayna65@gmail.com", "ALAYNA65@GMAIL.COM", "ODIE6", "590.855.9878 x3631", "7505b99c-d295-459f-b9dc-589fa1224fcf", "Odie6" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
+                values: new object[] { 18, "7b66b67f-f074-40a6-94b2-74b617d14fe5", "Alayna65@gmail.com", "ALAYNA65@GMAIL.COM", "ODIE6", "590.855.9878 x3631", "7505b99c-d295-459f-b9dc-589fa1224fcf", 3, "Odie6" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
@@ -2028,8 +2028,8 @@ namespace SD2_eindopdracht.Migrations
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "68",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 58, "7e16f024-0543-48fe-b3db-77c1b20eb193", "Marisa19@yahoo.com", "MARISA19@YAHOO.COM", "DEXTER42", "1-516-472-1861", "86f0fc26-10ef-4471-a17f-eb8333964b77", 4, "Dexter42" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
+                values: new object[] { 58, "7e16f024-0543-48fe-b3db-77c1b20eb193", "Marisa19@yahoo.com", "MARISA19@YAHOO.COM", "DEXTER42", "1-516-472-1861", "86f0fc26-10ef-4471-a17f-eb8333964b77", "Dexter42" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
@@ -2070,8 +2070,8 @@ namespace SD2_eindopdracht.Migrations
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "73",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 27, "d0c4dbdd-5789-48d9-9799-60334ec327c6", "Newell99@hotmail.com", "NEWELL99@HOTMAIL.COM", "PAXTON35", "836.946.5652", "1c151e53-14f2-4d02-a98f-176eeb2f894f", 2, "Paxton35" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
+                values: new object[] { 27, "d0c4dbdd-5789-48d9-9799-60334ec327c6", "Newell99@hotmail.com", "NEWELL99@HOTMAIL.COM", "PAXTON35", "836.946.5652", "1c151e53-14f2-4d02-a98f-176eeb2f894f", "Paxton35" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
@@ -2091,8 +2091,8 @@ namespace SD2_eindopdracht.Migrations
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "76",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
-                values: new object[] { 40, "5d2be353-74a5-4381-9ad8-ce1a9633cc52", "Roy_Flatley@hotmail.com", "ROY_FLATLEY@HOTMAIL.COM", "JORDON36", "1-710-674-1085", "d2a28600-2118-4b85-b503-79e27d33123d", "Jordon36" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
+                values: new object[] { 40, "5d2be353-74a5-4381-9ad8-ce1a9633cc52", "Roy_Flatley@hotmail.com", "ROY_FLATLEY@HOTMAIL.COM", "JORDON36", "1-710-674-1085", "d2a28600-2118-4b85-b503-79e27d33123d", 2, "Jordon36" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
@@ -2126,8 +2126,8 @@ namespace SD2_eindopdracht.Migrations
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "80",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 14, "d8027371-521f-4cb5-a67f-1686bafa98c7", "Lilliana_Schneider@hotmail.com", "LILLIANA_SCHNEIDER@HOTMAIL.COM", "ANGELITA_MAYERT", "(704) 915-5956 x1366", "b0d63e4d-0856-4223-81b6-33339057a8ef", 1, "Angelita_Mayert" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
+                values: new object[] { 14, "d8027371-521f-4cb5-a67f-1686bafa98c7", "Lilliana_Schneider@hotmail.com", "LILLIANA_SCHNEIDER@HOTMAIL.COM", "ANGELITA_MAYERT", "(704) 915-5956 x1366", "b0d63e4d-0856-4223-81b6-33339057a8ef", "Angelita_Mayert" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
@@ -2161,8 +2161,8 @@ namespace SD2_eindopdracht.Migrations
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "85",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 19, "f1f75b49-40d5-42b9-b211-561e21a8a2be", "Lina54@yahoo.com", "LINA54@YAHOO.COM", "DAX59", "441.423.1035 x257", "0473a8b8-4ac9-4d29-92db-9dac51021881", 3, "Dax59" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
+                values: new object[] { 19, "f1f75b49-40d5-42b9-b211-561e21a8a2be", "Lina54@yahoo.com", "LINA54@YAHOO.COM", "DAX59", "441.423.1035 x257", "0473a8b8-4ac9-4d29-92db-9dac51021881", "Dax59" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
@@ -2182,8 +2182,8 @@ namespace SD2_eindopdracht.Migrations
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "88",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 24, "6d167c54-8a71-4b4a-a00d-8c1be824f0a7", "Noah_Cartwright@gmail.com", "NOAH_CARTWRIGHT@GMAIL.COM", "DOROTHEA.KERLUKE", "1-359-824-1765 x5565", "8ea1caf3-2b18-44f3-aeb8-9b1f4e5b7dd7", 2, "Dorothea.Kerluke" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
+                values: new object[] { 24, "6d167c54-8a71-4b4a-a00d-8c1be824f0a7", "Noah_Cartwright@gmail.com", "NOAH_CARTWRIGHT@GMAIL.COM", "DOROTHEA.KERLUKE", "1-359-824-1765 x5565", "8ea1caf3-2b18-44f3-aeb8-9b1f4e5b7dd7", "Dorothea.Kerluke" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
@@ -2217,8 +2217,8 @@ namespace SD2_eindopdracht.Migrations
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "92",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
-                values: new object[] { 39, "adb838b6-02c5-4413-bc1f-873e2e185c59", "Maynard.Cronin@gmail.com", "MAYNARD.CRONIN@GMAIL.COM", "POLLY31", "(235) 585-8622 x1112", "b4bd0365-5ec8-4e56-ba5e-7ca839a0d733", "Polly31" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
+                values: new object[] { 39, "adb838b6-02c5-4413-bc1f-873e2e185c59", "Maynard.Cronin@gmail.com", "MAYNARD.CRONIN@GMAIL.COM", "POLLY31", "(235) 585-8622 x1112", "b4bd0365-5ec8-4e56-ba5e-7ca839a0d733", 4, "Polly31" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
@@ -2231,8 +2231,8 @@ namespace SD2_eindopdracht.Migrations
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "94",
-                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
-                values: new object[] { 66, "a2855a2e-f5da-4526-bc24-206374ffe85c", "Frankie81@yahoo.com", "FRANKIE81@YAHOO.COM", "TANNER.DARE56", "(649) 519-7247 x873", "6ab6c76a-674c-4ae2-b3e4-f04f5f2c4204", 4, "Tanner.Dare56" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
+                values: new object[] { 66, "a2855a2e-f5da-4526-bc24-206374ffe85c", "Frankie81@yahoo.com", "FRANKIE81@YAHOO.COM", "TANNER.DARE56", "(649) 519-7247 x873", "6ab6c76a-674c-4ae2-b3e4-f04f5f2c4204", "Tanner.Dare56" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
@@ -2252,8 +2252,8 @@ namespace SD2_eindopdracht.Migrations
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "97",
-                columns: new[] { "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "UserName" },
-                values: new object[] { "ccb64200-1e52-47d7-830a-09cd89a97b13", "Bertram.Roob@hotmail.com", "BERTRAM.ROOB@HOTMAIL.COM", "GUSSIE.BORER67", "404.702.5354 x7856", "33eaa796-e392-46cc-ae5d-6a23dd348697", "Gussie.Borer67" });
+                columns: new[] { "Age", "ConcurrencyStamp", "Email", "NormalizedEmail", "NormalizedUserName", "PhoneNumber", "SecurityStamp", "SubscriptionId", "UserName" },
+                values: new object[] { 18, "ccb64200-1e52-47d7-830a-09cd89a97b13", "Bertram.Roob@hotmail.com", "BERTRAM.ROOB@HOTMAIL.COM", "GUSSIE.BORER67", "404.702.5354 x7856", "33eaa796-e392-46cc-ae5d-6a23dd348697", 3, "Gussie.Borer67" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
@@ -2413,15 +2413,15 @@ namespace SD2_eindopdracht.Migrations
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 1,
-                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 17, "The Football Is Good For Training And Recreational Purposes", "Tasty Wooden Fish", 2008 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 17, 2, "The Football Is Good For Training And Recreational Purposes", "Tasty Wooden Fish", 2008 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 2,
-                columns: new[] { "AuthorId", "CategoryId", "Title", "YearOfRelease" },
-                values: new object[] { 2, 5, "Gorgeous Frozen Bacon", 2007 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 2, 5, "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality", "Gorgeous Frozen Bacon", 2007 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
@@ -2434,22 +2434,22 @@ namespace SD2_eindopdracht.Migrations
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 4,
-                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 17, 4, "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients", "Sleek Concrete Table", 2014 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title" },
+                values: new object[] { 17, 4, "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients", "Sleek Concrete Table" });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 5,
-                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 17, 4, "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J", "Unbranded Frozen Hat", 2000 });
+                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 17, "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J", "Unbranded Frozen Hat", 2000 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 6,
-                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 2, "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support", "Rustic Wooden Pants", 2020 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title" },
+                values: new object[] { 2, 3, "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support", "Rustic Wooden Pants" });
 
             migrationBuilder.UpdateData(
                 table: "Item",
@@ -2462,22 +2462,22 @@ namespace SD2_eindopdracht.Migrations
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 8,
-                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 19, "The Football Is Good For Training And Recreational Purposes", "Practical Concrete Towels", 2002 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 19, 1, "The Football Is Good For Training And Recreational Purposes", "Practical Concrete Towels", 2002 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 9,
-                columns: new[] { "AuthorId", "CategoryId", "Title", "YearOfRelease" },
-                values: new object[] { 9, 5, "Sleek Metal Mouse", 2017 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 9, 5, "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality", "Sleek Metal Mouse", 2017 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 10,
-                columns: new[] { "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 3, "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design", "Incredible Metal Towels", 2014 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 19, 3, "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design", "Incredible Metal Towels", 2014 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
@@ -2490,36 +2490,36 @@ namespace SD2_eindopdracht.Migrations
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 12,
-                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 4, "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals", "Intelligent Wooden Shoes", 2001 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 4, 5, "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals", "Intelligent Wooden Shoes", 2001 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 13,
-                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 18, 4, "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J", "Licensed Cotton Sausages", 2013 });
+                columns: new[] { "AuthorId", "Title", "YearOfRelease" },
+                values: new object[] { 18, "Licensed Cotton Sausages", 2013 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 14,
-                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 6, 2, "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart", "Fantastic Granite Bacon", 2008 });
+                columns: new[] { "AuthorId", "CategoryId", "Title", "YearOfRelease" },
+                values: new object[] { 6, 2, "Fantastic Granite Bacon", 2008 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 15,
-                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 15, "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support", "Ergonomic Wooden Bike", 2020 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 15, 5, "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support", "Ergonomic Wooden Bike", 2020 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 16,
-                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 7, 1, "The Football Is Good For Training And Recreational Purposes", "Intelligent Cotton Fish", 2019 });
+                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 7, "The Football Is Good For Training And Recreational Purposes", "Intelligent Cotton Fish", 2019 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
@@ -2532,15 +2532,15 @@ namespace SD2_eindopdracht.Migrations
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 18,
-                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 19, "The Football Is Good For Training And Recreational Purposes", "Ergonomic Granite Hat", 2006 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 19, 5, "The Football Is Good For Training And Recreational Purposes", "Ergonomic Granite Hat", 2006 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 19,
-                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 13, "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive", "Generic Soft Salad", 2023 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 13, 1, "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive", "Generic Soft Salad", 2023 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
@@ -2581,8 +2581,8 @@ namespace SD2_eindopdracht.Migrations
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 25,
-                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 8, "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit", "Fantastic Fresh Salad", 2001 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 8, 1, "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit", "Fantastic Fresh Salad", 2001 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
@@ -2595,8 +2595,8 @@ namespace SD2_eindopdracht.Migrations
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 27,
-                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 15, "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality", "Intelligent Rubber Mouse", 2004 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title" },
+                values: new object[] { 15, 5, "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality", "Intelligent Rubber Mouse" });
 
             migrationBuilder.UpdateData(
                 table: "Item",
@@ -2609,8 +2609,8 @@ namespace SD2_eindopdracht.Migrations
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 29,
-                columns: new[] { "AuthorId", "CategoryId", "Description", "Title" },
-                values: new object[] { 4, 5, "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit", "Awesome Plastic Cheese" });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 4, 5, "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit", "Awesome Plastic Cheese", 2003 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
@@ -2623,15 +2623,15 @@ namespace SD2_eindopdracht.Migrations
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 31,
-                columns: new[] { "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 3, "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals", "Gorgeous Granite Car", 2014 });
+                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 16, "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals", "Gorgeous Granite Car", 2014 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 32,
-                columns: new[] { "AuthorId", "CategoryId", "Title", "YearOfRelease" },
-                values: new object[] { 4, 5, "Gorgeous Rubber Computer", 2016 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 4, 5, "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit", "Gorgeous Rubber Computer", 2016 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
@@ -2658,22 +2658,22 @@ namespace SD2_eindopdracht.Migrations
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 36,
-                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 16, 1, "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients", "Refined Concrete Chicken", 2012 });
+                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 16, "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients", "Refined Concrete Chicken", 2012 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 37,
-                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 1, 5, "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit", "Intelligent Rubber Sausages", 2022 });
+                columns: new[] { "CategoryId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 5, "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit", "Intelligent Rubber Sausages", 2022 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 38,
-                columns: new[] { "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 1, "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients", "Incredible Metal Tuna", 2015 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 7, 1, "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients", "Incredible Metal Tuna", 2015 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
@@ -2686,8 +2686,8 @@ namespace SD2_eindopdracht.Migrations
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 40,
-                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 11, "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support", "Incredible Frozen Shirt", 2021 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 11, 1, "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support", "Incredible Frozen Shirt", 2021 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
@@ -2714,15 +2714,15 @@ namespace SD2_eindopdracht.Migrations
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 44,
-                columns: new[] { "AuthorId", "CategoryId", "Title", "YearOfRelease" },
-                values: new object[] { 8, 4, "Licensed Wooden Fish", 2009 });
+                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 8, "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles", "Licensed Wooden Fish", 2009 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 45,
-                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 7, 1, "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support", "Generic Metal Gloves", 2023 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title" },
+                values: new object[] { 7, 1, "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support", "Generic Metal Gloves" });
 
             migrationBuilder.UpdateData(
                 table: "Item",
@@ -2735,8 +2735,8 @@ namespace SD2_eindopdracht.Migrations
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 47,
-                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 10, "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients", "Handcrafted Cotton Computer", 2008 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 10, 4, "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients", "Handcrafted Cotton Computer", 2008 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
@@ -2749,15 +2749,15 @@ namespace SD2_eindopdracht.Migrations
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 49,
-                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 5, "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients", "Tasty Fresh Table", 2011 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 5, 1, "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients", "Tasty Fresh Table", 2011 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 50,
-                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 18, 5, "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients", "Unbranded Plastic Pants", 2015 });
+                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 18, "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients", "Unbranded Plastic Pants", 2015 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
@@ -2791,8 +2791,8 @@ namespace SD2_eindopdracht.Migrations
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 55,
-                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 16, "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart", "Ergonomic Concrete Bacon", 2002 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 16, 2, "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart", "Ergonomic Concrete Bacon", 2002 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
@@ -2819,15 +2819,15 @@ namespace SD2_eindopdracht.Migrations
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 59,
-                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 9, 3, "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design", "Refined Cotton Car", 2003 });
+                columns: new[] { "AuthorId", "CategoryId", "Title" },
+                values: new object[] { 9, 3, "Refined Cotton Car" });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 60,
-                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 11, 4, "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals", "Licensed Soft Pizza", 2022 });
+                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 11, "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals", "Licensed Soft Pizza", 2022 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
@@ -2847,8 +2847,8 @@ namespace SD2_eindopdracht.Migrations
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 63,
-                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 11, "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J", "Practical Plastic Computer", 2015 });
+                columns: new[] { "AuthorId", "Title", "YearOfRelease" },
+                values: new object[] { 11, "Practical Plastic Computer", 2015 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
@@ -2875,29 +2875,29 @@ namespace SD2_eindopdracht.Migrations
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 67,
-                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 7, "The Football Is Good For Training And Recreational Purposes", "Ergonomic Granite Tuna", 2003 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 7, 1, "The Football Is Good For Training And Recreational Purposes", "Ergonomic Granite Tuna", 2003 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 68,
-                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 9, 4, "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals", "Incredible Rubber Car", 2016 });
+                columns: new[] { "Description", "Title", "YearOfRelease" },
+                values: new object[] { "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals", "Incredible Rubber Car", 2016 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 69,
-                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 16, 3, "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality", "Fantastic Granite Pants", 2011 });
+                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 16, "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality", "Fantastic Granite Pants", 2011 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 70,
-                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 20, "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design", "Small Steel Computer", 2003 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 20, 2, "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design", "Small Steel Computer", 2003 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
@@ -2917,8 +2917,8 @@ namespace SD2_eindopdracht.Migrations
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 73,
-                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 3, 5, "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals", "Handmade Metal Keyboard", 2001 });
+                columns: new[] { "AuthorId", "Title" },
+                values: new object[] { 3, "Handmade Metal Keyboard" });
 
             migrationBuilder.UpdateData(
                 table: "Item",
@@ -2945,22 +2945,22 @@ namespace SD2_eindopdracht.Migrations
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 77,
-                columns: new[] { "Description", "Title", "YearOfRelease" },
-                values: new object[] { "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles", "Small Metal Towels", 2003 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 1, 5, "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles", "Small Metal Towels", 2003 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 78,
-                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 15, 2, "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality", "Gorgeous Metal Fish", 2001 });
+                columns: new[] { "AuthorId", "CategoryId", "Title", "YearOfRelease" },
+                values: new object[] { 15, 2, "Gorgeous Metal Fish", 2001 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 79,
-                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 9, "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients", "Sleek Steel Cheese", 2009 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 9, 5, "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients", "Sleek Steel Cheese", 2009 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
@@ -2973,22 +2973,22 @@ namespace SD2_eindopdracht.Migrations
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 81,
-                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 9, 5, "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive", "Intelligent Metal Car", 2017 });
+                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 9, "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive", "Intelligent Metal Car", 2017 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 82,
-                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 9, "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients", "Awesome Plastic Computer", 2022 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 9, 5, "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients", "Awesome Plastic Computer", 2022 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 83,
-                columns: new[] { "AuthorId", "CategoryId", "Description", "Title" },
-                values: new object[] { 4, 1, "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive", "Unbranded Plastic Bike" });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 4, 1, "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive", "Unbranded Plastic Bike", 2005 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
@@ -3001,15 +3001,15 @@ namespace SD2_eindopdracht.Migrations
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 85,
-                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 20, 3, "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart", "Handmade Soft Chair", 2021 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title" },
+                values: new object[] { 20, 3, "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart", "Handmade Soft Chair" });
 
             migrationBuilder.UpdateData(
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 86,
-                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 11, 4, "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients", "Generic Fresh Gloves", 2005 });
+                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 11, "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients", "Generic Fresh Gloves", 2005 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
@@ -3022,8 +3022,8 @@ namespace SD2_eindopdracht.Migrations
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 88,
-                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 17, 5, "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles", "Gorgeous Frozen Shoes", 2001 });
+                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 17, "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles", "Gorgeous Frozen Shoes", 2001 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
@@ -3050,8 +3050,8 @@ namespace SD2_eindopdracht.Migrations
                 table: "Item",
                 keyColumn: "Id",
                 keyValue: 92,
-                columns: new[] { "AuthorId", "Description", "Title", "YearOfRelease" },
-                values: new object[] { 15, "The Football Is Good For Training And Recreational Purposes", "Sleek Granite Chips", 2014 });
+                columns: new[] { "AuthorId", "CategoryId", "Description", "Title", "YearOfRelease" },
+                values: new object[] { 15, 3, "The Football Is Good For Training And Recreational Purposes", "Sleek Granite Chips", 2014 });
 
             migrationBuilder.UpdateData(
                 table: "Item",
