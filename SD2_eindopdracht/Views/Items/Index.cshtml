@@ -24,6 +24,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.YearOfRelease)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Stock)
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -39,12 +42,19 @@
             <td>
                 @Html.DisplayFor(modelItem => item.YearOfRelease)
             </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Stock)
+            </td>
                 <td>
                     <a asp-action="Details" asp-route-id="@item.Id">Details</a>
                     @if (User.IsInRole("Admin") || User.IsInRole("Employee"))
                     {
                         <a asp-action="Edit" asp-route-id="@item.Id">Edit</a>
                         <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    }
+                    @if (User.Identity.IsAuthenticated && item.Stock > 0)
+                    {
+                        <a asp-action="Reserve" asp-route-id="@item.Id">Reserveer Item</a>
                     }
                 </td>
         </tr>

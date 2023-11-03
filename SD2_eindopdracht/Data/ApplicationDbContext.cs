@@ -22,6 +22,8 @@ namespace SD2_eindopdracht.Data
         public DbSet<Item> Item { get; set; }
         public DbSet<Subscription> Subscription { get; set; }
 
+        public DbSet<UserItem> UserItem { get; set; }
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);

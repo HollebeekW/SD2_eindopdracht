@@ -104,6 +104,7 @@ using (var scope = app.Services.CreateScope())
         user.UserName = "user@email.com";
         user.LockoutEnabled = false;
         user.EmailConfirmed = true;
+        user.SubscriptionId = 2;
 
         await userManager.CreateAsync(user, password);
 
