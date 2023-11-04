@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNet.Identity;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -14,17 +15,28 @@ namespace SD2_eindopdracht.Controllers
     [Authorize]
     public class SubscriptionsController : Controller
     {
+        private readonly Microsoft.AspNetCore.Identity.UserManager<ApplicationUser> _userManager;
         private readonly ApplicationDbContext _context;
 
-        public SubscriptionsController(ApplicationDbContext context)
+        public SubscriptionsController(ApplicationDbContext context, Microsoft.AspNetCore.Identity.UserManager<ApplicationUser> userManager)
         {
             _context = context;
+            _userManager = userManager;
         }
 
         // GET: Subscriptions
         public async Task<IActionResult> Index()
         {
-              return _context.Subscription != null ? 
+            if (TempData.ContainsKey("SuccessMessage"))
+            {
+                ViewBag.SuccessMessage = TempData["SuccessMessage"].ToString();
+            }
+            if (TempData.ContainsKey("ErrorMessage"))
+            {
+                ViewBag.ErrorMessage = TempData["ErrorMessage"].ToString();
+            }
+
+            return _context.Subscription != null ? 
                           View(await _context.Subscription.ToListAsync()) :
                           Problem("Entity set 'ApplicationDbContext.Subscription'  is null.");
         }
@@ -168,6 +180,28 @@ namespace SD2_eindopdracht.Controllers
           return (_context.Subscription?.Any(e => e.Id == id)).GetValueOrDefault();
         }
 
+        [Authorize]
+        public async Task<IActionResult> ChangeSubscription(int id)
+        {
+            var currentUser = await _userManager.GetUserAsync(User);
 
+            if (currentUser == null)
+            {
+                return Problem("No User Found");
+            }
+
+            int newSubscriptionId = id;
+
+            if (currentUser.SubscriptionId == newSubscriptionId)
+            {
+                TempData["ErrorMessage"] = "Dit is je huidige abbonement. Kies een ander abbonement.";
+            }
+
+            currentUser.SubscriptionId = newSubscriptionId;
+            await _context.SaveChangesAsync();
+
+            TempData["SuccessMessage"] = "Abbonement succesvol gekozen of veranderd";
+            return RedirectToAction(nameof(Index));
+        }
     }
 }
