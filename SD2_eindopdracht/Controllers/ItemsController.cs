@@ -28,7 +28,12 @@ namespace SD2_eindopdracht.Controllers
         // GET: Items
         public async Task<IActionResult> Index()
         {
-              return _context.Item != null ? 
+            if (TempData.ContainsKey("ErrorMessage"))
+            {
+                ViewBag.ErrorMessage = TempData["ErrorMessage"].ToString(); //if tempdata has an error message, show in view
+            }
+
+            return _context.Item != null ? 
                           View(await _context.Item.ToListAsync()) :
                           Problem("Entity set 'ApplicationDbContext.Item'  is null.");
         }
@@ -204,7 +209,7 @@ namespace SD2_eindopdracht.Controllers
 
                     if (currentUser.SubscriptionId == 2 && Count >= 10) //if user has "Budget" subscription, max amount of items to be loaned out is 10. If over max ammount, return error
                     {
-                        return Problem("Maximale items is 10");
+                        TempData["ErrorMessage"] = "Maximale items voor dit abbonement is 10. Verwijder een item of verander je abbonement";
                     }
                     else //if user has other subscription or budget subscription and 10 or less items, add to table userItems
                     {
@@ -217,7 +222,7 @@ namespace SD2_eindopdracht.Controllers
                 }
                 else
                 {
-                    return Problem("Item is niet op voorraad");
+                    TempData["ErrorMessage"] = "Item is niet op voorraad"; //error if user is somehow able to reserve item 
                 }
             }
 

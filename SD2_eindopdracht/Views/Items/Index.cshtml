@@ -4,6 +4,13 @@
     ViewData["Title"] = "Index";
 }
 
+@if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+{
+    <div class="alert alert-danger">
+        @ViewBag.ErrorMessage
+    </div>
+}
+
 <h1>Index</h1>
 
 <p>
@@ -52,7 +59,7 @@
                         <a asp-action="Edit" asp-route-id="@item.Id">Edit</a>
                         <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
                     }
-                    @if (User.Identity.IsAuthenticated && item.Stock > 0)
+                    @if (User.Identity.IsAuthenticated && item.Stock > 0) //Only show ability to reservate item if item is in stock
                     {
                         <a asp-action="Reserve" asp-route-id="@item.Id">Reserveer Item</a>
                     }

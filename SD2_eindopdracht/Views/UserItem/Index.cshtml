@@ -5,10 +5,13 @@
     decimal TotalCost = 0;
 }
 
-@if (ViewBag.Message != null)
+@if (!string.IsNullOrEmpty(ViewBag.Message))
 {
-    <div class="alert alert-success">@ViewBag.Message</div>
+    <div class="alert alert-success">
+        @ViewBag.Message
+    </div>
 }
+
 
 <h1>Reserved Items</h1>
 

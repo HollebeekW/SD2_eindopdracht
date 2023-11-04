@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNet.Identity;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SD2_eindopdracht.Data;
@@ -7,6 +8,7 @@ using System.Drawing.Text;
 
 namespace SD2_eindopdracht.Controllers
 {
+    [Authorize]
     public class UserItemController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -62,8 +64,10 @@ namespace SD2_eindopdracht.Controllers
                 return cost * quantity; //total price = amount of items times cost
             }
 
-            string message = TempData["Message"] as string; //message to be added to view
-            ViewBag.Message = message;
+            if (TempData.ContainsKey("Message"))
+            {
+                ViewBag.Message = TempData["Message"].ToString();
+            }
 
             return View(reservedItems);
         }
@@ -123,7 +127,7 @@ namespace SD2_eindopdracht.Controllers
                 _context.SaveChanges();
             }
 
-            TempData["Message"] = "Items sucessfully ordered"; //message to be delivered back to index
+            TempData["Message"] = "Items gereserveerd!"; //message to be delivered back to index
 
             return RedirectToAction("Index");
         }
