@@ -82,6 +82,11 @@
                         <a asp-action="Edit" asp-route-id="@item.Id">Edit</a>
                         <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
                     }
+
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <a asp-action="ChangeSubscription" asp-route-id="@item.Id" class="btn btn-primary">kies of verander abbonement</a>
+                    }
                 </td>
         </tr>
 }

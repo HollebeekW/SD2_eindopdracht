@@ -167,5 +167,7 @@ namespace SD2_eindopdracht.Controllers
         {
           return (_context.Subscription?.Any(e => e.Id == id)).GetValueOrDefault();
         }
+
+
     }
 }
