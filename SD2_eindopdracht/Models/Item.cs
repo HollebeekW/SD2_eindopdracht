@@ -27,5 +27,8 @@ namespace SD2_eindopdracht.Models
 
         public int? UserId { get; set; }
         public List<ApplicationUser>? Users { get; set; }
+
+        public Author Author { get; set; }
+        public Category Category { get; set; }
     }
 }

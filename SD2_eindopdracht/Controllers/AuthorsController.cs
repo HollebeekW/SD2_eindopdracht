@@ -157,11 +157,10 @@ namespace SD2_eindopdracht.Controllers
             {
                 _context.Author.Remove(author);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-
         private bool AuthorExists(int id)
         {
           return (_context.Author?.Any(e => e.Id == id)).GetValueOrDefault();

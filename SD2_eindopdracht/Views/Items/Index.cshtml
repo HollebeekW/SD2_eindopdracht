@@ -18,6 +18,38 @@
     {
         <a asp-action="Create">Create New</a>
     }
+    <div class="d-flex mb-3">
+        <div class="mr-2">
+            <a asp-action="Sort" asp-route-sortBy="Title" class="btn btn-primary">Sort by Title</a>
+        </div>
+        <div class="mr-2">
+            <a asp-action="Sort" asp-route-sortBy="Category" class="btn btn-primary">Sort by Category</a>
+        </div>
+        <div class="mr-2">
+            <a asp-action="Sort" asp-route-sortBy="AuthorFirstName" class="btn btn-primary">Sort by Authors' first name</a>
+        </div>
+        <div class="mr-2">
+            <a asp-action="Sort" asp-route-sortBy="AuthorLastName" class="btn btn-primary">Sort by Authors' last name</a>
+        </div>
+        <div class="mr-2">
+            <a asp-action="Sort" asp-route-sortBy="YearOfRelease" class="btn btn-primary">Sort by Release Year</a>
+        </div>
+        <div class="mr-2">
+            <a asp-action="Sort" asp-route-sortBy="Stock" class="btn btn-primary">Sort by Stock</a>
+        </div>
+        <div class="mr-2">
+            <a asp-action="Sort" asp-route-sortBy="NoZeroStock" class="btn btn-primary">Hide Unavailable Items</a>
+        </div>
+    </div>
+    <form asp-action="Search" asp-controller="Items" method="get">
+        <div class="input-group">
+            <input type="text" name="query" class="form-control" placeholder="Search for name, category, year or author">
+            <div class="input-group-append">
+                <button type="submit" class="btn btn-primary">Search</button>
+            </div>
+        </div>
+    </form>
+
 </p>
 <table class="table">
     <thead>
@@ -27,6 +59,15 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Category)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Author.FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Author.LastName)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.YearOfRelease)
@@ -45,6 +86,15 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Category.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Author.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Author.LastName)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.YearOfRelease)
