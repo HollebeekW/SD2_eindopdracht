@@ -138,6 +138,7 @@ namespace SD2_eindopdracht.Data
                 .RuleFor(u => u.Email, f => f.Internet.Email())
                 .RuleFor(u => u.NormalizedEmail, (f, u) => u.Email.ToUpper())
                 .RuleFor(u => u.PhoneNumber, f => f.Phone.PhoneNumber())
+                .RuleFor(u => u.Fine, f => Math.Round(f.Random.Decimal(0,10), 1))
                 .RuleFor(u => u.Age, f => f.Random.Number(12, 80))
                 .RuleFor(u => u.SubscriptionId, (f, u) =>
                 {

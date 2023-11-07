@@ -12,6 +12,7 @@
             <th>Email</th>
             <th>Role(s)</th>
             <th>Subscription type</th>
+            <th>Fine</th>
         </tr>
     </thead>
     <tbody>
@@ -33,7 +34,10 @@
                     
                 </td>
                 <td>
-                    <a asp-action="Details" asp-route-id="@item.User.Id">Details</a>
+                    @item.User.Fine
+                    <a asp-action="RemoveFine" asp-route-id="@item.User.Id">Remove Fine</a>
+                </td>
+                <td>
                     @if (User.IsInRole("Admin"))
                     {
                         <a asp-action="Edit" asp-route-id="@item.User.Id">Edit</a>
