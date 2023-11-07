@@ -33,9 +33,14 @@ namespace SD2_eindopdracht.Controllers
                 ViewBag.ErrorMessage = TempData["ErrorMessage"].ToString(); //if tempdata has an error message, show in view
             }
 
-            return _context.Item != null ? 
-                          View(await _context.Item.ToListAsync()) :
-                          Problem("Entity set 'ApplicationDbContext.Item'  is null.");
+            var items = await _context.Item
+                .Include(i => i.Author)
+                .Include(i => i.Category)
+                .ToListAsync();
+
+            return items != null
+                ? View(items)
+                : Problem("Entity set 'ApplicationDbContext.Item' is null.");
         }
 
         // GET: Items/Details/5
@@ -227,6 +232,68 @@ namespace SD2_eindopdracht.Controllers
             }
 
             return RedirectToAction(nameof(Index));
+        }
+
+        public async Task<IActionResult> Sort(string sortBy)
+        {
+            IQueryable<Item> items = _context.Item
+                .Include(i => i.Author)
+                .Include(i => i.Category);
+
+            switch(sortBy)
+            {
+                case "Title":
+                    items = items.OrderBy(i => i.Title);
+                    break;
+
+                case "YearOfRelease":
+                    items = items.OrderByDescending(i => i.YearOfRelease);
+                    break;
+
+                case "Category":
+                    items = items.OrderBy(i => i.Category.Name);
+                    break;
+
+                case "AuthorFirstName":
+                    items = items.OrderBy(i => i.Author.FirstName);
+                    break;
+
+                case "AuthorLastName":
+                    items = items.OrderBy(i => i.Author.LastName);
+                    break;
+
+                case "Stock":
+                    items = items.OrderByDescending(i => i.Stock);
+                    break;
+
+                case "NoZeroStock":
+                    items = items.Where(i => i.Stock != 0);
+                    break;
+
+                default:
+                    items = items.OrderBy(i => i.Title);
+                    break;
+            }
+
+            var sortedItems = await items.ToListAsync();
+            return View("Index", sortedItems);
+        }
+
+        public async Task<IActionResult> Search(string query)
+        {
+            var items = _context.Item
+                .Include(i => i.Author)
+                .Include(i => i.Category);
+
+            var result = await items.
+                Where(i =>
+                i.Title.Contains(query) ||
+                i.YearOfRelease.ToString().Contains(query) ||
+                i.Category.Name.Contains(query) ||
+                i.Author.FirstName.Contains(query) ||
+                i.Author.LastName.Contains(query))
+                .ToListAsync();
+            return View("Index", result);
         }
     }
 }
