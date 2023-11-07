@@ -30,6 +30,11 @@ namespace SD2_eindopdracht.Controllers
                 return Problem("Niet ingelogd");
             }
 
+            if (currentUser.IsBlocked == true)
+            {
+                return Problem("Gebruiker is geblokkeerd");
+            }
+
             var subscriptionId = currentUser.SubscriptionId ?? 0; //check subscription Id
 
             if (subscriptionId == null)
