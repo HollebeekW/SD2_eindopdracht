@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SD2_eindopdracht.Models;
+using System.Runtime.CompilerServices;
 
 namespace SD2_eindopdracht.Controllers
 {
@@ -177,6 +178,40 @@ namespace SD2_eindopdracht.Controllers
                 await _userManager.UpdateAsync(user);
             }
 
+            return RedirectToAction("Index");
+        }
+
+        public async Task<IActionResult> BlockUser(string id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var user = await _userManager.FindByIdAsync(id);
+
+            if (user != null && user.IsBlocked == false)
+            {
+                user.IsBlocked = true;
+                await _userManager.UpdateAsync(user);
+            }
+            return RedirectToAction("Index");
+        }
+
+        public async Task<IActionResult> UnblockUser(string id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var user = await _userManager.FindByIdAsync(id);
+
+            if (user != null && user.IsBlocked == true)
+            {
+                user.IsBlocked = false;
+                await _userManager.UpdateAsync(user);
+            }
             return RedirectToAction("Index");
         }
     }

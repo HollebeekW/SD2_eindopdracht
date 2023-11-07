@@ -13,6 +13,7 @@
             <th>Role(s)</th>
             <th>Subscription type</th>
             <th>Fine</th>
+            <th>User Blocked</th>
         </tr>
     </thead>
     <tbody>
@@ -36,6 +37,17 @@
                 <td>
                     @item.User.Fine
                     <a asp-action="RemoveFine" asp-route-id="@item.User.Id">Remove Fine</a>
+                </td>
+                <td>
+                    @item.User.IsBlocked
+                    @if(item.User.IsBlocked == false)
+                    {
+                        <a asp-action="BlockUser" asp-route-id="@item.User.Id">Block User</a>
+                    }
+                    @if (item.User.IsBlocked == true)
+                    {
+                        <a asp-action="UnBlockUser" asp-route-id="@item.User.Id">Unblock User</a>
+                    }
                 </td>
                 <td>
                     @if (User.IsInRole("Admin"))
