@@ -14,5 +14,7 @@ namespace SD2_eindopdracht.Models
 
         [Range(0, double.MaxValue)]
         public decimal Fine { get; set; }
+
+        public bool IsBlocked { get; set; }
     }
 }
