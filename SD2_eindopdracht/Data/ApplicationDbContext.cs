@@ -21,7 +21,6 @@ namespace SD2_eindopdracht.Data
         public DbSet<Category> Category { get; set; }
         public DbSet<Item> Item { get; set; }
         public DbSet<Subscription> Subscription { get; set; }
-
         public DbSet<UserItem> UserItem { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)

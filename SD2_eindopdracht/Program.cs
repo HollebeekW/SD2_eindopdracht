@@ -9,6 +9,8 @@ using SD2_eindopdracht.Data;
 using SD2_eindopdracht.Models;
 using Microsoft.IdentityModel.Tokens;
 
+//Wesley Hollebeek S1117975
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -69,7 +71,7 @@ using (var scope = app.Services.CreateScope())
 {
     var userManager = scope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
 
-    var password = "Pass1!";
+    var password = "Pass1!"; // can be changed 
 
     if (await userManager.FindByEmailAsync("admin@email.com") == null)
     {
