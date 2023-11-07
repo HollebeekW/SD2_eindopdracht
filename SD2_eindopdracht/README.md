@@ -5,6 +5,7 @@
 - Er worden standaard drie account meegeleverd: admin@email.com, employee@email.com en user@email.com. Elk met het wachtwoord "Pass1!". Dit wachtwoord is evnetueel te veranderen in Program.cs, op line 74.
 - Het meegeleverde user-account heeft wel een abbonement toegewezen (met Id 2), de twee anderen en nieuwe geregisteerde accounts niet.
 - Ik had zelf errors in de UserItemController.cs, de applicatie builde en deed het verder wel gewoon volledig.
+- De branch "Testing-DevOps" is irrelevant voor Software Development 2. Ik gebruik dit project ook voor de unit- en end-to-end testen voor het vak DevOps.
 
 ### Data
 Er wordt (fake) data geseed, de code hiervoor staat deels in /Data/Seeder.cs en in Program.cs:
