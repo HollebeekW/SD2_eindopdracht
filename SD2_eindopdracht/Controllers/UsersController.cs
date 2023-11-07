@@ -161,5 +161,23 @@ namespace SD2_eindopdracht.Controllers
 
             return RedirectToAction("Edit", new { id = id });
         }
+
+        [Authorize(Roles = "Admin, Employee")]
+        public async Task<IActionResult> RemoveFine(string id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var user = await _userManager.FindByIdAsync(id);
+            if (user != null)
+            {
+                user.Fine = 0;
+                await _userManager.UpdateAsync(user);
+            }
+
+            return RedirectToAction("Index");
+        }
     }
 }

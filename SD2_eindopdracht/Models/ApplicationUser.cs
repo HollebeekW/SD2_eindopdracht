@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using System.ComponentModel.DataAnnotations;
 
 namespace SD2_eindopdracht.Models
 {
@@ -7,6 +8,11 @@ namespace SD2_eindopdracht.Models
         public int? SubscriptionId { get; set; }
         public Subscription Subscription { get; set; }
         public List<Item>? Items { get; set; }
+
+        [Range(0, int.MaxValue)]
         public int Age { get; set; }
+
+        [Range(0, double.MaxValue)]
+        public decimal Fine { get; set; }
     }
 }
