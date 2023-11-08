@@ -61,11 +61,17 @@ namespace SD2_eindopdracht.Controllers
 
             decimal CalculatePrice(int subscriptionId, int quantity)
             {
+                //get subscription that belongs to user
+                var userSubscription = _context.Subscription
+                    .SingleOrDefault(s => s.Id == currentUser.SubscriptionId);
+
+                //default price is 0
                 decimal cost = 0;
 
-                if (subscriptionId != 4) //if subscription type is anything other than "Top", price per item is 25 cents
+                //if value for price is anything other than 0, get value from database
+                if (userSubscription.ReservationPrice != 0) 
                 {
-                    cost = 0.25m;
+                    cost = userSubscription.ReservationPrice;
                 }
 
                 return cost * quantity; //total price = amount of items times cost

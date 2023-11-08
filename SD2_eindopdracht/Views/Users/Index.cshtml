@@ -38,24 +38,26 @@
                     @item.User.Fine
                     <a asp-action="RemoveFine" asp-route-id="@item.User.Id">Remove Fine</a>
                 </td>
-                <td>
-                    @item.User.IsBlocked
-                    @if(item.User.IsBlocked == false)
-                    {
-                        <a asp-action="BlockUser" asp-route-id="@item.User.Id">Block User</a>
-                    }
-                    @if (item.User.IsBlocked == true)
-                    {
-                        <a asp-action="UnBlockUser" asp-route-id="@item.User.Id">Unblock User</a>
-                    }
-                </td>
-                <td>
-                    @if (User.IsInRole("Admin"))
-                    {
+                @if (User.IsInRole("Admin"))
+                {
+
+
+                    <td>
+                        @item.User.IsBlocked
+                        @if (item.User.IsBlocked == false)
+                        {
+                            <a asp-action="BlockUser" asp-route-id="@item.User.Id">Block User</a>
+                        }
+                        @if (item.User.IsBlocked == true)
+                        {
+                            <a asp-action="UnBlockUser" asp-route-id="@item.User.Id">Unblock User</a>
+                        }
+                    </td>
+                    <td>
                         <a asp-action="Edit" asp-route-id="@item.User.Id">Edit</a>
                         <a asp-action="Delete" asp-route-id="@item.User.Id">Delete</a>
-                    }
                 </td>
+                }
             </tr>
         }
     </tbody>

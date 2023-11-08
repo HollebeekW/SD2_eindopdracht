@@ -68,7 +68,7 @@ namespace SD2_eindopdracht.Data
                     ItemsAtOnce = 10,
                     LoanPeriod = 3,
                     Extensions = 1,
-                    ReservationPrice = 0.35m,
+                    ReservationPrice = 0.25m,
                     DailyFine = 0.30m,
                     SubscriptionPrice = 1m
                 },

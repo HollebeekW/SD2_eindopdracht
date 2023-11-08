@@ -1,23 +1,42 @@
 # Software Development 2 Eindopdracht
 ## Wesley Hollebeek, S1117975
 
+---
+
 ### Belangrijk
-- Er worden standaard drie account meegeleverd: admin@email.com, employee@email.com en user@email.com. Elk met het wachtwoord "Pass1!". Dit wachtwoord is evnetueel te veranderen in Program.cs, op line 74.
-- Het meegeleverde user-account heeft wel een abbonement toegewezen (met Id 2), de twee anderen en nieuwe geregisteerde accounts niet.
-- Ik had zelf errors in de UserItemController.cs, de applicatie builde en deed het verder wel gewoon volledig.
+- Er worden standaard drie account meegeleverd: <code>admin@email.com</code>, <code>employee@email.com</code> en <code>user@email.com</code>. Elk met het wachtwoord <code>Pass1!</code>.
+- Het meegeleverde user-account heeft wel een abbonement toegewezen (Budget), de twee anderen en nieuwe geregisteerde accounts niet
+
+---
 
 ### Data
-Er wordt (fake) data geseed, de code hiervoor staat deels in /Data/Seeder.cs en in Program.cs:
-- De standaard categorieën en abbonement typen worden vanuit al gemaakte data geseed
-- Auteurs, users en items worden d.m.v. fake data (met gebruik van Bogus) geseed.
-- De rollen en de drie standaard users worden gemaakt in de Program.cs
-- Standaard worden er 20 fake auteurs, items en gebruikers gemaakt. Deze aantallen zijn te veranderen in Data/ApplicationDbContext.cs, op line 35. Er moet dan wel een nieuwe Migration aangemaakt worden, de meegeleverde migration heeft alle seeding data al inbegrepen.
+Er wordt een migration meegeleverd, met daarin:
+- 100 users, 100 items en 20 auteurs, gefaket met gebruik van Bogus
+- De vier abbonementen zoals op Brightspace staat: Jeugd, Budget, Basis en Top
+- vijf categorieën: Boek, CD, Game, DVD en Blu-Ray
+- 
+De standaard accounts en rollen worden beide gemaakt in de <code>Program.cs</code>. Ik hanteerde qua rollen zelf:
+- Bezoeker = User
+- Medewerker = Employee
+- Beheerder = Admin
 
-### Feautures
-- Account aanmaken, d.m.v. Microsoft's Asp.net Identity framework
-- Volledige CRUD op auteurs, items, categorieën, abbonement types
-- Rol-gebaseerde authorisatie
-- Admins kunnen gebruikers verwijderen en rollen van gebruiker weghalen en toevoegen
-- Items kunnen gereserveerd worden per gebruiker. Hierbij wordt de voorraad van het item geüpdated, ook met het verwijderen uit de "winkelmand"
-- Maximumitems voor "Budget" abbonement (Id 2) kan niet worden overschreden
-- De prijs voor het reserveren wordt getoont en geüpdatet wanneer er een item wordt toegevoegd of verwijderd
+---
+
+### Features
+- Volledige CRUD op auteurs, items, categorieën en abbonementen, op basis van rollen:
+	- Bezoekers (users) kunnen alleen alles inzien
+	- Medewerkers (employees) kunnen ook alles bewerken, de itemvoorraad beheren en boetes van bezoekers inzien en verwijderen
+	- Beheerders (admins) kunnen ook alles verwijderen, gebruikers een rol geven of verwijderen en gebruikers (de-)blokkeren
+- Gebruikers kunnen een abbonement kiezen en verwijderen
+- Gebruikers kunnen items reserveren, hierbij wordt ook gelet op:
+	- Itemvoorraad, items die niet op voorraad zijn kunnen niet worden gereserveerd
+	- Maximum aantal items dat per keer te reserveren is per abbonement. Dit kan niet overschreden worden
+	- De prijs, dit wordt per item per abbonement berekend
+- Er kan gesorteerd worden bij items op:
+	- Item naam
+	- Categorie
+	- Auteur voornaam
+	- Auteur achternaam
+	- Jaar van uitgeven
+	- Voorraad
+- Als laatste kan er bij items gezocht worden op alle bovenstaande termen

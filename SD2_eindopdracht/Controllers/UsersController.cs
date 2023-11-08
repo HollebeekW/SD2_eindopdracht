@@ -212,6 +212,7 @@ namespace SD2_eindopdracht.Controllers
             return RedirectToAction("Index");
         }
 
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> BlockUser(string id)
         {
             if (id == null)
@@ -236,6 +237,7 @@ namespace SD2_eindopdracht.Controllers
             return RedirectToAction("Index");
         }
 
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> UnblockUser(string id)
         {
             if (id == null)
