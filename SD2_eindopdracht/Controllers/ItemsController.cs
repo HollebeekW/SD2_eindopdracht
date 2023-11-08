@@ -211,7 +211,10 @@ namespace SD2_eindopdracht.Controllers
 
             }
 
-            if (currentUser.SubscriptionId == null)
+            var userSubscription = await _context.Subscription
+                .SingleOrDefaultAsync(s => s.Id == currentUser.SubscriptionId); //get users' subscription type
+
+            if (userSubscription == null)
             {
                 TempData["ErrorMessage"] = "No subscription found, item was not added";
                 return RedirectToAction("Index");
@@ -225,12 +228,12 @@ namespace SD2_eindopdracht.Controllers
                     ItemId = item.Id,
                 };
 
-                int Count = await _context.UserItem.CountAsync(ui => ui.UserId == currentUser.Id); //count amount of items added by user
+                int count = await _context.UserItem.CountAsync(ui => ui.UserId == currentUser.Id); //count amount of items added by user
+                int maxItems = userSubscription.ItemsAtOnce.Value; //max items to be loaned out at a time
 
-                if (currentUser.SubscriptionId == 2 && Count >= 10) //if user has "Budget" subscription, max amount of items to be loaned out is 10. If over max ammount, return error
-                //Hard coded nummer, ik kreeg het niet werkend om het aantal uit de database te halen d.m.v. int maxValue = currentUser.Subscription.ItemsAtOnce.Value;
+                if (maxItems != null && count >= maxItems)
                 {
-                    TempData["ErrorMessage"] = "Max amount of items for this subscription is 10.";
+                    TempData["ErrorMessage"] = $"Max amount of items for this subscription is {maxItems}.";
                 }
                 else //if user has other subscription or budget subscription and 10 or less items, add to table userItems
                 {

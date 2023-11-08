@@ -39,6 +39,9 @@
                 @Html.DisplayNameFor(model => model.MaxAge)
             </th>
             <th>
+                @Html.DisplayNameFor(model => model.ItemsAtOnce)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.YearlyItems)
             </th>
             <th>
@@ -70,6 +73,9 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.MaxAge)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ItemsAtOnce)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.YearlyItems)
