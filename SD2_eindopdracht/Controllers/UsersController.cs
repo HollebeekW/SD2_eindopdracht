@@ -8,7 +8,7 @@ using System.Runtime.CompilerServices;
 
 namespace SD2_eindopdracht.Controllers
 {
-    [Authorize(Roles = "Admin")]
+    [Authorize(Roles = "Admin, Employee")]
     public class UsersController : Controller
     {
         private readonly Microsoft.AspNetCore.Identity.UserManager<ApplicationUser> _userManager;
@@ -41,6 +41,7 @@ namespace SD2_eindopdracht.Controllers
             return View (usersWithRoles);
         }
 
+        [Authorize(Roles = "Admin")]
         //Delete view
         public async Task<IActionResult> Delete(string id)
         {
@@ -59,6 +60,7 @@ namespace SD2_eindopdracht.Controllers
             return View(user);
         }
 
+        [Authorize(Roles = "Admin")]
         //Delete action
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
@@ -81,13 +83,21 @@ namespace SD2_eindopdracht.Controllers
                 }
                 else
                 {
-                    await _userManager.DeleteAsync(user);
+                    try
+                    {
+                        await _userManager.DeleteAsync(user);
+                    } catch (Exception ex)
+                    {
+                        return Problem(ex.Message);
+                    }
+                    
                 }
             }
 
             return RedirectToAction(nameof(Index));
         }
 
+        [Authorize(Roles = "Admin")]
         //Edit view
         public async Task<IActionResult> Edit(string id)
         {
@@ -113,6 +123,7 @@ namespace SD2_eindopdracht.Controllers
             return View();
         }
 
+        [Authorize(Roles = "Admin")]
         //Add Role
         [HttpPost, ActionName("AddRole")]
         [ValidateAntiForgeryToken]
@@ -132,12 +143,20 @@ namespace SD2_eindopdracht.Controllers
 
             if (!string.IsNullOrEmpty(selectedRole))
             {
-                await _userManager.AddToRoleAsync(user, selectedRole);
+                try
+                {
+                    await _userManager.AddToRoleAsync(user, selectedRole);
+                } catch (Exception ex)
+                {
+                    return Problem(ex.Message);
+                }
+                
             }
 
             return RedirectToAction("Edit", new { id = id });
         }
 
+        [Authorize(Roles = "Admin")]
         //Delete Role
         [HttpPost, ActionName("RemoveRole")]
         [ValidateAntiForgeryToken]
@@ -157,7 +176,13 @@ namespace SD2_eindopdracht.Controllers
 
             if (!string.IsNullOrEmpty(userRole))
             {
-                await _userManager.RemoveFromRoleAsync(user, userRole);
+                try
+                {
+                    await _userManager.RemoveFromRoleAsync(user, userRole);
+                } catch (Exception ex)
+                {
+                    return Problem(ex.Message);
+                }
             }
 
             return RedirectToAction("Edit", new { id = id });
@@ -174,8 +199,14 @@ namespace SD2_eindopdracht.Controllers
             var user = await _userManager.FindByIdAsync(id);
             if (user != null)
             {
-                user.Fine = 0;
-                await _userManager.UpdateAsync(user);
+                try
+                {
+                    user.Fine = 0;
+                    await _userManager.UpdateAsync(user);
+                } catch (Exception ex)
+                {
+                    return Problem(ex.Message);
+                }
             }
 
             return RedirectToAction("Index");
@@ -192,8 +223,15 @@ namespace SD2_eindopdracht.Controllers
 
             if (user != null && user.IsBlocked == false)
             {
-                user.IsBlocked = true;
-                await _userManager.UpdateAsync(user);
+                try
+                {
+                    user.IsBlocked = true;
+                    await _userManager.UpdateAsync(user);
+                } catch (Exception ex)
+                {
+                    return Problem(ex.Message);
+                }
+                
             }
             return RedirectToAction("Index");
         }
@@ -209,8 +247,15 @@ namespace SD2_eindopdracht.Controllers
 
             if (user != null && user.IsBlocked == true)
             {
-                user.IsBlocked = false;
-                await _userManager.UpdateAsync(user);
+                try
+                {
+                    user.IsBlocked = false;
+                    await _userManager.UpdateAsync(user);
+                } catch(Exception ex)
+                {
+                    return Problem(ex.Message);
+                }
+                
             }
             return RedirectToAction("Index");
         }

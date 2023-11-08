@@ -32,14 +32,16 @@ namespace SD2_eindopdracht.Controllers
 
             if (currentUser.IsBlocked == true)
             {
-                return Problem("Gebruiker is geblokkeerd");
+                TempData["ErrorMessage"] = "User is blocked,";
+                return RedirectToAction("Index", "Items");
             }
 
             var subscriptionId = currentUser.SubscriptionId ?? 0; //check subscription Id
 
-            if (subscriptionId == null)
+            if (subscriptionId == 0)
             {
-                return Problem("Geen abbonement gekozen"); //return error if empty (no subscription linked to user)
+                TempData["ErrorMessage"] = "No Subscription found"; //return error if empty (no subscription linked to user)
+                return RedirectToAction("Index", "Items");
             }
 
             var userItems = _context.UserItem
@@ -73,6 +75,10 @@ namespace SD2_eindopdracht.Controllers
             {
                 ViewBag.Message = TempData["Message"].ToString();
             }
+            if (TempData.ContainsKey("ErrorMessage"))
+            {
+                ViewBag.ErrorMessage = TempData["ErrorMessage"].ToString();
+            }
 
             return View(reservedItems);
         }
@@ -103,10 +109,18 @@ namespace SD2_eindopdracht.Controllers
             {
                 return Problem("Item not found");
             }
-            item.Stock++; //add one to stock of deleted item
 
-            _context.UserItem.Remove(userItem);
-            _context.SaveChanges();
+            try
+            {
+                item.Stock++; //add one to stock of deleted item
+
+                _context.UserItem.Remove(userItem);
+                _context.SaveChanges();
+            } catch (Exception ex)
+            {
+                Problem(ex.Message);
+            }
+            
 
             return RedirectToAction("Index");
         }
@@ -128,8 +142,15 @@ namespace SD2_eindopdracht.Controllers
 
             foreach (var item in userItems )
             {
-                _context.UserItem.Remove(item);
-                _context.SaveChanges();
+                try
+                {
+                    _context.UserItem.Remove(item);
+                    _context.SaveChanges();
+                } catch (Exception ex)
+                {
+                    Problem(ex.Message);
+                }
+                
             }
 
             TempData["Message"] = "Items gereserveerd!"; //message to be delivered back to index

@@ -194,13 +194,50 @@ namespace SD2_eindopdracht.Controllers
 
             if (currentUser.SubscriptionId == newSubscriptionId)
             {
-                TempData["ErrorMessage"] = "Dit is je huidige abbonement. Kies een ander abbonement.";
+                TempData["ErrorMessage"] = "You already have this subscription, please choose another one";
+                return RedirectToAction(nameof(Index));
             }
 
-            currentUser.SubscriptionId = newSubscriptionId;
-            await _context.SaveChangesAsync();
+            try
+            {
+                currentUser.SubscriptionId = newSubscriptionId;
+                await _context.SaveChangesAsync();
+            } catch (Exception ex)
+            {
+                return Problem(ex.Message);
+            }
+            
 
-            TempData["SuccessMessage"] = "Abbonement succesvol gekozen of veranderd";
+            TempData["SuccessMessage"] = "Successfully changed subscription type";
+            return RedirectToAction(nameof(Index));
+        }
+
+        [Authorize]
+        public async Task<IActionResult> StopSubscription()
+        {
+            var currentUser = await _userManager.GetUserAsync(User);
+
+            if (currentUser == null)
+            {
+                return Problem("No User Found");
+            }
+
+            if (currentUser.SubscriptionId == 0)
+            {
+                TempData["ErrorMessage"] = "Choose a subscription first";
+                return RedirectToAction(nameof(Index));
+            }
+
+            try
+            {
+                currentUser.SubscriptionId = null;
+                await _context.SaveChangesAsync();
+                TempData["SuccessMessage"] = "Subscription successfully stopped";
+            } catch(Exception ex)
+            {
+                return Problem(ex.Message);
+            }
+            
             return RedirectToAction(nameof(Index));
         }
     }
