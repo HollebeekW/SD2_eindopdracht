@@ -99,10 +99,13 @@
 
                     @if (User.Identity.IsAuthenticated)
                     {
-                        <a asp-action="ChangeSubscription" asp-route-id="@item.Id" class="btn btn-primary">kies of verander abbonement</a>
+                        <a asp-action="ChangeSubscription" asp-route-id="@item.Id" class="btn btn-primary">Choose or Change</a>
                     }
                 </td>
         </tr>
 }
     </tbody>
 </table>
+<div>
+    <a asp-action="StopSubscription">Stop subscription</a>
+</div>

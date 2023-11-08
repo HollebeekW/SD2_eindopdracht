@@ -200,37 +200,49 @@ namespace SD2_eindopdracht.Controllers
 
             var item = await _context.Item.FindAsync(id); //get item id
 
-            if (item != null && currentUser != null)
+            if (item == null || currentUser == null)
             {
-                if (item.Stock >  0) //check if item is in stock
-                {
-                    var userItem = new UserItem
-                    {
-                        UserId = currentUser.Id.ToString(),
-                        ItemId = item.Id,
-                    };
-
-                    int Count = await _context.UserItem.CountAsync(ui => ui.UserId == currentUser.Id); //count amount of items added by user
-
-                    if (currentUser.SubscriptionId == 2 && Count >= 10) //if user has "Budget" subscription, max amount of items to be loaned out is 10. If over max ammount, return error
-                    {
-                        TempData["ErrorMessage"] = "Maximale items voor dit abbonement is 10. Verwijder een item of verander je abbonement";
-                    }
-                    else //if user has other subscription or budget subscription and 10 or less items, add to table userItems
-                    {
-                        item.Stock--;
-                        _context.UserItem.Add(userItem);
-                        await _context.SaveChangesAsync();
-                    }
-                    
-                    
-                }
-                else
-                {
-                    TempData["ErrorMessage"] = "Item is niet op voorraad"; //error if user is somehow able to reserve item 
-                }
+                return Problem("Item or user not found");
             }
 
+            if (item.Stock <= 0) //check if item is in stock
+            {
+                return Problem("Item not in stock"); //problem instead of redirect with tempdata, because link to items without stock is disabled in view. Normal users shouldn't have access to it.
+
+            }
+
+            if (currentUser.SubscriptionId == null)
+            {
+                TempData["ErrorMessage"] = "No subscription found, item was not added";
+                return RedirectToAction("Index");
+            }
+
+            try
+            {
+                var userItem = new UserItem
+                {
+                    UserId = currentUser.Id.ToString(),
+                    ItemId = item.Id,
+                };
+
+                int Count = await _context.UserItem.CountAsync(ui => ui.UserId == currentUser.Id); //count amount of items added by user
+
+                if (currentUser.SubscriptionId == 2 && Count >= 10) //if user has "Budget" subscription, max amount of items to be loaned out is 10. If over max ammount, return error
+                //Hard coded nummer, ik kreeg het niet werkend om het aantal uit de database te halen d.m.v. int maxValue = currentUser.Subscription.ItemsAtOnce.Value;
+                {
+                    TempData["ErrorMessage"] = "Max amount of items for this subscription is 10.";
+                }
+                else //if user has other subscription or budget subscription and 10 or less items, add to table userItems
+                {
+                    item.Stock--;
+                    _context.UserItem.Add(userItem);
+                    await _context.SaveChangesAsync();
+                }
+            } catch (Exception ex)
+            {
+                return Problem(ex.Message);
+            }
+            
             return RedirectToAction(nameof(Index));
         }
 

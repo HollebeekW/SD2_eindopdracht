@@ -124,7 +124,7 @@ namespace SD2_eindopdracht.Controllers
         }
 
         // GET: Authors/Delete/5
-        [Authorize(Roles = "Admin,Employee")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Author == null)
@@ -143,7 +143,7 @@ namespace SD2_eindopdracht.Controllers
         }
 
         // POST: Authors/Delete/5
-        [Authorize(Roles = "Admin,Employee")]
+        [Authorize(Roles = "Admin")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)

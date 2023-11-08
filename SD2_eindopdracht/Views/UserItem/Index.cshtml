@@ -12,6 +12,13 @@
     </div>
 }
 
+@if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+{
+    <div class="alert alert-danger">
+        @ViewBag.ErrorMessage
+    </div>
+}
+
 
 <h1>Reserved Items</h1>
 
