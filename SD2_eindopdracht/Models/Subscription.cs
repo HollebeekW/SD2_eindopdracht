@@ -34,6 +34,6 @@ namespace SD2_eindopdracht.Models
         [Required, Range(0, double.MaxValue)]
         public decimal SubscriptionPrice { get; set; }
 
-        public List<ApplicationUser> Users { get; set; }
+        public List<ApplicationUser>? Users { get; set; }
     }
 }

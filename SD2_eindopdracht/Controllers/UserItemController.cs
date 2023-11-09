@@ -159,7 +159,7 @@ namespace SD2_eindopdracht.Controllers
                 
             }
 
-            TempData["Message"] = "Items gereserveerd!"; //message to be delivered back to index
+            TempData["Message"] = "Items reserved!"; //message to be delivered back to index
 
             return RedirectToAction("Index");
         }

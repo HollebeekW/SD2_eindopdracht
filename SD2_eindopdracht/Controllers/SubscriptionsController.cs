@@ -72,7 +72,7 @@ namespace SD2_eindopdracht.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin,Employee")]
-        public async Task<IActionResult> Create([Bind("Id,Name,MinAge,MaxAge,YearlyItems,LoanPeriod,Extensions,ReservationPrice,DailyFine,SubscriptionPrice")] Subscription subscription)
+        public async Task<IActionResult> Create([Bind("Id,Name,MinAge,MaxAge,ItemsAtOnce,YearlyItems,LoanPeriod,Extensions,ReservationPrice,DailyFine,SubscriptionPrice")] Subscription subscription)
         {
             if (ModelState.IsValid)
             {
@@ -106,7 +106,7 @@ namespace SD2_eindopdracht.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin,Employee")]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,MinAge,MaxAge,YearlyItems,LoanPeriod,Extensions,ReservationPrice,DailyFine,SubscriptionPrice")] Subscription subscription)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,MinAge,MaxAge,ItemsAtOnce,YearlyItems,LoanPeriod,Extensions,ReservationPrice,DailyFine,SubscriptionPrice")] Subscription subscription)
         {
             if (id != subscription.Id)
             {
