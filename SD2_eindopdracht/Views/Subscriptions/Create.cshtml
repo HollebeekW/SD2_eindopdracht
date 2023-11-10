@@ -13,12 +13,12 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
+                <label asp-for="Name" class="control-label"></label>*
                 <input asp-for="Name" class="form-control" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="MinAge" class="control-label"></label>
+                <label asp-for="MinAge" class="control-label"></label>*
                 <input asp-for="MinAge" class="form-control" />
                 <span asp-validation-for="MinAge" class="text-danger"></span>
             </div>
@@ -38,29 +38,32 @@
                 <span asp-validation-for="YearlyItems" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="LoanPeriod" class="control-label"></label>
+                <label asp-for="LoanPeriod" class="control-label"></label>*
                 <input asp-for="LoanPeriod" class="form-control" />
                 <span asp-validation-for="LoanPeriod" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Extensions" class="control-label"></label>
+                <label asp-for="Extensions" class="control-label"></label>*
                 <input asp-for="Extensions" class="form-control" />
                 <span asp-validation-for="Extensions" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="ReservationPrice" class="control-label"></label>
+                <label asp-for="ReservationPrice" class="control-label"></label>*
                 <input asp-for="ReservationPrice" class="form-control" type="number" step="0.01" />
                 <span asp-validation-for="ReservationPrice" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="DailyFine" class="control-label"></label>
+                <label asp-for="DailyFine" class="control-label"></label>*
                 <input asp-for="DailyFine" class="form-control" type="number" step="0.01" />
                 <span asp-validation-for="DailyFine" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="SubscriptionPrice" class="control-label"></label>
-                <input asp-for="SubscriptionPrice" class="form-control" type="number" step="0.01" />
+                <label asp-for="SubscriptionPrice" class="control-label"></label>*
+                <input asp-for="SubscriptionPrice" class="form-control" type="number" step="0.1" />
                 <span asp-validation-for="SubscriptionPrice" class="text-danger"></span>
+            </div>
+            <div>
+                <span>*: Required</span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />

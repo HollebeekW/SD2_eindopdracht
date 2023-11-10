@@ -32,7 +32,7 @@ namespace SD2_eindopdracht.Controllers
 
             if (currentUser.IsBlocked == true)
             {
-                TempData["ErrorMessage"] = "User is blocked,";
+                TempData["ErrorMessage"] = "User is blocked";
                 return RedirectToAction("Index", "Items");
             }
 
@@ -41,7 +41,7 @@ namespace SD2_eindopdracht.Controllers
             if (subscriptionId == 0)
             {
                 TempData["ErrorMessage"] = "No Subscription found"; //return error if empty (no subscription linked to user)
-                return RedirectToAction("Index", "Items");
+                return RedirectToAction("Index", "Subscriptions");
             }
 
             var userItems = _context.UserItem

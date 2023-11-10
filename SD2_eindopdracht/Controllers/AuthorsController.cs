@@ -152,9 +152,16 @@ namespace SD2_eindopdracht.Controllers
             {
                 return Problem("Entity set 'ApplicationDbContext.Author'  is null.");
             }
+            
             var author = await _context.Author.FindAsync(id);
+
             if (author != null)
             {
+                var authorItems = _context.Item.Where(i => i.AuthorId == author.Id);
+                var authorItemsInCart = _context.UserItem.Where(ui => authorItems.Any(ai => ai.Id == ui.ItemId));
+
+                _context.Item.RemoveRange(authorItems); //also remove items linked to author
+                _context.UserItem.RemoveRange(authorItemsInCart); //and remove any items belonging to author in users' cart
                 _context.Author.Remove(author);
             }
 

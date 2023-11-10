@@ -18,29 +18,6 @@
     {
         <a asp-action="Create">Create New</a>
     }
-    <div class="d-flex mb-3">
-        <div class="mr-2">
-            <a asp-action="Sort" asp-route-sortBy="Title" class="btn btn-primary">Sort by Title</a>
-        </div>
-        <div class="mr-2">
-            <a asp-action="Sort" asp-route-sortBy="Category" class="btn btn-primary">Sort by Category</a>
-        </div>
-        <div class="mr-2">
-            <a asp-action="Sort" asp-route-sortBy="AuthorFirstName" class="btn btn-primary">Sort by Authors' first name</a>
-        </div>
-        <div class="mr-2">
-            <a asp-action="Sort" asp-route-sortBy="AuthorLastName" class="btn btn-primary">Sort by Authors' last name</a>
-        </div>
-        <div class="mr-2">
-            <a asp-action="Sort" asp-route-sortBy="YearOfRelease" class="btn btn-primary">Sort by Release Year</a>
-        </div>
-        <div class="mr-2">
-            <a asp-action="Sort" asp-route-sortBy="Stock" class="btn btn-primary">Sort by Stock</a>
-        </div>
-        <div class="mr-2">
-            <a asp-action="Sort" asp-route-sortBy="NoZeroStock" class="btn btn-primary">Hide Unavailable Items</a>
-        </div>
-    </div>
     <form asp-action="Search" asp-controller="Items" method="get">
         <div class="input-group">
             <input type="text" name="query" class="form-control" placeholder="Search for name, category, year or author">
@@ -55,25 +32,25 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Title)
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["TitleSortParm"]">@Html.DisplayNameFor(model => model.Title)</a>
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Description)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Category)
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["CategorySortParm"]">@Html.DisplayNameFor(model => model.Category)</a>
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Author.FirstName)
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["AuthorFirstNameSortParm"]">@Html.DisplayNameFor(model => model.Author.FirstName)</a>
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Author.LastName)
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["AuthorLastNameSortParm"]">@Html.DisplayNameFor(model => model.Author.LastName)</a>
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.YearOfRelease)
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["YearOfReleaseSortParm"]">@Html.DisplayNameFor(model => model.YearOfRelease)</a>
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Stock)
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["StockSortParm"]">@Html.DisplayNameFor(model => model.Stock)</a>
             </th>
             <th></th>
         </tr>
@@ -107,11 +84,16 @@
                     @if (User.IsInRole("Admin") || User.IsInRole("Employee"))
                     {
                         <a asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                    }
+
+                    @if (User.IsInRole("Admin"))
+                    {
                         <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
                     }
+
                     @if (User.Identity.IsAuthenticated && item.Stock > 0) //Only show ability to reservate item if item is in stock
                     {
-                        <a asp-action="Reserve" asp-route-id="@item.Id">Reserveer Item</a>
+                        <a asp-action="Reserve" asp-route-id="@item.Id">Reserve Item</a>
                     }
                 </td>
         </tr>

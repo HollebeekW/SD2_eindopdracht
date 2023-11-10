@@ -122,8 +122,8 @@ namespace SD2_eindopdracht.Data
             var itemId = 1;
             var itemFaker = new Faker<Item>()
                 .RuleFor(i => i.Id, f => itemId++) //auto increment id
-                .RuleFor(i => i.Title, f => f.Commerce.ProductName()) //product name may be changed
-                .RuleFor(i => i.Description, f => f.Commerce.ProductDescription()) //product desciption may be changed
+                .RuleFor(i => i.Title, f => f.Commerce.ProductName()) //commerce name for lack of better alternatives
+                .RuleFor(i => i.Description, f => f.Commerce.ProductDescription()) //same for commerce name, I couldn't find a better fitting alternative
                 .RuleFor(i => i.YearOfRelease, f => f.Random.Number(2000,2023))
                 .RuleFor(i => i.Stock, f => f.Random.Number(0,10))
                 .RuleFor(i => i.AuthorId, f => f.Random.Number(1, AuthorList.Count)) //random number between 1 and amount of existing authors

@@ -32,16 +32,17 @@
                     else {
                         <p>No subscription active</p>
                     }
-                    
+                    @if (item.User.SubscriptionId != null && User.IsInRole("Admin") || item.User.SubscriptionId != null && (User.IsInRole("Employee")))
+                    {
+                        <a asp-action="RemoveSubscription" asp-route-id="@item.User.Id">Remove</a>
+                    }
                 </td>
                 <td>
                     @item.User.Fine
-                    <a asp-action="RemoveFine" asp-route-id="@item.User.Id">Remove Fine</a>
+                    <a asp-action="RemoveFine" asp-route-id="@item.User.Id">Remove</a>
                 </td>
                 @if (User.IsInRole("Admin"))
                 {
-
-
                     <td>
                         @item.User.IsBlocked
                         @if (item.User.IsBlocked == false)

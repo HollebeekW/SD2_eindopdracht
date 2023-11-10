@@ -166,8 +166,18 @@ namespace SD2_eindopdracht.Controllers
                 return Problem("Entity set 'ApplicationDbContext.Subscription'  is null.");
             }
             var subscription = await _context.Subscription.FindAsync(id);
+
+            var usersWithSubscription = await _userManager.Users //get list of users subscribed to the to be deleted subscription
+                .Where(u => u.SubscriptionId == subscription.Id)
+                .ToListAsync();
+
             if (subscription != null)
             {
+                foreach (var user in usersWithSubscription)
+                {
+                    user.SubscriptionId = null; //remove subscription for every user in list
+                }
+
                 _context.Subscription.Remove(subscription);
             }
             

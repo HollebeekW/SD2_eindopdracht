@@ -261,5 +261,29 @@ namespace SD2_eindopdracht.Controllers
             }
             return RedirectToAction("Index");
         }
+
+        [Authorize(Roles = "Admin,Employee")]
+        public async Task<IActionResult> RemoveSubscription(string  id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var user = await _userManager.FindByIdAsync(id);
+
+            if (user != null )
+            {
+                try
+                {
+                    user.SubscriptionId = null;
+                    await _userManager.UpdateAsync(user);
+                } catch(Exception ex)
+                {
+                    return Problem(ex.Message);
+                }
+            }
+            return RedirectToAction("Index");
+        }
     }
 }
