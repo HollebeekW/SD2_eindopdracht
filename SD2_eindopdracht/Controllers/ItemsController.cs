@@ -26,21 +26,91 @@ namespace SD2_eindopdracht.Controllers
         }
 
         // GET: Items
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string sortOrder, string currentFilter, string searchString)
         {
-            if (TempData.ContainsKey("ErrorMessage"))
-            {
-                ViewBag.ErrorMessage = TempData["ErrorMessage"].ToString(); //if tempdata has an error message, show in view
-            }
+            //code van https://learn.microsoft.com/en-us/aspnet/core/data/ef-mvc/advanced?view=aspnetcore-8.0#dynamic-linq
 
-            var items = await _context.Item
+            //viewdata for sorting and searching
+            ViewData["CurrentSort"] = sortOrder;
+            ViewData["TitleSortParm"] = String.IsNullOrEmpty(sortOrder) ? "Title_desc" : "";
+            ViewData["CategorySortParm"] = sortOrder == "Category" ? "Category_desc" : "Category";
+            ViewData["StockSortParm"] = sortOrder == "Stock" ? "Stock_desc" : "Stock";
+            ViewData["AuthorFirstNameSortParm"] = sortOrder == "AuthorFirstName" ? "AuthorFirstName_desc" : "AuthorFirstName";
+            ViewData["AuthorLastNameSortParm"] = sortOrder == "AuthorLastName" ? "AuthorLastName_desc" : "AuthorLastName";
+            ViewData["YearOfReleaseSortParm"] = sortOrder == "YearOfRelease" ? "YearOfRelease_desc" : "YearOfRelease";
+
+            //get items with corresponding authors and categories
+            var items = _context.Item
                 .Include(i => i.Author)
                 .Include(i => i.Category)
-                .ToListAsync();
+                .AsQueryable();
 
-            return items != null
-                ? View(items)
-                : Problem("Entity set 'ApplicationDbContext.Item' is null.");
+            if (searchString != null)
+            {
+                searchString = currentFilter;
+            }
+
+            ViewData["CurrentFilter"] = searchString;
+
+            //search for search input in titles, categories, authors and year of release
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                items = items.Where(i => i.Title.Contains(searchString)
+                                        || i.Category.Name.Contains(searchString)
+                                        || i.Author.FirstName.Contains(searchString)
+                                        || i.Author.LastName.Contains(searchString)
+                                        || i.YearOfRelease.ToString().Contains(searchString));
+            }
+
+            //default sort order
+            if (string.IsNullOrEmpty(sortOrder))
+            {
+                sortOrder = "Title";
+            }
+
+            bool descending = false;
+            if (sortOrder.EndsWith("_desc"))
+            {
+                sortOrder = sortOrder.Substring(0, sortOrder.Length - 5);
+                descending = true;
+            }
+
+            //switch cases for each sort order
+            switch (sortOrder)
+            {
+                case "Title":
+                    items = descending ? items.OrderByDescending(i => i.Title) : items.OrderBy(i => i.Title);
+                    break;
+                case "Category":
+                    items = descending ? items.OrderByDescending(i => i.Category.Name) : items.OrderBy(i => i.Category.Name);
+                    break;
+                case "AuthorFirstName":
+                    items = descending ? items.OrderByDescending(i => i.Author.FirstName) : items.OrderBy(i => i.Author.FirstName);
+                    break;
+                case "AuthorLastName":
+                    items = descending ? items.OrderByDescending(i => i.Author.LastName) : items.OrderBy(i => i.Author.LastName);
+                    break;
+                case "YearOfRelease":
+                    items = descending ? items.OrderByDescending(i => i.YearOfRelease) : items.OrderBy(i => i.YearOfRelease);
+                    break;
+                case "Stock":
+                    items = descending ? items.OrderByDescending(i => i.Stock) : items.OrderBy(i => i.Stock);
+                    break;
+                default:
+                    items = descending ? items.OrderByDescending(i => i.Title) : items.OrderBy(i => i.Title);
+                    break;
+            }
+
+            if (TempData.ContainsKey("SuccessMessage"))
+            {
+                ViewBag.SuccessMessage = TempData["SuccessMessage"].ToString();
+            }
+            if (TempData.ContainsKey("ErrorMessage"))
+            {
+                ViewBag.ErrorMessage = TempData["ErrorMessage"].ToString();
+            }
+
+            return View(await items.AsNoTracking().ToListAsync());
         }
 
         // GET: Items/Details/5
@@ -211,7 +281,18 @@ namespace SD2_eindopdracht.Controllers
 
             }
 
-            if (currentUser.SubscriptionId == null)
+            var userBlocked = currentUser.IsBlocked; //get users' blocked state
+
+            if (userBlocked) //if user is blocked, don't add item
+            {
+                TempData["ErrorMessage"] = "User is blocked, item was not added";
+                return RedirectToAction("Index");
+            }
+
+            var userSubscription = await _context.Subscription
+                .SingleOrDefaultAsync(s => s.Id == currentUser.SubscriptionId); //get users' subscription type
+
+            if (userSubscription == null)
             {
                 TempData["ErrorMessage"] = "No subscription found, item was not added";
                 return RedirectToAction("Index");
@@ -225,15 +306,16 @@ namespace SD2_eindopdracht.Controllers
                     ItemId = item.Id,
                 };
 
-                int Count = await _context.UserItem.CountAsync(ui => ui.UserId == currentUser.Id); //count amount of items added by user
+                int count = await _context.UserItem.CountAsync(ui => ui.UserId == currentUser.Id); //count amount of items added by user
+                int maxItems = userSubscription.ItemsAtOnce.Value; //max items to be loaned out at a time
 
-                if (currentUser.SubscriptionId == 2 && Count >= 10) //if user has "Budget" subscription, max amount of items to be loaned out is 10. If over max ammount, return error
-                //Hard coded nummer, ik kreeg het niet werkend om het aantal uit de database te halen d.m.v. int maxValue = currentUser.Subscription.ItemsAtOnce.Value;
+                if (maxItems != null && count >= maxItems)
                 {
-                    TempData["ErrorMessage"] = "Max amount of items for this subscription is 10.";
+                    TempData["ErrorMessage"] = $"Max amount of items for this subscription is {maxItems}.";
                 }
                 else //if user has other subscription or budget subscription and 10 or less items, add to table userItems
                 {
+                    TempData["SuccessMessage"] = $"Item {item.Title} added to cart";
                     item.Stock--;
                     _context.UserItem.Add(userItem);
                     await _context.SaveChangesAsync();
@@ -244,51 +326,6 @@ namespace SD2_eindopdracht.Controllers
             }
             
             return RedirectToAction(nameof(Index));
-        }
-
-        public async Task<IActionResult> Sort(string sortBy)
-        {
-            IQueryable<Item> items = _context.Item
-                .Include(i => i.Author)
-                .Include(i => i.Category);
-
-            switch(sortBy)
-            {
-                case "Title":
-                    items = items.OrderBy(i => i.Title);
-                    break;
-
-                case "YearOfRelease":
-                    items = items.OrderByDescending(i => i.YearOfRelease);
-                    break;
-
-                case "Category":
-                    items = items.OrderBy(i => i.Category.Name);
-                    break;
-
-                case "AuthorFirstName":
-                    items = items.OrderBy(i => i.Author.FirstName);
-                    break;
-
-                case "AuthorLastName":
-                    items = items.OrderBy(i => i.Author.LastName);
-                    break;
-
-                case "Stock":
-                    items = items.OrderByDescending(i => i.Stock);
-                    break;
-
-                case "NoZeroStock":
-                    items = items.Where(i => i.Stock != 0);
-                    break;
-
-                default:
-                    items = items.OrderBy(i => i.Title);
-                    break;
-            }
-
-            var sortedItems = await items.ToListAsync();
-            return View("Index", sortedItems);
         }
 
         public async Task<IActionResult> Search(string query)

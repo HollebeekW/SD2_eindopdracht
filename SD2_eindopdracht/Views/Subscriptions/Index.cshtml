@@ -39,6 +39,9 @@
                 @Html.DisplayNameFor(model => model.MaxAge)
             </th>
             <th>
+                @Html.DisplayNameFor(model => model.ItemsAtOnce)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.YearlyItems)
             </th>
             <th>
@@ -69,25 +72,40 @@
                 @Html.DisplayFor(modelItem => item.MinAge)
             </td>
             <td>
+                    @if(item.MaxAge == null)
+                    {
+                        <span>No maximum age</span>
+                    }
                 @Html.DisplayFor(modelItem => item.MaxAge)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.YearlyItems)
+                    @if(item.ItemsAtOnce == null)
+                    {
+                        <span>No limit on </span>
+                    }
+                @Html.DisplayFor(modelItem => item.ItemsAtOnce) <span>items</span>
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.LoanPeriod)
+                    @if (item.YearlyItems == null)
+                    {
+                        <span>No limit on </span>
+                    }
+                @Html.DisplayFor(modelItem => item.YearlyItems) <span>items</span>
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Extensions)
+                @Html.DisplayFor(modelItem => item.LoanPeriod) <span> weeks</span>
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ReservationPrice)
+                @Html.DisplayFor(modelItem => item.Extensions) <span> times</span>
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.DailyFine)
+                <span>&euro; </span>@Html.DisplayFor(modelItem => item.ReservationPrice)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.SubscriptionPrice)
+                    <span>&euro; </span>@Html.DisplayFor(modelItem => item.DailyFine)
+            </td>
+            <td>
+                    <span>&euro; </span>@Html.DisplayFor(modelItem => item.SubscriptionPrice)
             </td>
                 <td>
                     <a asp-action="Details" asp-route-id="@item.Id">Details</a>

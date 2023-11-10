@@ -72,7 +72,7 @@ namespace SD2_eindopdracht.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin,Employee")]
-        public async Task<IActionResult> Create([Bind("Id,Name,MinAge,MaxAge,YearlyItems,LoanPeriod,Extensions,ReservationPrice,DailyFine,SubscriptionPrice")] Subscription subscription)
+        public async Task<IActionResult> Create([Bind("Id,Name,MinAge,MaxAge,ItemsAtOnce,YearlyItems,LoanPeriod,Extensions,ReservationPrice,DailyFine,SubscriptionPrice")] Subscription subscription)
         {
             if (ModelState.IsValid)
             {
@@ -106,7 +106,7 @@ namespace SD2_eindopdracht.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin,Employee")]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,MinAge,MaxAge,YearlyItems,LoanPeriod,Extensions,ReservationPrice,DailyFine,SubscriptionPrice")] Subscription subscription)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,MinAge,MaxAge,ItemsAtOnce,YearlyItems,LoanPeriod,Extensions,ReservationPrice,DailyFine,SubscriptionPrice")] Subscription subscription)
         {
             if (id != subscription.Id)
             {
@@ -166,8 +166,18 @@ namespace SD2_eindopdracht.Controllers
                 return Problem("Entity set 'ApplicationDbContext.Subscription'  is null.");
             }
             var subscription = await _context.Subscription.FindAsync(id);
+
+            var usersWithSubscription = await _userManager.Users //get list of users subscribed to the to be deleted subscription
+                .Where(u => u.SubscriptionId == subscription.Id)
+                .ToListAsync();
+
             if (subscription != null)
             {
+                foreach (var user in usersWithSubscription)
+                {
+                    user.SubscriptionId = null; //remove subscription for every user in list
+                }
+
                 _context.Subscription.Remove(subscription);
             }
             

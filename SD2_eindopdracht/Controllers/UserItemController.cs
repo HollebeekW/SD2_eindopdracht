@@ -32,7 +32,7 @@ namespace SD2_eindopdracht.Controllers
 
             if (currentUser.IsBlocked == true)
             {
-                TempData["ErrorMessage"] = "User is blocked,";
+                TempData["ErrorMessage"] = "User is blocked";
                 return RedirectToAction("Index", "Items");
             }
 
@@ -41,7 +41,7 @@ namespace SD2_eindopdracht.Controllers
             if (subscriptionId == 0)
             {
                 TempData["ErrorMessage"] = "No Subscription found"; //return error if empty (no subscription linked to user)
-                return RedirectToAction("Index", "Items");
+                return RedirectToAction("Index", "Subscriptions");
             }
 
             var userItems = _context.UserItem
@@ -61,11 +61,17 @@ namespace SD2_eindopdracht.Controllers
 
             decimal CalculatePrice(int subscriptionId, int quantity)
             {
+                //get subscription that belongs to user
+                var userSubscription = _context.Subscription
+                    .SingleOrDefault(s => s.Id == currentUser.SubscriptionId);
+
+                //default price is 0
                 decimal cost = 0;
 
-                if (subscriptionId != 4) //if subscription type is anything other than "Top", price per item is 25 cents
+                //if value for price is anything other than 0, get value from database
+                if (userSubscription.ReservationPrice != 0) 
                 {
-                    cost = 0.25m;
+                    cost = userSubscription.ReservationPrice;
                 }
 
                 return cost * quantity; //total price = amount of items times cost
@@ -153,7 +159,7 @@ namespace SD2_eindopdracht.Controllers
                 
             }
 
-            TempData["Message"] = "Items gereserveerd!"; //message to be delivered back to index
+            TempData["Message"] = "Items reserved!"; //message to be delivered back to index
 
             return RedirectToAction("Index");
         }

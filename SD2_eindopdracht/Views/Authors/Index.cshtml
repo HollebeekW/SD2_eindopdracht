@@ -39,9 +39,13 @@
                     @if (User.IsInRole("Admin") || User.IsInRole("Employee"))
                     {
                         <a asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                    }
+
+                    @if (User.IsInRole("Admin"))
+                    {
                         <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
                     }
-            </td>
+                </td>
         </tr>
 }
     </tbody>

@@ -156,6 +156,11 @@ namespace SD2_eindopdracht.Controllers
             var category = await _context.Category.FindAsync(id);
             if (category != null)
             {
+                var categoryItems = _context.Item.Where(i => i.CategoryId == category.Id);
+                var categoryItemsInCart = _context.UserItem.Where(ui => categoryItems.Any(ci => ci.Id == ui.ItemId));
+
+                _context.RemoveRange(categoryItems); //also delete items belonging to deleted category
+                _context.RemoveRange(categoryItemsInCart); //and items beloning to category in users' cart
                 _context.Category.Remove(category);
             }
             
